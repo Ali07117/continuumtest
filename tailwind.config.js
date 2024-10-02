@@ -7,10 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily:{
+        average:["Average", "sans-serif"],
+        inter:["Inter", "sans-serif"],
+        trirong:["Trirong", "sans-serif"],
+
+      }
+
+      // colors: {
+      //   background: "var(--background)",
+      //   foreground: "var(--foreground)",
+      // },
     },
   },
   plugins: [],
