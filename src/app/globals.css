@@ -480,21 +480,27 @@ body {
 
 }
 @media screen and (max-width: 650px) {
+
+  .footer-nav{
+    padding-top: 0.3rem;
+    min-height: 2.8rem ;
+    /* background-color: red; */
+  }
   
   .footer-links p{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .footer-links{
-    font-size: 1rem;
+    font-size: 0.8rem;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     line-height: 5px;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
   }
   .footer-copyright{
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    margin-top: 0rem;
   }
 
   .bottom-logo{
