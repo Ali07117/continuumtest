@@ -385,6 +385,15 @@ body {
     height: 50px;
   }
   }
+@media screen and (max-width: 375px) {
+  .card-header p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .card-header img{
+    height: 50px;
+  }
+  }
 
 
 /* ---------------capabilities------------- */
