@@ -21,6 +21,9 @@ function Home() {
           duration:1,
           scrollTrigger:{
             trigger:".img-container",
+            scrub:true,
+            start:"top 70%",
+            end:"top 0%",
           }
         })
 
@@ -29,6 +32,9 @@ function Home() {
           duration:1,
           scrollTrigger:{
             trigger:".img-container2",
+            scrub:true,
+            start:"top 70%",
+            end:"top 0%",
           }
         })
 
@@ -37,6 +43,10 @@ function Home() {
           duration:1,
           scrollTrigger:{
             trigger:".img-container3",
+            scrub:true,
+            start:"top center",
+            start:"top 70%",
+            end:"top 0%",
           }
         })
 
@@ -45,17 +55,13 @@ function Home() {
           duration:1,
           scrollTrigger:{
             trigger:".img-container4",
+            scrub:true,
+            start:"top 70%",
+            end:"top 0%",
           }
         })
 
-        // gsap.to(".homeabout-left", {
-        //   scrollTrigger: {
-        //     trigger: ".homeabout-left", 
-        //     start: "top top",      
-        //     end: "+=420",            
-        //     pin: true,                 
-        //   }
-        // })
+       
 
         let mm = gsap.matchMedia(); // Create a GSAP matchMedia instance
 
@@ -66,7 +72,7 @@ function Home() {
               trigger: ".homeabout-left", 
               start: "top top",      
               end: "+=420",            
-              pin: true,                 
+              pin: true,               
             }
           });
         });
@@ -102,10 +108,10 @@ mm.add("(max-width: 1285px)", () => {
     <>
     <div className="relative home-wrapper min-h-[100vh] px-[1.5rem] w-[100%]" style={{backgroundImage:"url(/images/home-hero.svg)", backgroundPosition:"center", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
       <Navbar/>
-      <p className="mt-[22%] hero-heading w-[90%] font-average font-[400] leading-[7.2rem] text-[6rem]  text-[--textprimary]">Increasing human potential through design.</p>
+      <p className="mt-[22%] hero-heading w-[90%] font-average font-[400] leading-[7vw] text-[5.8vw]  text-[--textprimary]">Increasing human potential through design.</p>
       <p className=" mt-[4rem] hero-sub-heading w-[95%] text-[2rem] leading-[3rem] font-[400] font-inter font-[200] text-[--textprimary]">At Continuum, we drive forward-thinking solutions that empower people and transform ideas into impactful realities.</p>
-      <div className="img-container mt-[5rem] flex justify-center">
-      <div className=' img1 rounded-[2.5rem] hero-image scale-[0] h-[43.75rem] w-[100%]' style={{backgroundImage:"url(/images/heroimg1.svg)", backgroundPosition:"center", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}></div>
+      <div className="img-container mt-[2rem] flex justify-center">
+      <div className=' img1 rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{backgroundImage:"url(/images/heroimg1.svg)", backgroundPosition:"center", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}></div>
       </div>
     </div>
     <Homesection1 titlept={"8rem"} containerclass={"img-container2"} imgclass={"img2"} img={"/images/section1img.svg"} pt={"7.5rem"} maintitle={"Selected Work"} title={"Mobile Interface for Robotic Process Automation"} cta={"Request Case Study"} para1={"Mobile app for a leading robotic process automation(RPA) software company."} para2={"Discovery & Research Strategy Experience Design Visual Design"}/>

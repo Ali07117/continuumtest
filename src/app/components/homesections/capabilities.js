@@ -39,7 +39,7 @@ function Capabilities() {
         <p className='font-inter card-para text-[20px] w-[65%] mt-[1rem] text-[--text-primary] font-[400]'>Ongoing refinement of products via UX audits, A/B testing, and optimization, ensuring evolution based on user feedback and emerging needs.</p>
     </div>
     </div>
-    <div className="section-bottom-left flex mt-[1rem] items-center gap-[20px]">
+    <div className="section-bottom-left flex mt-[1rem] items-center gap-[8px]">
             <p className='text-[1.125rem] font-[400] text-[--textsecondry]'>See all Services</p>
             <img src="/images/blackarrow.svg" alt="" />
         </div>

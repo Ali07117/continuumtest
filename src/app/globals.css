@@ -81,11 +81,11 @@ body {
 
 
 @media screen and (max-width: 1180px) {
-  .hero-heading{
+  /* .hero-heading{
     font-size: 5rem;
     line-height: 6rem;
     width: 100%;
-  }
+  } */
   .hero-sub-heading{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -94,10 +94,10 @@ body {
 
 }
 @media screen and (max-width: 990px) {
-  .hero-heading{
+  /* .hero-heading{
     font-size: 4rem;
     line-height: 5rem;
-  }
+  } */
   .hero-sub-heading{
     font-size: 1.3rem;
     line-height: 1.9rem;
@@ -106,44 +106,44 @@ body {
 
 }
 @media screen and (max-width: 800px) {
-  .hero-heading{
+  /* .hero-heading{
     font-size: 3rem;
     line-height: 3.5rem;
-    text-align: center;
-  }
+    
+  } */
   .hero-sub-heading{
     font-size: 1rem;
     line-height: 1.6rem;
     margin-top: 1.6rem;
-    text-align: center;
+    /*  */
   }
 
 }
 @media screen and (max-width: 650px) {
-  .hero-heading{
+  /* .hero-heading{
     font-size: 2.8rem;
     line-height: 3.5rem;
-    text-align: center;
-  }
+    
+  } */
   .hero-sub-heading{
     font-size: 1rem;
     line-height: 1.6rem;
     margin-top: 1.2rem;
-    text-align: center;
+    /*  */
   }
 
 }
 @media screen and (max-width: 380px) {
-  .hero-heading{
+  /* .hero-heading{
     font-size: 2.5rem;
     line-height: 3.2rem;
-    text-align: center;
-  }
+    
+  } */
   .hero-sub-heading{
     font-size: 1rem;
     line-height: 1.6rem;
     margin-top: 1.2rem;
-    text-align: center;
+    /*  */
   }
 
 }
@@ -155,11 +155,11 @@ body {
   .select-work-text{
     font-size: 3rem;
     padding-top: 5rem !important;
-    text-align: center;
+    
   }
   .section-heading{
     font-size: 2.2rem;
-    text-align: center;
+    
     line-height: 2.4rem;
     padding-top: 1.5rem;
   
@@ -169,7 +169,7 @@ body {
 @media screen and (max-width: 650px) {
   .select-work-text{
     font-size: 3.2rem;
-    padding-top: 5rem !important;
+    padding-top: 0rem !important;
   }
   .section-heading{
     font-size: 2.4rem;
@@ -203,7 +203,7 @@ body {
   }
   .bottom-right-first-p, .bottom-right-second-p{
     width: 100%;
-    text-align: center;
+    
   }
   
 
@@ -247,7 +247,7 @@ body {
 @media screen and (max-width: 800px) {
   .section-about-heading{
     font-size: 3rem;
-    text-align: center;
+    
     
   }
   .homeabout-left-text{
@@ -279,7 +279,7 @@ body {
 @media screen and (max-width: 800px) {
 .marquee-heading{
   font-size: 2.2rem;
-  text-align: center;
+  
 }
 .marquee-inner-container img{
   height: 40px;
@@ -328,7 +328,7 @@ body {
 @media screen and (max-width: 1024px) {
 .card-header p{
   font-size: 2.2rem;
-  text-align: center;
+  
 }
 .card-header{
   justify-content: center;
@@ -339,7 +339,7 @@ body {
 .card-para{
   font-size: 17px;
   margin-top: 0.5rem;
-  text-align: center;
+  
   width: 100%;
 }
 }
@@ -353,14 +353,14 @@ body {
 @media screen and (max-width: 800px) {
   .capabilities-text{
     font-size: 3rem;
-    text-align: center;
+    
   }
 }
 
 @media screen and (max-width: 650px) {
   .capabilities-text{
     font-size: 2.4rem;
-    text-align: center;
+    
   }
 
   .card-header p{
@@ -444,18 +444,18 @@ body {
 
 .contact-heading{
   font-size: 3rem;
-  text-align: center;
+  
   line-height: 3rem;
 }
 .contact-sub-heading{
   font-size: 1.4rem;
-  text-align: center;
+  
   line-height: 2rem;
   margin-top: 1.5rem;
 }
 .contact-para{
   font-size: 1rem;
-  text-align: center;
+  
   margin-top: 1rem;
 }
   .contact-button{
@@ -480,7 +480,7 @@ body {
 @media screen and (max-width: 650px) {
   
   .footer-links p{
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .footer-links{
     font-size: 1rem;
@@ -491,8 +491,8 @@ body {
     margin-top: 0.5rem;
   }
   .footer-copyright{
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
   }
 
 
