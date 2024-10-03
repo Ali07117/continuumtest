@@ -21,9 +21,9 @@ function Home() {
           duration:1,
           scrollTrigger:{
             trigger:".img-container",
-            scrub:true,
-            start:"top 70%",
-            end:"top 0%",
+            // scrub:true,
+            // start:"top 70%",
+            // end:"top 0%",
           }
         })
 
