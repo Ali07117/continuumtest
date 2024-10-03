@@ -121,7 +121,9 @@ body {
 }
 @media screen and (max-width: 650px) {
   .hero-heading{
-    font-size: 7vw;
+    font-size: 7.9vw;
+    width: 100%;
+    /* background-color: red; */
     /* line-height: 3.5rem; */
     
   }
