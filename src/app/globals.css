@@ -585,17 +585,17 @@ body {}
     padding-left: 1.2rem;
     padding-right: 1.2rem;
   }
+  .home-section-1-wrapper {
+    padding-top: 1rem;
+  }
+  .capabilities-wrapper{
+    margin-top: 1rem;
+  }
+  .capabilities-wrapper{
+    padding-bottom: 1rem;
+  }
 }
 
-.home-section-1-wrapper {
-  padding-top: 1rem;
-}
-.capabilities-wrapper{
-  margin-top: 1rem;
-}
-.capabilities-wrapper{
-  padding-bottom: 1rem;
-}
 
 
 /* ------footer nav----------- */
