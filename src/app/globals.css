@@ -183,12 +183,17 @@ body {}
     gap: 0.5rem;
     width: 100%;
   }
+  .section-bottom-left{
+ 
+    display: inline-block;
+    display: flex;
+  }
 
   .bottom-right-first-p,
   .bottom-right-second-p,
   .section-bottom-left p
   {
-    width: 100%;
+    /* width: 100%; */
     font-size: 0.8rem;
 
   }
