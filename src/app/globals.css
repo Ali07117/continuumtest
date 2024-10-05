@@ -518,7 +518,7 @@ body {}
 @media screen and (max-width: 650px) {
 
   .contact-heading {
-    font-size: 6.8vw;
+    font-size: 8.5vw;
   }
   .contact-sub-heading {
     font-size: 5.5vw;
@@ -546,10 +546,6 @@ body {}
 }
 
 @media screen and (max-width: 650px) {
-  .footer-nav {
-    /* padding-top: 0.3rem; */
-    /* min-height: 2.8rem; */
-  }
 
   .footer-links p {
     font-size: 0.6rem;
