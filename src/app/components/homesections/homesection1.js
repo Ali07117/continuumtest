@@ -7,7 +7,7 @@ function Homesection1(props) {
         <p className={`font-average select-work-text  text-[4rem] text-[--textprimary] font-[300]`} style={{paddingTop:`${props.titlept}`}}>{props.maintitle}</p>
         <p className='font-average section-heading pt-[2.5rem] text-[2.8rem] text-[--text-primary] font-[400]'>{props.title}</p>
         <div className={` ${props.containerclass} mt-[2.1rem] flex justify-center`}>
-      <div className={` ${props.imgclass} rounded-[2.5rem] scale-[0] section-images h-[100vh] w-[100%]`} style={{backgroundImage:`url(${props.img})`, backgroundPosition:"center", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}></div>
+      <div className={` ${props.imgclass} rounded-[2.5rem] scale-[0.5] section-images h-[100vh] w-[100%]`} style={{backgroundImage:`url(${props.img})`, backgroundPosition:"center", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}></div>
       </div>
       <div className="section-bottom flex h-[250px] justify-between items-start mt-[20px]">
         <div className="section-bottom-left flex items-center gap-[8px]">

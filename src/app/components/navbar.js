@@ -10,7 +10,7 @@ function Navbar() {
     <>
     <div className="navContainer navbg h-[4.3rem] flex justify-between items-center">
       <div className="navLeft">
-          <Link href="/"><img className='' src="/images/logo.svg" alt="" /></Link>
+          <Link href="/"><img className='nav-logo' src="/images/logo.svg" alt="" /></Link>
       </div>
       <div className="nav-right flex gap-[32px]">
           <Link className='' href="/about"><p className=' font-inter  font-[200] text-[1.125rem] text-[--textprimary]'>About</p></Link>

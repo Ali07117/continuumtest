@@ -3,7 +3,7 @@ import React from 'react';
 function Footernav() {
   return (
     <>
-        <div className="relative z-[5] footer-nav flex justify-between pt-[0.5rem] mt-[1rem] items-start footer-nav-wrapper min-h-[5rem] border-t-[1px] border-t-[#FFFFFF]">
+        <div className="relative z-[5] footer-nav flex justify-between pt-[0.5rem] mt-[1rem] items-start footer-nav-wrapper max-h-[75px] h-[75px] border-t-[1px] border-t-[#FFFFFF]">
             <div className="empty-div w-[15%]"></div>
             <div className="footer-links flex items-center gap-[32px]">
             <p className=' font-inter  font-[200] text-[1.125rem] text-[--textprimary]'>About</p>
