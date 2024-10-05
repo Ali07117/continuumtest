@@ -580,10 +580,9 @@ body {}
   .home-section-1-wrapper,
   .homeabout-wrapper,
   .marquee-wrapper,
-  .capabilities-wrapper,
-  .contact-wrapper {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+  .capabilities-wrapper{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
   .home-section-1-wrapper {
     padding-top: 1rem;
