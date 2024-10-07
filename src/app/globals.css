@@ -20,6 +20,18 @@
   }
 }
 
+.scrollnone::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.scrollnone {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+.scrollnone::-ms-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 body {}
 
 @layer utilities {
