@@ -6,7 +6,9 @@ function Contactpage() {
   return (
     <>
     <div className="contact-page-wrapper bg-[black] px-[1.5rem]">
+    <div className="contact-page-nav-container px-[1.5rem]">
     <Navbar/>
+    </div>
     <Contactsection/>
     </div>
 

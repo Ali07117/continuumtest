@@ -509,8 +509,8 @@ body {}
 
 @media screen and (max-width: 900px) {
   .contact-wrapper {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 }
 
@@ -629,7 +629,7 @@ body {}
 @media screen and (max-width: 650px) { .about-wrapper{ padding: ;} .cards-wrapper{padding: 1rem 0rem;} .hero-heading{margin-bottom: 1rem;} .aboutimg1, .capabilities-wrapper{margin-top: 0rem;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.3rem;} .work-card-last, .work-answer-text{font-size: 0.9rem;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
 @media screen and (max-width: 530px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.8rem;} .workcardwrapper{padding: 1.5rem 0;}}
 @media screen and (max-width: 440px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.7rem;} .workcardwrapper{padding: 1.5rem 0;}}
-@media screen and (max-width: 650px) { .anime-text{ font-size: 4.5vw;} .stroke{-webkit-text-stroke-width: 0.9px !important;}}
+@media screen and (max-width: 650px) { .anime-text{ font-size: 4.7vw;} .stroke{-webkit-text-stroke-width: 0.9px !important;}}
 
 /* -------About-page------- */
 
@@ -646,6 +646,10 @@ body {}
 @media screen and (max-width: 600px) {.capabilities-card-wrapper{border-radius: 1rem;} .hero-subheading-para1{margin-top: 0rem;}}
 
 /* -------Capabilities page------- */
+/* -------Contact page------- */
+@media screen and (max-width: 600px) {.contact-page-wrapper{ padding-left: 0rem; padding-right: 0rem;} .contact-page-nav-container{padding-left: 0.8rem; padding-right: 0.8rem;}}
+
+/* -------Contact page------- */
 
 
 
