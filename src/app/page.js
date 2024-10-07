@@ -115,9 +115,9 @@ mm.add("(max-width: 1285px)", () => {
     <Homesection1 containerclass={"img-container3"} imgclass={"img3"} img={"/images/section2img.svg"} pt={"7.5rem"} title={"Afious"} cta={"Request Case Study"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} para2={"Discovery & Research Strategy Experience Design Visual Design"}/>
     <Homesection1 containerclass={"img-container4"} imgclass={"img4"} img={"/images/section2img.svg"} pt={"7.5rem"} title={"Energy Company’s Digital Presence"} cta={"Request Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"}/>
     <Homeaboutsection/>
-    <Homemarquee/>
-    <Capabilities/>
-    <Contactsection/>
+    <Homemarquee bg={"#fff"} text={"--textsecondry"}/>
+    <Capabilities bg={"#D5D9E4"}/>
+    <Contactsection bg={"/images/home-hero.svg"}/>
     </>
   );
 }
