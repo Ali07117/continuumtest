@@ -16,8 +16,7 @@ function Capabilities() {
   
   // ----------
 
-  useGSAP(
-    () => {
+  useGSAP(() => {
       
       // let cmm = gsap.matchMedia();
       // cmm.add("(min-width: 1000px)", () => {
@@ -31,10 +30,19 @@ function Capabilities() {
       }
     })
 
+
+
+
   tl.from(".capabilities-cards",{
     y:"200vh",
     stagger:0.5,
   },"a")
+
+
+
+
+
+
   tl.to(".anime-heading", {
     color: "#0443E8",
     stagger: 0.5,
