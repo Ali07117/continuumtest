@@ -13,7 +13,7 @@ function Aboutcapabilities(props) {
     <Capabilitiescard text={"--textprimary"} subheading={"Ongoing refinement of products via UX audits, A/B testing, and optimization, ensuring evolution based on user feedback and emerging needs."} heading={"Continuous Improvement"}/>
     </div>
     <div className="section-bottom-left flex mt-[1rem] items-center gap-[8px]">
-            <p className='text-[1.125rem] font-[400] text-[--textprimary]'>See all Services</p>
+            <p className='text-[1.125rem] font-[400] text-[--textprimary]'>View all capabilities</p>
             <img src="/images/aboutpageimg/whiterightarrow.svg" alt="" />
         </div>
     </div>

@@ -12,7 +12,7 @@ function Aboutworksection() {
     <Aboutworkcards company={"Afious"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"}/>
     </div>
     <div className="section-bottom-left flex mt-[1rem] items-center gap-[8px]">
-            <p className='text-[1.125rem] font-[400] text-[--textprimary]'>See all Services</p>
+            <p className='text-[1.125rem] font-[400] text-[--textprimary]'>View all works</p>
             <img src="/images/aboutpageimg/whiterightarrow.svg" alt="" />
         </div>
     </div>
