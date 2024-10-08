@@ -19,31 +19,28 @@ function Navbar() {
 
         <div className="nav-right flex gap-[32px]">
           <Link href="/about">
-            <p className={`font-inter font-[200] text-[1.125rem] ${
-              pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'
-            }`}>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+              }`}>
               About
             </p>
           </Link>
 
           <Link href="/capabilities">
-            <p className={`font-inter font-[200] text-[1.125rem] ${
-              pathname === "/capabilities" ? 'text-[#044AFF]' : 'text-[--textprimary]'
-            }`}>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/capabilities" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+              }`}>
               Capabilities
             </p>
           </Link>
 
           <Link href="/work">
-            <p className={`font-inter font-[200] text-[1.125rem] ${
-              pathname === "/work" ? 'text-[#044AFF]' : 'text-[--textprimary]'
-            }`}>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/work" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+              }`}>
               Work
             </p>
           </Link>
 
           <Link href="/contact">
-            <p className={`font-inter font-[200] text-[1.125rem] ${ pathname === "/contact" ? 'text-[#044AFF]' : 'text-[--textprimary]' }`}> Contact </p>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/contact" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> Contact </p>
           </Link>
         </div>
 
@@ -52,16 +49,16 @@ function Navbar() {
         <div className={`hidden-nav bg-[#000] flex flex-col items-center gap-[30px] py-[60px] absolute h-[100vh] duration-[0.5s] z-[999] ${active ? 'top-[-200%]' : 'top-[0%]'} left-[0px] w-[100%]`}>
           <img className="cursor-pointer absolute top-[20px] right-[20px]" src="/images/navcross.svg" alt="" onClick={() => setActive(!active)} />
           <Link href="/about">
-          <p className={`font-inter font-[200] text-[1.125rem] ${ pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]' }`}> About </p>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> About </p>
           </Link>
           <Link href="/capabilities">
-            <p className={`font-inter font-[200] text-[1.125rem] ${ pathname === "/capabilities" ? 'text-[#044AFF]' : 'text-[--textprimary]' }`}> Capabilities </p>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/capabilities" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> Capabilities </p>
           </Link>
           <Link href="/work">
-          <p className={`font-inter font-[200] text-[1.125rem] ${ pathname === "/work" ? 'text-[#044AFF]' : 'text-[--textprimary]' }`}> Work </p>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/work" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> Work </p>
           </Link>
           <Link href="/contact">
-          <p className={`font-inter font-[200] text-[1.125rem] ${ pathname === "/contact" ? 'text-[#044AFF]' : 'text-[--textprimary]' }`}> Contact </p>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/contact" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> Contact </p>
           </Link>
         </div>
       </div>
