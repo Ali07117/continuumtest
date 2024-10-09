@@ -86,9 +86,7 @@ function Home() {
           }
         });
       });
-
-
-
+      
       gsap.to(".marquee-inner-container", {
         x: "-100%",
         duration: 15,

@@ -192,6 +192,12 @@ body {}
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .section-images,
+  .hero-image {
+    height: 550px;
+  }
+}
 @media screen and (max-width: 600px) {
   .section-images,
   .hero-image {
@@ -237,6 +243,12 @@ body {}
   }
 }
 
+@media screen and (max-width: 850px) {
+  .homeabout-wrapper {
+    padding-top: 1rem;
+  }
+
+}
 @media screen and (max-width: 650px) {
   .section-about-heading {
     font-size: 6.8vw;
@@ -246,7 +258,7 @@ body {}
     margin-top: 0.5rem;
   }
   .homeabout-wrapper {
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 }
 
@@ -499,6 +511,11 @@ body {}
     flex-direction: column;
     align-items: center;
     padding-bottom: 0.5rem;
+    height: 50px;
+    
+  }
+  .empty-div{
+    display: none;
   }
 }
 
@@ -514,7 +531,7 @@ body {}
     gap: 10px;
     line-height: 5px;
     justify-content: center;
-    margin-top: 0rem;
+    margin-top: 0.2rem;
   }
 
   .footer-copyright {
@@ -556,8 +573,11 @@ body {}
 
 /* -------About-page------- */
 
+@media screen and (max-width: 1230px) {.work-card-center{width: 200px;}}
+@media screen and (max-width: 1070px) {.work-card-center{width: 200px;} .work-card-first{width: 250px;}}
+@media screen and (max-width: 760px) {.work-card-center{width: 50%;} .work-card-first{width: 50%;}}
 @media screen and (max-width: 650px) { .about-wrapper, .howwework-wrapper{ padding-left: 0.8rem; padding-right: 0.8rem;}}
-@media screen and (max-width: 900px) {.aboutimg1, .capabilities-wrapper{margin-top: 2rem;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.5rem;} .work-card-last, .work-answer-text{font-size: 1rem;} .work-plus{height: 15px;} .work-minus{height: 2px;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
+@media screen and (max-width: 900px) {.aboutimg1, .capabilities-wrapper{margin-top: 2rem; padding-top: 1rem;} .capabilities-margin-top{margin-top: 0px;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.5rem;} .work-card-last, .work-answer-text{font-size: 1rem;} .work-plus{height: 15px;} .work-minus{height: 2px;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
 @media screen and (max-width: 650px) { .about-wrapper{ padding: ;} .cards-wrapper{padding: 1rem 0rem;} .hero-heading{margin-bottom: 1rem;} .aboutimg1, .capabilities-wrapper{margin-top: 0rem;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.3rem;} .work-card-last, .work-answer-text{font-size: 0.9rem;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
 @media screen and (max-width: 530px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.8rem;} .workcardwrapper{padding: 1.5rem 0;}}
 @media screen and (max-width: 440px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.7rem;} .workcardwrapper{padding: 1.5rem 0;}}
@@ -570,12 +590,13 @@ body {}
 /* -------Work-page------- */
 
 @media screen and (max-width: 650px) { .work-wrapperd{ padding-left: 0.8rem; padding-right: 0.8rem;}}
-@media screen and (max-width: 1000px) {  .work-hero-text{margin-top: 3rem;} .workimgs-image, .work-hero-img{height: 450px;} .work-anime-container{flex-direction: column;} .anime-right, .anime-left{width: 100%;} .workimgs{position: static;} .anime-left{display: none;}.work-hidden-text-wrapper{display: block;} .work-left-text-card-wrapper{height: 100%; padding-top: 1rem;} .work-left-text-card-wrapper-button{margin-top: 2rem;} .anime-right{padding-top: 1rem; padding-bottom: 1rem;} .anime-right{margin-top: 1rem; margin-bottom: 1rem;} }
+@media screen and (max-width: 1000px) { .hidden-div{display: block;}  .work-hero-text{margin-top: 3rem;} .workimgs-image, .work-hero-img{height: 450px;} .work-anime-container{flex-direction: column;} .anime-right, .anime-left{width: 100%;} .workimgs{position: static;} .anime-left{display: none;} .work-left-text-card-wrapper{height: 100%; padding-top: 1rem;} .work-left-text-card-wrapper-button{margin-top: 2rem;} .anime-right{padding-top: 1rem; padding-bottom: 1rem;} .anime-right{margin-top: 1rem; margin-bottom: 1rem;} }
 
 /* -------Work-page------- */
 
 /* -------Capabilities page------- */
-@media screen and (max-width: 1000px) { .capabilities-anime-container{flex-direction: column;} .capabilities-left{display: none;} .capabilities-left, .capabilities-right{width: 100%;} }
+@media screen and (max-width: 1000px) { .hidden-div{display: block !important;}  .capabilities-cards{position: static;}}
+@media screen and (max-width: 1000px) { .capabilities-anime-container{display: none;} .capabilities-left{display: none;} .capabilities-left, .capabilities-right{width: 100%;} }
 @media screen and (max-width: 800px) { .capabilities-left{padding-right: 0px;}}
 @media screen and (max-width: 800px) { .capabilities-card-wrapper{max-height:50% ; min-height:50% ;} .work-subscription-heading{font-size: 1rem;} .anime-heading, .anime-heading-second{font-size: 2rem;} .capabilities-card-wrapper{padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 1.5rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 0.8rem; padding-top: 0.5rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
 @media screen and (max-width: 500px) { .anime-heading, .anime-heading-second{font-size: 1.8rem;} .capabilities-card-wrapper{padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 1.5rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 0.8rem; padding-top: 0.5rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
