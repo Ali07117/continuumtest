@@ -7,7 +7,6 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 import Worktext from './comp/worktext';
 import Workimg from './comp/workimg';
-import Footernav from '../components/homesections/footernav';
 gsap.registerPlugin(ScrollTrigger)
 
 function Workpage() {
@@ -83,10 +82,8 @@ function Workpage() {
             <Worktext heading={"Robotic Process Automation"} paral={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
             <Worktext heading={"Afious"} paral={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
             <Worktext heading={"Energy Company"} paral={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} />
-            <Worktext heading={"Bank of America"} paral={"Dashboard and Mobile apps for the"} parar={"Investment Banking team."} point3={"Experience Design"} point4={"Visual Design"} point1={"Discovery & Research"} point2={"Strategy"} />
-            <Worktext heading={"AT&T"} paral={"Tablet and desktop designs for the in-"} parar={"store agent experience"}  point3={"Experience Design"} point4={"Visual Design"} point1={"Discovery & Research"} point2={"Strategy"} />
-            {/* <Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /> */}
-            {/* <Worktext heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /> */}
+            <Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
           </div>
           <div className="anime-right w-[70%] py-[5vh] mt-[6rem] min-h-[500vh] ">
             <Workimg img={"/images/heroimg1.svg"} />
@@ -96,13 +93,11 @@ function Workpage() {
             <Workimg img={"/images/section2img.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"Energy Company"} paral={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section1img.svg"} />
-            <div className='my-[3rem] hidden work-hidden-text-wrapper'> <Worktext heading={"Bank of America"} paral={"Dashboard and Mobile apps for the"} parar={"Investment Banking team."} point3={"Experience Design"} point4={"Visual Design"} point1={"Discovery & Research"} point2={"Strategy"} /></div>
+            <div className='my-[3rem] hidden work-hidden-text-wrapper'> <Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section2img.svg"} />
-            <div className='my-[3rem] hidden work-hidden-text-wrapper'> <Worktext heading={"AT&T"} paral={"Tablet and desktop designs for the in-"} parar={"store agent experience"}  point3={"Experience Design"} point4={"Visual Design"} point1={"Discovery & Research"} point2={"Strategy"} /></div>
+            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
           </div>
         </div>
-        <div className="bottom-logo  z-[5] relative flex justify-center mt-[12rem]"><img className='h-[16px]' src="/images/logo.svg" alt="" /></div>
-        <Footernav />
       </div>
     </>
   );
