@@ -457,6 +457,11 @@ body {}
     padding-right: 0.8rem;
   }
 }
+@media screen and (max-width: 900px) {
+  .contact-wrapper {
+  padding-top: 2rem;
+  }
+}
 
 @media screen and (max-width: 810px) {
   .contact-inner-wrapper {
@@ -577,7 +582,7 @@ body {}
 @media screen and (max-width: 1070px) {.work-card-center{width: 200px;} .work-card-first{width: 250px;}}
 @media screen and (max-width: 760px) {.work-card-center{width: 50%;} .work-card-first{width: 50%;}}
 @media screen and (max-width: 650px) { .about-wrapper, .howwework-wrapper{ padding-left: 0.8rem; padding-right: 0.8rem;}}
-@media screen and (max-width: 900px) {.aboutimg1, .capabilities-wrapper{margin-top: 2rem; padding-top: 1rem;} .capabilities-margin-top{margin-top: 0px;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.5rem;} .work-card-last, .work-answer-text{font-size: 1rem;} .work-plus{height: 15px;} .work-minus{height: 2px;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
+@media screen and (max-width: 900px) {.aboutimg1, .capabilities-wrapper{margin-top: 2rem; padding-top: 1rem; padding-bottom: 1rem;} .capabilities-margin-top{margin-top: 0px;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.5rem;} .work-card-last, .work-answer-text{font-size: 1rem;} .work-plus{height: 15px;} .work-minus{height: 2px;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
 @media screen and (max-width: 650px) { .about-wrapper{ padding: ;} .cards-wrapper{padding: 1rem 0rem;} .hero-heading{margin-bottom: 1rem;} .aboutimg1, .capabilities-wrapper{margin-top: 0rem;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.3rem;} .work-card-last, .work-answer-text{font-size: 0.9rem;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
 @media screen and (max-width: 530px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.8rem;} .workcardwrapper{padding: 1.5rem 0;}}
 @media screen and (max-width: 440px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.7rem;} .workcardwrapper{padding: 1.5rem 0;}}
