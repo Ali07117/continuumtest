@@ -28,7 +28,7 @@ function Contactsection(props) {
             <button className='py-[12px] contact-button px-[24px] text-[--textprimary] bg-[#00259C] mt-[3rem] border-[2px] border-[#044AFF] rounded-[32px]'>Send Message</button>
           </div>
         </div>
-        <div className="bottom-logo  z-[5] relative flex justify-center mt-[12rem]"><img className='h-[16px]' src="/images/logo.svg" alt="" /></div>
+        <div className="bottom-logo  z-[5] relative flex justify-center mt-[12rem]"><img className='h-[16px] footer-logo' src="/images/logo.svg" alt="" /></div>
         <Footernav />
       </div>
     </>

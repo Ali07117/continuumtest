@@ -80,6 +80,8 @@ body {}
     display: none;
   }
 }
+/* @media screen and (max-width: 650px) {.hero-image{ height: ; } } */
+@media screen and (max-width: 650px) {.footer-logo{ height: 11px !important; } }
 @media screen and (max-width: 650px) {.nav-logo{ height: 20px !important; } }
 @media screen and (max-width: 500px) {.nav-logo{ height: 18px !important; } }
 @media screen and (max-width: 450px) {.nav-logo{ height: 17px !important; } }
@@ -201,7 +203,10 @@ body {}
 @media screen and (max-width: 600px) {
   .section-images,
   .hero-image {
-    height: 450px;
+    height: 350px;
+  }
+  .homeabout-img{
+    height: 350px !important;
   }
 }
 
@@ -246,6 +251,10 @@ body {}
 @media screen and (max-width: 850px) {
   .homeabout-wrapper {
     padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .marquee-wrapper{
+    margin-top: 1rem;
   }
 
 }
