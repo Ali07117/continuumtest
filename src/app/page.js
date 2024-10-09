@@ -86,7 +86,7 @@ function Home() {
           }
         });
       });
-      
+
       gsap.to(".marquee-inner-container", {
         x: "-100%",
         duration: 15,
@@ -101,7 +101,7 @@ function Home() {
   );
   return (
     <>
-      <div className="relative home-wrapper min-h-[100vh] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-hero.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+      <div className="relative home-wrapper bg-[black] h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-hero.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <Navbar />
         <p className="  mt-[22%] lg:mt-[40vh] hero-heading w-[90%] font-average font-[400] leading-[7vw] text-[5.8vw]  text-[--textprimary]">Increasing human potential through design.</p>
         <p className=" mt-[4rem] hero-sub-heading w-[95%] text-[2rem] leading-[3rem] font-[400] font-inter font-[200] text-[--textprimary]">At Continuum, we drive forward-thinking solutions that empower people and transform ideas into impactful realities.</p>

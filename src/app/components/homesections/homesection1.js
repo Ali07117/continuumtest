@@ -3,7 +3,7 @@ import React from 'react';
 function Homesection1(props) {
   return (
     <>
-        <div className={`home-section-1-wrapper px-[1.5rem] pt-[${props.pt}] bg-[--bgprimary] text-[white]`}>
+        <div className={`home-section-1-wrapper bg-[black] px-[1.5rem] pt-[${props.pt}] text-[white]`}>
         <p className={`font-average select-work-text  text-[4rem] text-[--textprimary] font-[300]`} style={{paddingTop:`${props.titlept}`}}>{props.maintitle}</p>
         <p className='font-average section-heading pt-[2.5rem] text-[2.8rem] text-[--text-primary] font-[400]'>{props.title}</p>
         <div className={` ${props.containerclass} mt-[2.1rem] flex justify-center`}>

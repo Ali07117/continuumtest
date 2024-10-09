@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 import Worktext from './comp/worktext';
 import Workimg from './comp/workimg';
+import Footernav from '../components/homesections/footernav';
 gsap.registerPlugin(ScrollTrigger)
 
 function Workpage() {
@@ -98,6 +99,8 @@ function Workpage() {
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
           </div>
         </div>
+        <div className="bottom-logo  z-[5] relative flex justify-center mt-[12rem]"><img className='h-[16px]' src="/images/logo.svg" alt="" /></div>
+        <Footernav />
       </div>
     </>
   );

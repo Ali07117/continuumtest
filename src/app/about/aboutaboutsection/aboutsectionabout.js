@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 function Aboutsectionabout() {
   return (
     <>
-    <div className=' about-wrapper bg-[black] min-h-[120vh] px-[1.5rem] w-[100%]'>
+    <div className=' about-wrapper bg-[black] h-[100%] px-[1.5rem] w-[100%]'>
       <Navbar/>
       <h1 className='hero-heading text-[white] text-[6rem] mt-[22%] lg:mt-[40vh] text-[--textprimary] font-average'>About </h1>
       <span className='relative w-[100%]'>
