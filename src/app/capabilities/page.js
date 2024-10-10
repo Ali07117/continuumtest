@@ -77,9 +77,9 @@ function Capabilities() {
 
   return (
     <>
-      <div className="px-[1.5rem] bg-[--bgprimary] capabilities-wrapper capabilities-margin-top">
-        <Navbar />
-        <h1 className='hero-heading text-[white] text-[6rem] mt-[22%] lg:mt-[40vh] text-[--textprimary] font-average'>Capabilities </h1>
+      <div className="px-[1.5rem] pt-[4.3rem] bg-[--bgprimary] capabilities-wrapper capabilities-margin-top">
+        <Navbar bg={"#000"}/>
+        <h1 className='hero-heading text-[white] text-[6rem] pt-[22%] lg:pt-[40vh] text-[--textprimary] font-average'>Capabilities </h1>
         <h2 className=' font-[400] text-[4.7vw] hero-subheading-para1 leading-[5.7vw] mt-[2rem] text-[--textprimary] font-average'>Empowering Your Vision with Comprehensive </h2>
         <h2 className=' font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>Design and Strategy Services </h2>
         <div className="capabilities-anime-container w-[100%] pt-[5vh] flex min-h-[90vh] max-h-[90vh] mt-[6rem]">

@@ -71,9 +71,9 @@ function Workpage() {
     });
   return (
     <>
-      <div className="work-wrapperd bg-[black] px-[1.5rem]">
-        <Navbar />
-        <h1 className='hero-heading text-[white] text-[6rem] mt-[22%] lg:mt-[40vh] text-[--textprimary] font-average'>Work </h1>
+      <div className="work-wrapperd pt-[4.3rem] bg-[black] px-[1.5rem]">
+        <Navbar bg={"#000"}/>
+        <h1 className='hero-heading text-[white] text-[6rem] pt-[22%] lg:pt-[40vh] text-[--textprimary] font-average'>Work </h1>
         <div className="img-container mt-[2rem] flex justify-center">
           <div className=' img1 work-hero-img rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
         </div>

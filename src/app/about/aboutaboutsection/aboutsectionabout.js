@@ -10,9 +10,9 @@ gsap.registerPlugin(ScrollTrigger)
 function Aboutsectionabout() {
   return (
     <>
-    <div className=' about-wrapper bg-[black] h-[100%] px-[1.5rem] w-[100%]'>
-      <Navbar/>
-      <h1 className='hero-heading text-[white] text-[6rem] mt-[22%] lg:mt-[40vh] text-[--textprimary] font-average'>About </h1>
+    <div className=' about-wrapper pt-[4.3rem] bg-[black] h-[100%] px-[1.5rem] w-[100%]'>
+      <Navbar bg={"#000"}/>
+      <h1 className='hero-heading text-[white] text-[6rem] pt-[22%] lg:pt-[40vh] text-[--textprimary] font-average'>About </h1>
       <span className='relative w-[100%]'>
       <h2 className='anime-text text-nowrap top-[0px] left-[0px] relative font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>At <span className='text-[4.3vw] leading-[5.7vw] stroke text-[#044AFF] font-average'>Continuum,</span> we create digital experiences</h2>
       <h2 className='anime-text top-[0px] stroke left-[0px] absolute w-[0%] overflow-hidden text-nowrap  text-[4.7vw] leading-[5.7vw] text-[#044AFF] font-average'>At <span className='text-[4.3vw] stroke leading-[5.7vw] text-[#044AFF] font-average'>Continuum,</span> we create digital experiences</h2>
