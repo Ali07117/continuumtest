@@ -9,7 +9,7 @@ function Homeaboutsection() {
           <p className='font-inter text-[24px] homeabout-left-text w-[65%] mt-[4rem] text-[--text-primary] font-[400]'>At Continuum, we create digital experiences that deliver measurable results. With expertise across industries, we transform ideas into user-friendly products for startups and Fortune 500 companies alike. Our collaborative approach ensures that every design aligns with your goals, driving success and exceeding expectations. Partner with us to achieve something exceptional.</p>
         </div>
         <div className="homeabout-right w-[50%]">
-          <img className='h-[100px] homeabout-img w-[100%]' src="/images/homeaboutimg.svg" alt="" />
+          <img className='h-[100%] homeabout-img w-[100%]' src="/images/homeaboutimg.svg" alt="" />
         </div>
       </div>
     </>
