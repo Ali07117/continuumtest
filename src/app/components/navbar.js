@@ -34,7 +34,7 @@ function Navbar(props) {
 
   return (
     <>
-      <div className={`navContainer  navbar ${isHidden ? 'hiddenn' : ''} navbg z-[50] h-[4.3rem] flex justify-between items-center`} style={{backgroundColor:`${props.bg}`}}>
+      <div className={`navContainer ${props.blend} navbar ${isHidden ? 'hiddenn' : ''} navbg z-[50] h-[4.3rem] flex justify-between items-center`} style={{backgroundColor:`${props.bg}`}}>
         <div className="navLeft">
           <Link href="/">
             <img className="nav-logo" src="/images/logo.svg" alt="Logo" />

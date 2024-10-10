@@ -637,7 +637,7 @@ body {}
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: black; */
+  background-color: black;
   padding: 1.5rem;
   transition: transform 0.3s ease; /* Smooth transition */
 }
