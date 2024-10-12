@@ -18,6 +18,8 @@ gsap.registerPlugin(ScrollTrigger)
 function about() {
   useGSAP(
     () => {
+      
+
       gsap.to(".aboutimg1", {
         scale: '1',
         duration: 1,
