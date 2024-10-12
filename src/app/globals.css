@@ -645,7 +645,7 @@ body {}
 /* -------Work-page------- */
 
 @media screen and (max-width: 650px) { .work-wrapperd{ padding-left: 0.8rem; padding-right: 0.8rem;}}
-@media screen and (max-width: 1000px) { .hidden-div{display: block;} .work-hidden-text-wrapper{display: block;}  .work-hero-text{margin-top: 3rem;} .workimgs-image, .work-hero-img{height: 450px;} .work-anime-container{flex-direction: column;} .anime-right, .anime-left{width: 100%;} .workimgs{position: static;} .anime-left{display: none;} .work-left-text-card-wrapper{height: 100%; padding-top: 1rem;} .work-left-text-card-wrapper-button{margin-top: 2rem;} .anime-right{padding-top: 1rem; padding-bottom: 1rem;} .anime-right{margin-top: 1rem; margin-bottom: 1rem;} }
+@media screen and (max-width: 1000px) { .work-opacity-img{opacity: 1;} .hidden-div{display: block;} .work-hidden-text-wrapper{display: block;}  .work-hero-text{margin-top: 3rem;} .workimgs-image, .work-hero-img{height: 450px;} .work-anime-container{flex-direction: column;} .anime-right, .anime-left{width: 100%;} .workimgs{position: static;} .anime-left{display: none;} .work-left-text-card-wrapper{height: 100%; padding-top: 1rem;} .work-left-text-card-wrapper-button{margin-top: 2rem;} .anime-right{padding-top: 1rem; padding-bottom: 1rem;} .anime-right{margin-top: 1rem; margin-bottom: 1rem;} }
 
 /* -------Work-page------- */
 

@@ -6,7 +6,7 @@ function Aboutworksection() {
     <>
       <div className={`capabilities-wrapper px-[1.5rem] min-h-[10rem] mt-[6rem] bg-[black] `}>
         <p className={`font-average capabilities-text text-[4rem] text-[--textprimary] font-[400]`}>Work</p>
-        <div className=" about-card-component-wrapper py-[3rem]">
+        <div className=" about-card-component-wrapper py-[6rem]">
           <Aboutworkcards border={"1px"} company={"RPA Company"} device={"Mobile App"} beforpara={"Discovery & Research, Strategy, Experience"} afterpara={"Design, Visual Design"} />
           <Aboutworkcards border={"1px"} company={"Dynegy"} device={"Website"} beforpara={"Visual Design, Experience Design"} />
           <Aboutworkcards company={"Afious"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"} />
