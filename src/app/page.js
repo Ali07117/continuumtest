@@ -112,7 +112,7 @@ function Home() {
       <div className="relative pt-[14.3rem] home-wrapper bg-[black] h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-hero.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <Navbar />
         <p className=" anime-1 hero-heading w-[90%] font-average font-[400] text-[6.25rem] leading-[6.5rem]  text-[--textprimary]">Increasing human potential through design.</p>
-        <p className=" anime-1 mt-[1rem] hero-sub-heading w-[95%] text-[2rem] leading-[3rem] font-[400] font-inter font-[200] text-[--textprimary]">At Continuum, we drive forward-thinking solutions that empower people and transform ideas into impactful realities.</p>
+        <p className=" anime-1 mt-[2rem] hero-sub-heading w-[95%] text-[2rem] leading-[3rem] font-[400] font-inter font-[200] text-[--textprimary]">At Continuum, we drive forward-thinking solutions that empower people and transform ideas into impactful realities.</p>
         <div className="img-container mt-[2rem] flex justify-center">
           <div className=' img1 rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
         </div>
