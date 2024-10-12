@@ -615,6 +615,7 @@ body {}
   }
   .capabilities-wrapper{
     padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }
 
