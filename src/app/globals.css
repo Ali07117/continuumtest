@@ -556,7 +556,7 @@ body {}
     align-items: center;
     padding-bottom: 0.5rem;
     height: 50px;
-    
+    gap: 5px;
   }
   .empty-div{
     display: none;
@@ -583,9 +583,7 @@ body {}
     margin-top: 0rem;
   }
 
-  .bottom-logo {
-    margin-top: 5rem;
-  }
+ 
 }
 
 @media screen and (max-width: 1100px) {
@@ -653,9 +651,9 @@ body {}
 @media screen and (max-width: 1000px) { .hidden-div{display: block !important;}}
 @media screen and (max-width: 1000px) {  .capabilities-left{display: none;} .capabilities-left, .capabilities-right{width: 100%;} }
 @media screen and (max-width: 800px) { .capabilities-left{padding-right: 0px;}}
-@media screen and (max-width: 800px) { .capabilities-card-wrapper{max-height:50% ; min-height:50% ;} .work-subscription-heading{font-size: 1rem;} .anime-heading, .anime-heading-second{font-size: 2rem;} .capabilities-card-wrapper{padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 1.5rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 0.8rem; padding-top: 0.5rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
+@media screen and (max-width: 800px) {  .work-subscription-heading{font-size: 1rem;} .anime-heading, .anime-heading-second{font-size: 2rem;} .capabilities-card-wrapper{padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 1.5rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 0.8rem; padding-top: 0.5rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
 @media screen and (max-width: 500px) { .anime-heading, .anime-heading-second{font-size: 1.8rem;} .capabilities-card-wrapper{padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 1.5rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 0.8rem; padding-top: 0.5rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
-@media screen and (max-width: 600px) { .capabilities-card-wrapper{max-height:70% ; min-height:70% ;} .work-subscription-heading{font-size: 0.8rem;} .capabilities-anime-container{margin-top: 1rem; padding-top: 1rem;}}
+@media screen and (max-width: 600px) {  .work-subscription-heading{font-size: 0.8rem;} .capabilities-anime-container{margin-top: 1rem; padding-top: 1rem;}}
 
 /* -------Capabilities page------- */
 /* -------Contact page------- */
@@ -663,7 +661,10 @@ body {}
 
 /* -------Contact page------- */
 
-
+.pin-spacer{
+  /* height: 100vh !important; */
+  padding: 0px !important;
+}
 
 .navbar {
   position: fixed;

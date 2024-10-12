@@ -80,9 +80,9 @@ function Capabilities() {
       <div className="px-[1.5rem] pt-[14.3rem] bg-[--bgprimary] capabilities-wrapperd capabilities-margin-top">
         <Navbar/>
         <h1 className='hero-heading text-[white] text-[6.25rem] leading-[6.5rem] text-[--textprimary] font-average'>Capabilities </h1>
-        <h2 className=' font-[400] text-[4.7vw] hero-subheading-para1 leading-[5.7vw] mt-[2rem] text-[--textprimary] font-average'>Empowering Your Vision with Comprehensive </h2>
-        <h2 className=' font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>Design and Strategy Services </h2>
-        <div className="capabilities-anime-container w-[100%]  flex min-h-[90vh] -max-h-[90vh] mt-[6rem]">
+        <h2 className=' font-[400] text-[5.5vw] leading-[6.5vw] sm:text-[4.7vw] hero-subheading-para1 sm:leading-[5.7vw] mt-[1rem] sm:mt-[2rem] text-[--textprimary] font-average'>Empowering Your Vision with Comprehensive Design and Strategy Services</h2>
+        {/* <h2 className=' font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>Design and Strategy Services </h2> */}
+        <div className="capabilities-anime-container w-[100%]  flex h-[50vh] md:h-[90vh] -max-h-[90vh] mt-[6rem]">
           <div className="capabilities-left -bg-[blue] w-[50%] h-[100%]">
             <div className="subscription flex flex-col gap-[1rem]  pb-[2rem]">
               <h3 className=' anime-headings font-[400] text-[2.5rem] text-[--textprimary] font-average'>User Research & Insights </h3>
@@ -97,7 +97,7 @@ function Capabilities() {
               <h3 className=' anime-headingd font-[400] text-[2.5rem] text-[--textprimary] font-average'>Fractional Design Plans</h3>
             </div>
           </div>
-          <div className="capabilities-right w-[50%] h-[100%]">
+          <div className="capabilities-right w-[50%] -bg-[red] h-[100%]">
             {/* <div className='cards-1 '><Capabilitiescard heading={"User Research & Insights"} para1={"Our User Research & Insights service provides a comprehensive understanding of your users through data-driven research methods such as interviews, surveys, and usability testing. We analyze user behaviors, needs, and pain points to ensure that your product aligns with real-world demands. These insights drive the design process, resulting in user-centric solutions that resonate with your audience."} para2={"We also conduct product-market fit assessments, helping you identify the optimal market positioning for your product. By combining user insights with competitive analysis, we ensure your product meets both user and market needs effectively."} /></div> */}
             <div className="capabilities-card-wrapper scrollnone  capabilities-cardss absolute min-h-[100px] max-h-[100%] bg-[#D5D9E4] rounded-[2.5rem] py-[3rem] px-[2rem]">
         <h3 className=' font-[400] capabilitiescard-heading text-[2.5rem] text-[#00259C] font-average'>User Research & Insights</h3>
