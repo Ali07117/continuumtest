@@ -381,6 +381,15 @@ body {}
 
   }
 }
+
+
+@media screen and (max-width: 1000px) {
+  .capabilities-cards{
+    min-height: 70vh;
+  }
+  .capabilitiescard-para2, .capabilitiescard-para1{font-size: 1rem; padding-top: 1rem;}
+}
+
 @media screen and (max-width: 650px) {
   .cards-wrapper {
     padding-bottom: 0px;
@@ -494,14 +503,7 @@ body {}
   }
  
 }
-@media screen and (max-width: 1100px) {
-  .contact-wrapper {
-  padding-top: 6rem;
-  }
-  .contact-wrapper-left, .contact-wrapper-right{
-    /* margin-top: 1rem; */
-   }
-}
+
 @media screen and (max-width: 650px) {
   .contact-wrapper {
   padding-top: 1rem !important;
@@ -688,10 +690,10 @@ body {}
 /* -------Work-page------- */
 
 /* -------Capabilities page------- */
-@media screen and (max-width: 1000px) { .hidden-div{display: block !important;}}
+@media screen and (max-width: 1000px) { .hidden-div{display: block !important;} }
 @media screen and (max-width: 1000px) {  .capabilities-left{display: none;} .capabilities-left, .capabilities-right{width: 100%;} }
 @media screen and (max-width: 800px) { .capabilities-left{padding-right: 0px;}}
-@media screen and (max-width: 800px) {  .work-subscription-heading{font-size: 1rem;} .anime-heading, .anime-heading-second{font-size: 2rem;} .capabilities-card-wrapper{padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 1.5rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 0.8rem; padding-top: 0.5rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
+@media screen and (max-width: 1000px) {  .work-subscription-heading{font-size: 1rem;} .anime-heading, .anime-heading-second{font-size: 2rem;} .capabilities-card-wrapper{ height: 60vh; padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 2.2rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 1rem; padding-top: 1rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
 @media screen and (max-width: 500px) { .anime-heading, .anime-heading-second{font-size: 1.8rem;} .capabilities-card-wrapper{padding: 1rem 1rem;} .capabilitiescard-heading{font-size: 1.5rem;} .capabilitiescard-para2, .capabilitiescard-para1{font-size: 0.8rem; padding-top: 0.5rem;}  .capabilities-card-wrapper{border-radius: 1rem;}}
 @media screen and (max-width: 600px) {  .work-subscription-heading{font-size: 0.8rem;} .capabilities-anime-container{margin-top: 1rem; padding-top: 1rem;}}
 
