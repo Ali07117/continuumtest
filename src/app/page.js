@@ -101,17 +101,17 @@ function Home() {
   );
   return (
     <>
-      <div className="relative pt-[4.3rem] home-wrapper bg-[black] h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-hero.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-        <Navbar bg={"transparent"} blend={"mix-blend-difference"}/>
-        <p className="  pt-[22%] lg:pt-[40vh] hero-heading w-[90%] font-average font-[400] leading-[7vw] text-[5.8vw]  text-[--textprimary]">Increasing human potential through design.</p>
+      <div className="relative pt-[14.3rem] home-wrapper bg-[black] h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-hero.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+        <Navbar />
+        <p className="   hero-heading w-[90%] font-average font-[400] leading-[7vw] text-[5.8vw]  text-[--textprimary]">Increasing human potential through design.</p>
         <p className=" mt-[4rem] hero-sub-heading w-[95%] text-[2rem] leading-[3rem] font-[400] font-inter font-[200] text-[--textprimary]">At Continuum, we drive forward-thinking solutions that empower people and transform ideas into impactful realities.</p>
         <div className="img-container mt-[2rem] flex justify-center">
           <div className=' img1 rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
         </div>
       </div>
-      <Homesection1 titlept={"8rem"} containerclass={"img-container2"} imgclass={"img2"} img={"/images/section1img.svg"} pt={"7.5rem"} maintitle={"Selected Work"} title={"Mobile Interface for Robotic Process Automation"} cta={"Request Case Study"} para1={"Mobile app for a leading robotic process automation(RPA) software company."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
-      <Homesection1 containerclass={"img-container3"} imgclass={"img3"} img={"/images/section2img.svg"} pt={"7.5rem"} title={"Afious"} cta={"Request Case Study"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
-      <Homesection1 containerclass={"img-container4"} imgclass={"img4"} img={"/images/section2img.svg"} pt={"7.5rem"} title={"Energy Company’s Digital Presence"} cta={"Request Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 titlept={"0rem"} containerclass={"img-container2"} imgclass={"img2"} img={"/images/section1img.svg"} pt={"6rem"} maintitle={"Selected Work"} title={"Mobile Interface for Robotic Process Automation"} cta={"Request Case Study"} para1={"Mobile app for a leading robotic process automation(RPA) software company."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 containerclass={"img-container3"} imgclass={"img3"} img={"/images/section2img.svg"} pt={"6rem"} title={"Afious"} cta={"Request Case Study"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 pb={"6rem"} containerclass={"img-container4"} imgclass={"img4"} img={"/images/section2img.svg"} pt={"6rem"} title={"Energy Company’s Digital Presence"} cta={"Request Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
       <Homeaboutsection />
       <Homemarquee bg={"#fff"} text={"--textsecondry"} />
       <Capabilities bg={"#D5D9E4"} />
