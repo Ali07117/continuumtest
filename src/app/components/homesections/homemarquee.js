@@ -4,8 +4,8 @@ function Homemarquee(props) {
   return (
     <>
       <div className="px-[1.5rem] my-[6rem] marquee-wrapper overflow-x-hidden">
-        <p className={`font-average marquee-heading py-[6rem] text-[2.8rem] text-[${props.text}] font-[400]`}>You are in good company</p>
-        <div className={`marquee-container mt-[3rem] flex gap-[55%] overflow-hidden`} style={{ backgroundColor: `${props.bg}` }}>
+        <p className={`font-average marquee-heading py-[1rem] sm:py-[6rem] text-[2.8rem] text-[${props.text}] font-[400]`}>You are in good company</p>
+        <div className={`marquee-container my-[1rem] sm:mt-[3rem] flex gap-[55%] overflow-hidden`} style={{ backgroundColor: `${props.bg}` }}>
           <div className="marquee-inner-container  flex gap-[100px]">
             <img className='mix-blend-luminosity' src="/images/marqueelogo1.svg" alt="" />
             <img className='mix-blend-luminosity' src="/images/marqueelogo2.svg" alt="" />
