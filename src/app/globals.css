@@ -288,7 +288,7 @@ body {}
     margin-top: 0.5rem;
   }
   .homeabout-wrapper {
-    /* padding-top: 4rem; */
+    padding-top: 4rem;
     padding-bottom: 4rem;
     /* margin-top: 4rem; */
   }
@@ -406,7 +406,7 @@ body {}
   }
 
   .capabilities-text {
-    font-size: 2rem;
+    font-size: 6.8vw;
 
   }
 
