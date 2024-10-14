@@ -38,8 +38,8 @@ function Home() {
         scrollTrigger: {
           trigger: ".img-container2",
           scrub: true,
-          start: "top 55%",
-          end: "top 0%",
+          start: "top 80%",
+          end: "top 10%",
         }
       })
 
@@ -50,8 +50,8 @@ function Home() {
           trigger: ".img-container3",
           scrub: true,
           start: "top center",
-          start: "top 55%",
-          end: "top 0%",
+          start: "top 80%",
+          end: "top 10%",
         }
       })
 
@@ -61,8 +61,8 @@ function Home() {
         scrollTrigger: {
           trigger: ".img-container4",
           scrub: true,
-          start: "top 55%",
-          end: "top 0%",
+          start: "top 80%",
+          end: "top 10%",
         }
       })
 
@@ -122,7 +122,7 @@ function Home() {
       <Homesection1 pb={"6rem"} containerclass={"img-container4"} imgclass={"img4"} img={"/images/section2img.svg"} pt={"6rem"} title={"Energy Company’s Digital Presence"} cta={"Request Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
       <Homeaboutsection />
       <Homemarquee bg={"#fff"} text={"--textsecondry"} />
-      <Capabilities bg={"#D5D9E4"} />
+      <Capabilities bg={"#D5D9E4"} arrowimg={"/images/blackarrow.svg"} capabgif1={"/images/accessbility.gif"} capabgif2={"/images/expert recomendation.gif"} capabgif3={"/images/evaluation.gif"} capabgif4={"/images/user satisfaction.gif"}/>
       <Contactsection bg={"/images/home-hero.svg"} />
     </>
   );

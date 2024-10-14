@@ -70,7 +70,8 @@ function Navbar(props) {
 
         <img className="hamburger hidden" src="/images/navhamburger.svg" alt="" onClick={() => setActive(!active)} />
 
-        <div className={`hidden-nav bg-[#000] flex flex-col items-center gap-[30px] py-[60px] absolute h-[120vh] pt-[100px] duration-[0.5s] z-[999] ${active ? 'top-[-20000%]' : 'top-[0%]'} left-[0px] w-[100%]`}>
+      </div>
+        <div className={`hidden-nav bg-[#000] flex flex-col items-center gap-[30px] py-[60px] fixed max-h-[100vh] overflow-y-hidden h-[100vh] pt-[100px] scrollnone duration-[0.5s] z-[999] ${active ? 'top-[-20000%]' : 'top-[0%]'} left-[0px] w-[100%]`}>
           <img className="cursor-pointer absolute top-[20px] right-[20px]" src="/images/navcross.svg" alt="" onClick={() => setActive(!active)} />
           <Link href="/about">
             <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> About </p>
@@ -85,7 +86,6 @@ function Navbar(props) {
             <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/contact" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> Contact </p>
           </Link>
         </div>
-      </div>
     </>
   );
 }

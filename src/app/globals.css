@@ -288,7 +288,9 @@ body {}
     margin-top: 0.5rem;
   }
   .homeabout-wrapper {
-    padding-top: 1rem;
+    /* padding-top: 4rem; */
+    padding-bottom: 4rem;
+    /* margin-top: 4rem; */
   }
 }
 
@@ -318,7 +320,7 @@ body {}
     line-height: 2.5rem;
   }
   .marquee-wrapper{
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     margin-top: 1rem;
   }
 
@@ -506,7 +508,7 @@ body {}
 
 @media screen and (max-width: 650px) {
   .contact-wrapper {
-  padding-top: 1rem !important;
+  padding-top: 4rem !important;
   }
 }
 @media screen and (max-width: 750px) {
@@ -633,8 +635,11 @@ body {}
   }
 }
 @media screen and (max-width: 650px) {
-  .capabilities-wrapper{
-    /* padding: 1rem 1.5rem ; */
+  .about-work-section{
+    padding-bottom: 3rem;
+  }
+  .howwework-wrapper{
+    margin-top: 4rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -643,6 +648,7 @@ body {}
   .home-section-1-wrapper,
   .homeabout-wrapper,
   .marquee-wrapper,
+  .about-work-section,
   .capabilities-wrapper{
     padding-left: 0.8rem;
     padding-right: 0.8rem;
@@ -652,11 +658,11 @@ body {}
     padding-bottom: 1rem !important;
   }
   .capabilities-wrapper{
-    margin-top: 1rem;
+    /* margin-top: 4rem; */
   }
   .capabilities-wrapper{
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
   }
 }
 

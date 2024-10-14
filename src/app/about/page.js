@@ -73,7 +73,7 @@ function about() {
     <>
       <div className="aboutpagewrapper bg-[black]">
         <Aboutsectionabout />
-        <Aboutcapabilities bg={"black"} />
+        <Capabilities bg={"#000"} textcol={"--textprimary"} arrowimg={"/images/aboutpageimg/whiterightarrow.svg"}/>
         <Aboutworksection />
         <Homemarquee bg={"black"} text={"--textprimary"} />
         <Howwework />
