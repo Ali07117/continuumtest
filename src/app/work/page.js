@@ -77,7 +77,7 @@ function Workpage() {
     <div className='relative'>
       <div className="work-wrapperd pt-[14.3rem] bg-[black] px-[1.5rem]">
         <Navbar/>
-        <h1 className='hero-heading text-[white] text-[6.25rem] leading-[6.5rem] text-[--textprimary] font-average'>Work </h1>
+        <h1 className='hero-heading text-[white] text-[8rem] leading-[6.5rem] text-[--textprimary] font-average'>Work </h1>
         <div className="img-container mt-[2rem] flex justify-center">
           <div className=' img1 work-hero-img rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
         </div>
