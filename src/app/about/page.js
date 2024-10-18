@@ -18,8 +18,6 @@ gsap.registerPlugin(ScrollTrigger)
 function about() {
   useGSAP(
     () => {
-      
-
       gsap.to(".aboutimg1", {
         scale: '1',
         duration: 1,
@@ -73,7 +71,7 @@ function about() {
     <>
       <div className="aboutpagewrapper bg-[black]">
         <Aboutsectionabout />
-        <Capabilities bg={"#000"} textcol={"--textprimary"} arrowimg={"/images/aboutpageimg/whiterightarrow.svg"}/>
+        <Capabilities bg={"#000"} textcol={"--textprimary"} arrowimg={"/images/aboutpageimg/whiterightarrow.svg"} />
         <Aboutworksection />
         <Homemarquee bg={"black"} text={"--textprimary"} />
         <Howwework />

@@ -12,12 +12,6 @@ function Footernav() {
         <div className="relative z-[5] footer-nav flex justify-between pt-[0.5rem] mt-[1rem] items-start footer-nav-wrapper max-h-[100px] h-[70px] border-t-[1px] border-t-[#FFFFFF]">
             <div className="empty-div w-[15%]"></div>
             <div className="footer-links flex items-center gap-[32px]">
-            {/* <Link href="/about">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'
-              }`}>
-              About
-            </p>
-          </Link> */}
           <Link href="/about"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'
               } `}>About</p> </Link>
             <Link href="/capabilities"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/capabilities" ? 'text-[#044AFF]' : 'text-[--textprimary]'

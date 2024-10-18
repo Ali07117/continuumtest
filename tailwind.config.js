@@ -11,6 +11,7 @@ module.exports = {
         average:["Average", "sans-serif"],
         inter:["Inter", "sans-serif"],
         trirong:["Trirong", "sans-serif"],
+        museoSans:["Museo Sans Regular", "sans-serif"],
 
       }
 

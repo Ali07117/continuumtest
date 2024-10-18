@@ -26,13 +26,13 @@ function Capabilities() {
       }
     });
 
-    tl.from(".anime-headings",{
-      color:"#0443E8",
-    },"f")
-    tl.to(".capabilities-cardss",{
-      scale:0.5,
+    tl.from(".anime-headings", {
+      color: "#0443E8",
+    }, "f")
+    tl.to(".capabilities-cardss", {
+      scale: 0.5,
       // stagger:0.1
-    },"f")
+    }, "f")
 
     // Select all cards
     const cards = document.querySelectorAll(".capabilities-cards");
@@ -72,15 +72,15 @@ function Capabilities() {
 
 
 
-    
+
   });
 
   return (
     <>
       <div className="px-[1.5rem] pt-[14.3rem] bg-[--bgprimary] capabilities-wrapperd capabilities-margin-top">
-        <Navbar/>
+        <Navbar />
         <h1 className='hero-heading text-[white] text-[6.25rem] leading-[6.5rem] text-[--textprimary] font-average'>Capabilities </h1>
-        <h2 className=' font-[400] text-[5.5vw] leading-[6.5vw] sm:text-[4.7vw] hero-subheading-para1 sm:leading-[5.7vw] mt-[1rem] sm:mt-[2rem] text-[--textprimary] font-average'>Empowering Your Vision with Comprehensive Design and Strategy Services</h2>
+        <h2 className=' font-[400] text-[5.5vw] leading-[6.5vw] sm:text-[4.7vw] hero-subheading-para1 sm:leading-[5.7vw] mt-[1rem] sm:mt-[1rem] text-[--textprimary] font-average'>Empowering Your Vision with Comprehensive Design and Strategy Services</h2>
         {/* <h2 className=' font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>Design and Strategy Services </h2> */}
         <div className="capabilities-anime-container w-[100%]  flex h-[50vh] md:h-[90vh] -max-h-[90vh] mt-[6rem]">
           <div className="capabilities-left -bg-[blue] w-[50%] h-[100%]">
@@ -98,12 +98,11 @@ function Capabilities() {
             </div>
           </div>
           <div className="capabilities-right w-[50%] -bg-[red] h-[100%]">
-            {/* <div className='cards-1 '><Capabilitiescard heading={"User Research & Insights"} para1={"Our User Research & Insights service provides a comprehensive understanding of your users through data-driven research methods such as interviews, surveys, and usability testing. We analyze user behaviors, needs, and pain points to ensure that your product aligns with real-world demands. These insights drive the design process, resulting in user-centric solutions that resonate with your audience."} para2={"We also conduct product-market fit assessments, helping you identify the optimal market positioning for your product. By combining user insights with competitive analysis, we ensure your product meets both user and market needs effectively."} /></div> */}
             <div className="capabilities-card-wrapper scrollnone  capabilities-cardss absolute min-h-[100px] max-h-[100%] bg-[#D5D9E4] rounded-[2.5rem] py-[3rem] px-[2rem]">
-        <h3 className=' font-[400] capabilitiescard-heading text-[2.5rem] text-[#00259C] font-average'>User Research & Insights</h3>
-        <p className='font-inter capabilitiescard-para1 text-[20px] text-[#000] font-[400] pt-[2rem]'>Our User Research & Insights service provides a comprehensive understanding of your users through data-driven research methods such as interviews, surveys, and usability testing. We analyze user behaviors, needs, and pain points to ensure that your product aligns with real-world demands. These insights drive the design process, resulting in user-centric solutions that resonate with your audience.</p>
-        <p className='font-inter capabilitiescard-para2 text-[20px] text-[#000] font-[400] pt-[1rem]'>We also conduct product-market fit assessments, helping you identify the optimal market positioning for your product. By combining user insights with competitive analysis, we ensure your product meets both user and market needs effectively.</p>
-      </div>
+              <h3 className=' font-[400] capabilitiescard-heading text-[2.5rem] text-[#00259C] font-average'>User Research & Insights</h3>
+              <p className='font-inter capabilitiescard-para1 text-[20px] text-[#000] font-[400] pt-[2rem]'>Our User Research & Insights service provides a comprehensive understanding of your users through data-driven research methods such as interviews, surveys, and usability testing. We analyze user behaviors, needs, and pain points to ensure that your product aligns with real-world demands. These insights drive the design process, resulting in user-centric solutions that resonate with your audience.</p>
+              <p className='font-inter capabilitiescard-para2 text-[20px] text-[#000] font-[400] pt-[1rem]'>We also conduct product-market fit assessments, helping you identify the optimal market positioning for your product. By combining user insights with competitive analysis, we ensure your product meets both user and market needs effectively.</p>
+            </div>
             <div className='cards-2 '><Capabilitiescard heading={"Experience Design"} para1={"Our Experience Design service is focused on crafting intuitive and engaging digital experiences that resonate with users. We blend UX/UI design, interaction design, and information architecture to create seamless journeys across all touchpoints. By prioritizing the user at every stage, we ensure that the design not only looks great but also functions smoothly, delivering real value to both the user and your business."} para2={"From wireframing to prototyping, our team creates user interfaces that are visually appealing, easy to navigate, and optimized for performance. We also conduct thorough usability testing to refine the experience, ensuring it’s both accessible and enjoyable."} /></div>
             <div className='cards-3 '><Capabilitiescard heading={"Strategy and Innovation "} para1={"Our Experience Design service is focused on crafting intuitive and engaging digital experiences that resonate with users. We blend UX/UI design, interaction design, and information architecture to create seamless journeys across all touchpoints. By prioritizing the user at every stage, we ensure that the design not only looks great but also functions smoothly, delivering real value to both the user and your business."} para2={"From wireframing to prototyping, our team creates user interfaces that are visually appealing, easy to navigate, and optimized for performance. We also conduct thorough usability testing to refine the experience, ensuring it’s both accessible and enjoyable."} /></div>
             <div className='cards-4 '><Capabilitiescard heading={"Continuous Improvement "} para1={"Our Continuous Improvement service ensures your product evolves and adapts even after launch. We regularly assess user feedback, conduct UX audits, and perform A/B testing to identify opportunities for optimization. By tracking key performance indicators and customer insights, we refine your product over time, keeping it relevant and effective."} para2={"This iterative process allows us to enhance user experiences, boost performance, and ensure your product continues to meet both business goals and user needs as market demands change. Continuous improvement ensures long-term success and sustainable growth."} /></div>
@@ -111,9 +110,6 @@ function Capabilities() {
             <div className='cards-6 '><Capabilitiescard heading={"Fractional Design Plans "} para1={"Our Fractional Design Plans offer subscription-based access to top-tier UX design services, providing an efficient and scalable solution for businesses in need of ongoing design support. These plans allow you to engage a dedicated team focused on user experience design, handling tasks such as wireframes, prototyping, user testing, and iterative improvements as your project evolves."} para2={"This flexible subscription model ensures that your design needs are met continuously, without the commitment of full-time hires, giving you the freedom to scale services as your business grows."} /></div>
           </div>
         </div>
-
-        
-        {/* <div className="bottom-logo  z-[5] relative flex justify-center mt-[12rem]"><img className='h-[16px]' src="/images/logo.svg" alt="" /></div> */}
         <Footernav />
       </div>
     </>
