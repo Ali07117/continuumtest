@@ -17,7 +17,9 @@ function OtherWorkSection() {
           <Aboutworkcards company={"Afious"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"} />
         </div>
         </div>
+        <div className='px-[1.5rem]'>
     <Footernav/>
+        </div>
     </div>
     
     </>
