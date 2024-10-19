@@ -92,7 +92,7 @@ function Workpage() {
           </div>
           <div className="anime-right w-[70%]  py-[5vh] mt-[6rem]  ">
             <Workimg img={"/images/heroimg1.svg"} />
-            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"Robotic Process Automation"} para1={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
+            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext pageurl={"/automation"} heading={"Robotic Process Automation"} para1={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section1img.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section2img.svg"} />
