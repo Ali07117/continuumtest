@@ -12,7 +12,7 @@ function AutomationHero() {
                     <p className='font-inter font-[400] text-[18px] text-[--textprimary] text-start'>All Works</p>
                 </div>
                 <div className='flex justify-center'>
-                    <div className={` rounded-[1.5rem] h-[95vh] w-[97%]`} style={{ backgroundImage: `url(/images/section1img.svg)`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                    <div className={` automation-hero-image rounded-[1.5rem] h-[95vh] w-[97%]`} style={{ backgroundImage: `url(/images/section1img.svg)`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
                 </div>
             </div>
         </>

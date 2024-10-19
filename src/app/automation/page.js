@@ -1,4 +1,9 @@
+'use client'
+
 import React from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/all";
 import Navbar from '../components/navbar';
 import Projectintro from '../components/projectintro';
 import AutomationHero from './component/automationhero';
@@ -6,7 +11,50 @@ import WorkInfo from '../components/workinfo';
 import WorkSolutionSection from '../components/worksolutionsection';
 import OtherWorkSection from '../components/otherworksection';
 import Footernav from '../components/homesections/footernav';
+gsap.registerPlugin(ScrollTrigger)
 function Automation() {
+  useGSAP(
+    () => {
+
+      gsap.to(".automation-hero-image", {
+        width: '100%',
+        // duration:0.8,
+        borderRadius:'0rem',
+        scrollTrigger: {
+          trigger: ".automation-hero-image",
+          scrub: true,
+          // markers:true,
+          start: "top 60%",
+          end: "top 10%",
+        }
+      });
+
+      let am = gsap.matchMedia();
+
+      am.add("(min-width: 1285px)", () => {
+      gsap.to(".work-result-left", {
+        scrollTrigger: {
+          trigger: ".work-result-left",
+          start: "top top",
+          end: "+=30%",
+          // markers:true,
+          pin: true,
+        }
+      });
+    });
+
+      gsap.to(".other-work-top", {
+        backgroundColor:"black",
+        color:"white",
+        scrollTrigger: {
+          trigger: ".other-work-top",
+          start: "top 0%",
+          end: "top 10%",
+          scrub:true,
+          // markers: true,
+        }
+      });
+    });
   return (
     <>
     <div className='automation-wrapper'>

@@ -774,3 +774,7 @@ body {}
 .mindmap-text-left{
   background: linear-gradient(to bottom, rgba(242, 242, 242, 1), rgba(89, 112, 149, 1));
 }
+
+.other-work-top{
+  transition-duration: 0.5s;
+}
