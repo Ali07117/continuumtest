@@ -11,7 +11,7 @@ function OtherWorkSection() {
             <button className='bg-[#00259C] text-[18px] text-[white] font-[400] border-[2px] border-[#044AFF] px-[3rem] py-[13px] rounded-[2rem]'>Contact Us</button>
         </div> */}
         <div className="other-work-section bg-[--bgprimary] pt-[5rem]">
-        <p className='font-average text-[--textprimary] text-[3rem] px-[1.5rem]'>Other Work</p>
+        <p className='font-average other-work-section-heading text-[--textprimary] text-[3rem] px-[1.5rem]'>Other Work</p>
         <div className=" other-work-card-component-wrapper pt-[6rem] pb-[12rem] px-[1.5rem]">
           <Aboutworkcards pr={"25px"} border={"1px"} company={"Dynegy"} device={"Website"} beforpara={"Visual Design, Experience Design"}  />
           <Aboutworkcards company={"Afious"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"} />

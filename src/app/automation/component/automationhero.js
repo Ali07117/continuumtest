@@ -5,7 +5,7 @@ function AutomationHero() {
     return (
         <>
             <div className="automation-hero-section">
-                <h1 className=' px-[1.5rem] text-[white] hero-heading text-[7.6vw] leading-[6.5rem] text-[--textprimary] font-average'>Automation Anywhere </h1>
+                <h1 className=' px-[1.5rem] text-[white] automation-hero-heading hero-heading text-[7.6vw] leading-[6.5rem] text-[--textprimary] font-average'>Automation Anywhere </h1>
                 <Projectintro />
                 <div className='flex gap-[15px] px-[1.5rem] mb-[1rem] automation-all-work-box'>
                     <img className='rotate-[180deg]' src="/images/sectionarrow.svg" alt="" />

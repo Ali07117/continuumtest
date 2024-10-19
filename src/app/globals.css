@@ -809,6 +809,7 @@ body {}
 }
 .challenge-container{
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .work-result-left{
   padding-left: 0rem;
@@ -820,6 +821,22 @@ body {}
 .outcome-image-container{
   min-height: 10vh;
 }
+}
+@media screen and (max-width: 650px) {
+  .workinfo-text{
+    padding: 0rem 0.8rem;
+  }
+  .challenge-container, .progress-image-container{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .work-result-left{
+    padding-left: 0rem;
+  }
+  .solution-outer-container, .work-outcome-container, .outcome-image-container, .work-result-contaier, .workmap-section, .mindmap-text-section, .other-work-card-component-wrapper, .other-work-top, .project-intro-wrapper, .automation-hero-heading, .automation-all-work-box, .other-work-section-heading, .automation-footer-nav-container{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
 }
 @media screen and (max-width: 1050px) {
 
@@ -863,7 +880,7 @@ body {}
 @media screen and (max-width: 670px) {
   .other-work-top{
     flex-direction: column;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0.8rem;
 
   }
   .other-work-top-text{
