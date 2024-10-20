@@ -3,6 +3,7 @@ import Navbar from '../components/navbar';
 import AutomationHero from '../automation/component/automationhero';
 import WorkChallenge from '../components/workchallenge';
 import SolutionSection from '../components/solutionsection';
+import OutcomeSection from '../components/outcomesection';
 
 function EnergyProvider() {
   return (
@@ -15,6 +16,7 @@ function EnergyProvider() {
                <WorkChallenge workchallengemainpara={"A leading retail electricity provider in the U.S., wanted a website that communicated its commitment to transparency, reliability, and community engagement. I led the visual design effort, ensuring the website effectively catered to both residential and business customers across multiple states, while highlighting client’s partnerships and community initiatives."} workchallengeheading={"Challenge "} workchallengepara={"We faced several challenges, including managing complex information architecture for different states and customer types, integrating the Chicago Cubs partnership while maintaining Dynegy’s professional brand, and effectively showcasing community engagement and their Total Satisfaction Guarantee."}/>
             </div>
             <SolutionSection  pl={"5%"} flex={"flex"} center={"center"} img={"/images/workimages/energyprovidersolutionimg.svg"} heading={"Solution"} subheading={"We employed a user-centered design approach, conducting research to understand customer needs. This led to a responsive, streamlined navigation system for easy plan comparisons, a high-conversion sign-up process, and engaging visuals that balanced professional branding with community involvement. We ensured the site was accessible and intuitive for all users."}/>
+            <OutcomeSection heading={"Outcome"} subheading={"The redesigned website delivered a cleaner, more engaging experience for users. By focusing on clarity and ease of use, it simplified the sign-up process and effectively showcased Dynegy’s brand values, resulting in higher customer satisfaction and engagement."}/>
             </div>
         </div>
     </>

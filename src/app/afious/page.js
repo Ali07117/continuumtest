@@ -4,6 +4,7 @@ import Projectintro from '../components/projectintro';
 import AutomationHero from '../automation/component/automationhero';
 import WorkChallenge from '../components/workchallenge';
 import SolutionSection from '../components/solutionsection';
+import OutcomeSection from '../components/outcomesection';
 
 function Afious() {
   return (
@@ -16,6 +17,7 @@ function Afious() {
                <WorkChallenge workchallengemainpara={"Afious is a mobile app that connects college students through shared interests, addressing the growing loneliness problem on campuses exacerbated by COVID-19. Our goal was to build an intuitive platform where students could easily find peers, join clubs, and engage in campus life."} workchallengeheading={"Challenge "} workchallengepara={"The main challenge was to create a solution that felt authentic and engaging without overwhelming users. Early versions faced issues with a complex onboarding process and a generic interface that didn’t resonate with Gen Z users. The primary task was to refine the experience to enable quick and meaningful connections based on student interests."}/>
             </div>
             <SolutionSection pr={"12%"} img={"/images/workimages/afioussolutionimg.svg"} heading={"Solution"} subheading={"We began with extensive interviews to validate the concept and understand student needs. Using this data, we reworked the onboarding and interest pages multiple times to ensure a seamless experience. Our efforts included designing a vibrant, modern interface that matched Gen Z aesthetics and integrating a recommendation engine to suggest relevant connections. Key features like group chats, event listings, and curated content were added to encourage interaction."}/>
+            <OutcomeSection heading={"Outcome"} subheading={"The redesigned app now offers a smooth user experience that helps students find connections and join groups easily. Enhanced interest pages, real-time chat, and event planning features allow for a lively community experience. The onboarding process is simple and intuitive, ensuring students can set up and start engaging within minutes."}/>
             </div>
         </div>
     </>

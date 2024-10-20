@@ -12,6 +12,7 @@ import WorkSolutionSection from '../components/worksolutionsection';
 import OtherWorkSection from '../components/otherworksection';
 import Footernav from '../components/homesections/footernav';
 import WorkResult from '../components/workresult';
+import OutcomeSection from '../components/outcomesection';
 gsap.registerPlugin(ScrollTrigger)
 function Automation() {
   useGSAP(
@@ -89,10 +90,7 @@ function Automation() {
           </div>
         </div>
         <p className='font-inter mindmap-bottom-text px-[1.5rem] font-[400] text-[18px] mt-[0.5rem] text-[--textsecondry]'>Mindmap to visualize all the necessary functionality of the app</p>
-        <div className="work-outcome-container pl-[10%] w-[50%] mt-[12rem]">
-          <p className='text-[2rem] font-[300] font-average'>Outcome</p>
-          <p className='text-[20px] work-outcome-text font-inter mt-[1rem] text-[--textsecondry]'>The redesigned app featured a more intuitive user interface, with streamlined navigation and an improved login process that accommodated both cloud and on-premise solutions. Users could now easily manage automations, assign failed bots, and receive real-time updates. We also introduced filters to help users quickly access the information they needed.</p>
-        </div>
+        <OutcomeSection heading={"Outcome"} subheading={"The redesigned app featured a more intuitive user interface, with streamlined navigation and an improved login process that accommodated both cloud and on-premise solutions. Users could now easily manage automations, assign failed bots, and receive real-time updates. We also introduced filters to help users quickly access the information they needed."}/>
         <div className=' min-h-[100vh] outcome-image-container px-[10%] mt-[6rem] flex justify-center'>
           <img className=' h-[100%] w-[100%] outcome-image' src="/images/workimages/outcome1img.svg" alt="" />
         </div>
