@@ -85,8 +85,8 @@ function Workpage() {
         <div className=" work-anime-container overflow-hidden flex min-h-[500vh]">
           <div className="anime-left w-[30%] mt-[6rem] h-[100%]">
             <Worktext pageurl={"/automation"} heading={"Robotic Process Automation"} para1={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
-            <Worktext heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
-            <Worktext heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext pageurl={"/afious"} heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext pageurl={"/energyprovider"} heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} />
             <Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
             <Worktext heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
           </div>
@@ -94,9 +94,9 @@ function Workpage() {
             <Workimg img={"/images/heroimg1.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext pageurl={"/automation"} heading={"Robotic Process Automation"} para1={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section1img.svg"} />
-            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
+            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext pageurl={"/afious"} heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section2img.svg"} />
-            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} /></div>
+            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext pageurl={"/energyprovider"} heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section1img.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'> <Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section2img.svg"} />
