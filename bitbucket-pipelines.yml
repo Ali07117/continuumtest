@@ -7,27 +7,28 @@ pipelines:
         caches:
           - node
         script:
+          # Install sshpass
+          - apt-get update && apt-get install -y sshpass
+
+          # Define your server password as an environment variable
+          - export SERVER_PASSWORD="k3#Qh.#!,J7(JZ"
+
           # 1. Clone the repository on the server
           - echo "Cloning repository into the server"
-          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "git clone https://x-token-auth:ATCTT3xFfGN0JkDIrIZLEUli-ypvMIHb8ijUOYIl8G9K0-BVfUyzuWaA3-FUofba8Q_lR9_oiFJ5IrOKU4HmqpnLHAaYEbzxdnZarBrEcmm2-UsTsKHQ_K6MZLH0wrGxthz_ClW5W8kgmDdkwMJo_sxM4DEaib-oScI40Czw6ZpsIX3J5TsWVOo=F9CF8284@bitbucket.org/continuumdesignlabs/continuum-main-site.git ~/nextjs-app"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "git clone https://x-token-auth:ATCTT3xFfGN0JkDIrIZLEUli-ypvMIHb8ijUOYIl8G9K0-BVfUyzuWaA3-FUofba8Q_lR9_oiFJ5IrOKU4HmqpnLHAaYEbzxdnZarBrEcmm2-UsTsKHQ_K6MZLH0wrGxthz_ClW5W8kgmDdkwMJo_sxM4DEaib-oScI40Czw6ZpsIX3J5TsWVOo=F9CF8284@bitbucket.org/continuumdesignlabs/continuum-main-site.git ~/nextjs-app"
 
-          # 2. Navigate to the project directory
-          - echo "Navigating to the project directory"
-          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app"
-
-          # 3. Install dependencies
+          # 2. Navigate to the project directory and install dependencies
           - echo "Installing dependencies"
-          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install"
 
-          # 4. Build the Next.js app
+          # 3. Build the Next.js app
           - echo "Building the Next.js app"
-          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm run build"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm run build"
 
-          # 5. Start the Next.js app
+          # 4. Start the Next.js app
           - echo "Starting the Next.js app"
-          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm start"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm start"
 
 definitions:
   caches:
     node: ~/.npm
-
