@@ -3,7 +3,7 @@ import React from 'react';
 function SolutionSection(props) {
   return (
     <>
-    <div className="solution-section-wrapper flex h-[70%] mt-[6rem] px-[10%]">
+    <div className="solution-section-wrapper flex min-h-[70%] mt-[6rem] px-[10%]">
     <div className="solution-section-left w-[50%] " style={{paddingRight:`${props.pr}`}}>
     <img className='w-[100%]' src={props.img} alt="" />
     <video

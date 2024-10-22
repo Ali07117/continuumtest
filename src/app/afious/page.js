@@ -47,12 +47,12 @@ function Afious() {
             <OutcomeSection heading={"Outcome"} subheading={"The redesigned app now offers a smooth user experience that helps students find connections and join groups easily. Enhanced interest pages, real-time chat, and event planning features allow for a lively community experience. The onboarding process is simple and intuitive, ensuring students can set up and start engaging within minutes."}/>
             <AfiousChatSection/>
             <div className="grid-section min-h-[100vh] mt-[3rem] py-[5%] px-[1.5rem] flex justify-center w-[100%] bg-[#D5D9E4]">
-              <img className='w-[100%] object-cover' src="/images/gridimg.svg" alt="" />
+              <img className='w-[100%] rounded-[2.5rem] object-cover' src="/images/gridimg.svg" alt="" />
             </div>
             <div className="result-upper-section px-[1.5rem] w-[100%] py-[12rem]">
               <div className="reslut-video-1-section w-[50%]">
                 <video 
-                className='rounded-[2.5rem] h-[80vh] object-cover'
+                className='reslut-video-1-section-video rounded-[2.5rem] h-[80vh] object-cover'
                 src="/videos/afious-result-video1.mp4"
                 autoPlay 
                 loop 
@@ -60,7 +60,7 @@ function Afious() {
                 ></video>
               </div>
             </div>
-            <div className="solution-section-wrapper flex h-[70%]  px-[10%]">
+            <div className="solution-section-wrapper flex min-h-[70%]  px-[10%]">
    
     <div className="solution-section-right w-[50%]">
     <div>

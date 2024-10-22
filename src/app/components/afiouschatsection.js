@@ -5,11 +5,11 @@ function AfiousChatSection() {
     <>
     <div className="afious-chat-wrapper flex min-h-[80vh] gap-[1rem] mt-[6rem] w-[100%] px-[1.5rem]">
         <div className="afious-chat-left h-[100%] w-[50%] rounded-[2.6rem]">
-            <img className=' w-[100%] object-cover rounded-[2.5rem]' src="/images/chatleftimg.svg" alt="" />
+            <img className=' afious-chat-img w-[100%] object-cover rounded-[2.5rem]' src="/images/chatleftimg.svg" alt="" />
         </div>
         <div className="afious-chat-right h-[100%] overflow-hidden w-[50%]">
             <video 
-            className='rounded-[3rem] scale-[1.04]'
+            className='afious-chat-video object-cover rounded-[3rem] scale-[1.04]'
             src="/videos/chat-video.mp4"
             autoPlay 
             loop 

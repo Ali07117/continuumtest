@@ -950,26 +950,82 @@ body {}
     padding-right: 1.5rem;
     
   }
+   .solution-section-left{
+    padding: 0px;
+    margin-top: 1rem;
+   }
  
 
 }
 @media screen and (max-width: 1050px) {
-  .solution-section-wrapper{
+  .solution-section-wrapper, .afious-chat-wrapper{
     flex-direction: column;
     /* height: 100%; */
 
   }
-  .solution-section-right{
+  .afious-chat-wrapper{
+    gap: 1rem;
+  }
+  .solution-section-right , .afious-chat-left, .afious-chat-right, .reslut-video-1-section{
     width: 100%;
+  }
+  .afious-chat-right, .afious-chat-left, .reslut-video-1-section{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+  }
+  .afious-chat-img {
+    height: 600px !important;
+    width: 600px !important;
+    
+  }
+  .afious-chat-video, .reslut-video-1-section-video{
+    height: 600px !important;
+    width: 600px !important;
+    margin: auto;
+    border-radius: 2rem;
+    
+
   }
   .solution-section-left{
     min-height: 20px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* margin-right: 0px; */
+    padding-right: 0px !important;
+    width: 100%;
+
   }
   .afious-solution-video{
-    height: 100%;
-    width: 100%;
+    height: 600px;
+    width: 600px !important;
+    margin: auto !important;
+    padding-right: 0px;
+    margin: 0px;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .solution-section-wrapper, .afious-chat-wrapper, .grid-section, .result-upper-section{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+  }
+
+}
+@media screen and (max-width: 850px) {
+  .solution-section-wrapper{
+    margin-top: 0px;
+    
+  }
+  .afious-chat-wrapper, .grid-section{
+    margin-top: 4rem;
+  }
+  .result-upper-section{
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+  }
+  .grid-section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
 }
