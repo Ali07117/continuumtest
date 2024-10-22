@@ -1,4 +1,4 @@
-image: node:18 #  Node.js Docker image
+image: node:18 # Node.js Docker image
 
 pipelines:
   default:
@@ -8,21 +8,26 @@ pipelines:
           - node
         script:
           # 1. Clone the repository on the server
-          - echo "Cloning repository into server"
-          - ssh -o StrictHostKeyChecking=root@157.245.244.83 "git clone https://x-token-auth:ATCTT3xFfGN0JkDIrIZLEUli-ypvMIHb8ijUOYIl8G9K0-BVfUyzuWaA3-FUofba8Q_lR9_oiFJ5IrOKU4HmqpnLHAaYEbzxdnZarBrEcmm2-UsTsKHQ_K6MZLH0wrGxthz_ClW5W8kgmDdkwMJo_sxM4DEaib-oScI40Czw6ZpsIX3J5TsWVOo=F9CF8284@bitbucket.org/continuumdesignlabs/continuum-main-site.git"
+          - echo "Cloning repository into the server"
+          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "git clone https://x-token-auth:ATCTT3xFfGN0JkDIrIZLEUli-ypvMIHb8ijUOYIl8G9K0-BVfUyzuWaA3-FUofba8Q_lR9_oiFJ5IrOKU4HmqpnLHAaYEbzxdnZarBrEcmm2-UsTsKHQ_K6MZLH0wrGxthz_ClW5W8kgmDdkwMJo_sxM4DEaib-oScI40Czw6ZpsIX3J5TsWVOo=F9CF8284@bitbucket.org/continuumdesignlabs/continuum-main-site.git ~/nextjs-app"
 
           # 2. Navigate to the project directory
-          - ssh -o StrictHostKeyChecking=root@157.245.244.83"cd ~/nextjs-app"
+          - echo "Navigating to the project directory"
+          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app"
 
           # 3. Install dependencies
-          - ssh -o StrictHostKeyChecking=root@157.245.244.83 "cd ~/nextjs-app && npm install"
+          - echo "Installing dependencies"
+          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install"
 
           # 4. Build the Next.js app
-          - ssh -o StrictHostKeyChecking=root@157.245.244.83 "cd ~/nextjs-app && npm run build"
+          - echo "Building the Next.js app"
+          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm run build"
 
           # 5. Start the Next.js app
-          - ssh -o StrictHostKeyChecking=root@157.245.244.83 "cd ~/nextjs-app && npm start"
+          - echo "Starting the Next.js app"
+          - ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm start"
 
 definitions:
   caches:
     node: ~/.npm
+
