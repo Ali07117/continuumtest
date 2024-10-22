@@ -1,4 +1,4 @@
-image: node:18 # Node.js Docker image
+image: node:14
 
 pipelines:
   default:
@@ -7,25 +7,31 @@ pipelines:
         caches:
           - node
         script:
-          # Install sshpass
-          - apt-get update && apt-get install -y sshpass
+          # 1. Kill any process running on port 3000
+          - echo "Stopping any running instance on port 3000"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "sudo fuser -k 3000/tcp"
 
-          # Define your server password as an environment variable
-          - export SERVER_PASSWORD="k3#Qh.#!,J7(JZ"
+          # 2. Check if the repository already exists and remove it if it does
+          - echo "Checking if repository exists on the server"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "if [ -d ~/nextjs-app ]; then rm -rf ~/nextjs-app; fi"
 
-          # 1. Clone the repository on the server
-          - echo "Cloning repository into the server"
+          # 3. Clone the new repository on the server
+          - echo "Cloning repository into server"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "git clone https://x-token-auth:ATCTT3xFfGN0JkDIrIZLEUli-ypvMIHb8ijUOYIl8G9K0-BVfUyzuWaA3-FUofba8Q_lR9_oiFJ5IrOKU4HmqpnLHAaYEbzxdnZarBrEcmm2-UsTsKHQ_K6MZLH0wrGxthz_ClW5W8kgmDdkwMJo_sxM4DEaib-oScI40Czw6ZpsIX3J5TsWVOo=F9CF8284@bitbucket.org/continuumdesignlabs/continuum-main-site.git ~/nextjs-app"
 
-          # 2. Navigate to the project directory and install dependencies
+          # 4. Navigate to the project directory
+          - echo "Navigating to project directory"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app"
+
+          # 5. Install dependencies
           - echo "Installing dependencies"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install"
 
-          # 3. Build the Next.js app
+          # 6. Build the Next.js app
           - echo "Building the Next.js app"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm run build"
 
-          # 4. Start the Next.js app
+          # 7. Start the Next.js app on port 3000
           - echo "Starting the Next.js app"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm start"
 
