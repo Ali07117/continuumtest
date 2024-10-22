@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import Aboutworkcards from '../about/aboutworksection/comp/aboutworkcards';
 import Footernav from './homesections/footernav';
 

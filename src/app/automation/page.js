@@ -22,6 +22,7 @@ function Automation() {
         // width: '100%',
         marginLeft: '0rem',
         marginRight: '0rem',
+        marginBottom: '0rem',
         // duration:0.8,
         borderRadius: '0rem',
         scrollTrigger: {
@@ -29,7 +30,7 @@ function Automation() {
           scrub: true,
           // markers:true,
           start: "top 60%",
-          end: "top 10%",
+          end: "top -70%",
         }
       });
 
@@ -62,7 +63,7 @@ function Automation() {
   return (
     <>
       <div className='automation-wrapper'>
-        <div className="automation-header pb-[1rem] pt-[14.3rem]  min-h-[10vh] w-[100%] bg-[--bgprimary]">
+        <div className="automation-header  pt-[14.3rem]  min-h-[10vh] w-[100%] bg-[--bgprimary]">
           <Navbar />
           <AutomationHero imgheight={"95vh"} heroimg={"url(/images/section1img.svg)"} heading={"Automation Anywhere"} intro={"Intro"} introheading={"Mobile app for a leading robotic process automation(RPA) software company."} projectintrolabel={"Contributions"} projectintro1={"Discovery & Research"} projectintro2={"Strategy"} projectintro3={"Experience Design"} projectintro4={"Visual Design"}/>
         </div>

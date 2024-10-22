@@ -3,7 +3,7 @@ import React from 'react';
 function WorkResult() {
   return (
     <>
-        <div className="work-result-contaier mt-[6rem] flex pr-[1.5rem] gap-[1rem]">
+        <div className="work-result-contaier mt-[12rem] flex pr-[1.5rem] gap-[1rem]">
         <div className="work-result-left  w-[40%] pl-[10%]">
         <div className="">
         <p className='text-[2rem] font-[300] font-average'>Results </p>
