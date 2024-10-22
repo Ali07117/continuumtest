@@ -1004,7 +1004,7 @@ body {}
 }
 
 @media screen and (max-width: 650px) {
-  .solution-section-wrapper, .afious-chat-wrapper, .grid-section, .result-upper-section{
+  .solution-section-wrapper, .afious-chat-wrapper, .grid-section, .result-upper-section {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
 
