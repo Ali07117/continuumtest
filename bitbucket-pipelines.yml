@@ -8,6 +8,8 @@ pipelines:
           - node
         script:
           # 1. Install sshpass on the server
+          - apt-get update && apt-get install -y sshpass
+          - export SERVER_PASSWORD="k3#Qh.#!,J7(JZ"
           - echo "Installing sshpass on the server"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "apt-get update && apt-get install -y sshpass"
 
