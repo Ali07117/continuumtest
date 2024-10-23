@@ -24,6 +24,18 @@
 /* -------- video controlls ------------- */
 
 /* For WebKit-based browsers (Safari, iOS Safari, Chrome) */
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* Optionally, hide all media controls */
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* Hide WebKit controls for all video elements */
 video::-webkit-media-controls {
   display: none !important;
   opacity: 0 !important;
@@ -37,8 +49,9 @@ video::-moz-media-controls {
   pointer-events: none !important;
 }
 
-video{
-  pointer-events: none;
+/* Optional: Consider whether pointer-events should be none globally */
+video {
+  pointer-events: none; /* Disable all interactions */
 }
 
 
