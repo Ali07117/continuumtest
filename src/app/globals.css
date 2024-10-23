@@ -21,6 +21,21 @@
   }
 }
 
+/* -------- video controlls ------------- */
+
+/* For WebKit-based browsers (Safari, iOS Safari, Chrome) */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+/* For Firefox */
+video::-moz-media-controls {
+  display: none !important;
+}
+
+
+/* -------- video controlls ------------- */
+
 .scrollnone::-webkit-scrollbar {
   width: 0px;
   height: 0px;

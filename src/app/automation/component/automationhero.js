@@ -36,8 +36,8 @@ function AutomationHero(props) {
                     className=' automation-hero-video  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]'
                      src={props.video}
                      autoPlay 
-                loop 
-                muted
+                     loop 
+                     muted
                     ></video>
                 </div>
             </div>
