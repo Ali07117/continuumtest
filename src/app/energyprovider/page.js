@@ -63,6 +63,7 @@ function EnergyProvider() {
           src="/videos/tab-video.mp4"  
           autoPlay 
                 loop 
+                playsinline
                 muted></video></div>
           <div className='mt-[4rem] step-img-section px-[10%]'><img className='w-[100%]' src="/images/workimages/energy-step-img.svg" alt="" /></div>
           <div className="work-result-contaier mt-[12rem] px-[10%]">

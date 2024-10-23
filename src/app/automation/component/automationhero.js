@@ -38,6 +38,8 @@ function AutomationHero(props) {
                      autoPlay 
                      loop 
                      muted
+                     playsinline
+
                     ></video>
                 </div>
             </div>

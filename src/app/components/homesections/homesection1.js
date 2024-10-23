@@ -14,6 +14,7 @@ function Homesection1(props) {
             autoPlay
             loop
             muted
+            playsinline
           ></video>
         </div>
         <div className="section-bottom flex pb-[1rem] min-h-[100px] justify-between items-start mt-[20px]">

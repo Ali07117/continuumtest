@@ -14,6 +14,7 @@ function AfiousChatSection() {
             autoPlay 
             loop 
             muted
+            playsinline
             ></video>
         </div>
     </div>

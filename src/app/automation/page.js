@@ -101,6 +101,7 @@ function Automation() {
           autoPlay 
                 loop 
                 muted
+                playsinline
           ></video>
         </div>
         <WorkResult />

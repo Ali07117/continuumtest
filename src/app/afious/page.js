@@ -57,6 +57,7 @@ function Afious() {
                 autoPlay 
                 loop 
                 muted
+                playsinline
                 ></video>
               </div>
             </div>
@@ -75,6 +76,7 @@ function Afious() {
     autoPlay 
       loop 
       muted
+      playsinline
     ></video>
     </div>
     </div>

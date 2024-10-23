@@ -12,6 +12,7 @@ function SolutionSection(props) {
     autoPlay 
     loop 
     muted
+    playsinline
     ></video>
     </div>
     <div className="solution-section-right w-[50%]" style={{display:`${props.flex}`, paddingLeft:`${props.pl}` , alignItems:`${props.center}`}}>

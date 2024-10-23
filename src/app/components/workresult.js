@@ -18,6 +18,7 @@ function WorkResult() {
           autoPlay 
                 loop 
                 muted
+                playsinline
           ></video>
         </div>
         </div>
