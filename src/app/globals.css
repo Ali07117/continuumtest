@@ -37,6 +37,10 @@ video::-moz-media-controls {
   pointer-events: none !important;
 }
 
+video{
+  pointer-events: none;
+}
+
 
 /* -------- video controlls ------------- */
 
