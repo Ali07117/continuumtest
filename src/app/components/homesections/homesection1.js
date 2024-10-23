@@ -1,6 +1,22 @@
-import React from 'react';
+import { useRef, useEffect } from 'react';
 
 function Homesection1(props) {
+  const videoRef = useRef(null);
+
+  const hideControll = () => {
+    const video = videoRef.current;
+
+    if (video) {
+      // If controls exist, hide them
+      video.removeAttribute('controls');
+      
+      // Optional: prevent pointer events on the video element (to avoid user interaction)
+      video.style.pointerEvents = 'none';
+    }
+    useEffect(() => {
+      hideControll();
+    }, []);
+  };
   return (
     <>
       <div className={`home-section-1-wrapper bg-[black]  px-[1.5rem]  pt-[${props.pt}] text-[white]`} style={{ paddingBottom: `${props.pb}` }}>
@@ -9,6 +25,7 @@ function Homesection1(props) {
         <div className={` ${props.containerclass} mt-[2.1rem] flex justify-center`}>
           {/* <div className={` ${props.imgclass} rounded-[2.5rem] scale-[0.5] section-images h-[100vh] w-[100%]`} style={{ backgroundImage: `url(${props.img})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div> */}
           <video
+           ref={videoRef}
           className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
             src={props.img}
             autoPlay

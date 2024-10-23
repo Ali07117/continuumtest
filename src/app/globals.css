@@ -26,11 +26,15 @@
 /* For WebKit-based browsers (Safari, iOS Safari, Chrome) */
 video::-webkit-media-controls {
   display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 /* For Firefox */
 video::-moz-media-controls {
   display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 
