@@ -33,7 +33,7 @@
   width: 0px;
   height: 0px;
 }
-body {}
+/* body {} */
 
 @layer utilities {
   .text-balance {
@@ -513,9 +513,7 @@ body {}
   }
 }
 @media screen and (max-width: 750px) {
-  .contact-wrapper {
-  /* padding-top: 1rem; */
-  }
+ 
 }
 
 @media screen and (max-width: 810px) {
@@ -631,9 +629,7 @@ body {}
 }
 
 @media screen and (max-width: 1100px) {
-  .capabilities-wrapper{
-    /* padding: 3rem 1.5rem ; */
-  }
+ 
 }
 @media screen and (max-width: 650px) {
   .about-work-section{
@@ -658,9 +654,7 @@ body {}
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
-  .capabilities-wrapper{
-    /* margin-top: 4rem; */
-  }
+  
   .capabilities-wrapper{
     padding-bottom: 4rem;
     padding-top: 4rem;
@@ -680,7 +674,7 @@ body {}
 @media screen and (max-width: 760px) {.work-card-center{width: 50%;} .work-card-first{width: 50%;}}
 @media screen and (max-width: 650px) { .about-wrapper, .howwework-wrapper{ padding-left: 0.8rem; padding-right: 0.8rem;}}
 @media screen and (max-width: 900px) { .capabilities-margin-top{margin-top: 0px;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.5rem;} .work-card-last, .work-answer-text{font-size: 1rem;} .work-plus{height: 15px;} .work-minus{height: 2px;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
-@media screen and (max-width: 650px) { .about-wrapper{ padding: ;} .cards-wrapper{padding: 1rem 0rem;} .hero-heading{margin-bottom: 0rem;} .aboutimg1,  .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.3rem;} .work-card-last, .work-answer-text{font-size: 0.9rem;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
+@media screen and (max-width: 650px) { .cards-wrapper{padding: 1rem 0rem;} .hero-heading{margin-bottom: 0rem;} .aboutimg1,  .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.3rem;} .work-card-last, .work-answer-text{font-size: 0.9rem;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
 @media screen and (max-width: 530px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.8rem;} .workcardwrapper{padding: 1.5rem 0;}}
 @media screen and (max-width: 440px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.7rem;} .workcardwrapper{padding: 1.5rem 0;}}
 @media screen and (max-width: 440px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.7rem;} .workcardwrapper{padding: 1.5rem 0;}}
@@ -814,10 +808,11 @@ body {}
 .work-result-left{
   padding-left: 0rem;
 }
-.solution-outer-container, .work-outcome-container, .outcome-image-container, .work-result-contaier{
+.solution-outer-container, .work-outcome-container, .outcome-image-container, .work-result-contaier, .step-img-section{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 .outcome-image-container{
   min-height: 10vh;
 }
@@ -851,7 +846,17 @@ body {}
   .work-result-contaier{
     flex-direction: column;
   }
+  .solution-section-right{
+    padding-left: 0rem;
+  }
 
+  
+}
+@media screen and (max-width: 850px) {
+  .challenge-container{
+    width: 100%;
+  }
+  
   
 }
 @media screen and (max-width: 750px) {
@@ -861,6 +866,20 @@ body {}
   }
   .challenge-container, .solution-container, .work-outcome-container{
     width: 100%;
+  }
+  .energy-outcome-img-section{
+    flex-direction: column;
+  }
+  .energy-outcome-section-left, .energy-outcome-section-right{
+    width: 100%;
+
+  }
+  .energy-outcome-section-left img, .energy-outcome-section-right img{
+    height:500px ;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2.5rem;
+
   }
 }
 
@@ -894,8 +913,22 @@ body {}
   .project-intro-text, .automation-all-work{
     font-size: 15px;
   }
-  .automation-hero-image, .workmap-section-img, .outcome-image, .work-result-image{
+  .automation-hero-image, .workmap-section-img, .outcome-image, .work-result-image, .solution-section-left img, .energy-outcome-section-left img, .energy-outcome-section-right img, .step-img-section img{
   height: 350px;
+}
+.tab-img-section video{
+  height: 350px;
+}
+.tab-img-section{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.automation-hero-video{
+  height: 400px;
+}
+.step-img-section img{
+  object-fit: cover;
+  border-radius: 2.5rem;
 }
 .workinfo-text{
   font-size: 1.6rem;
@@ -905,7 +938,7 @@ body {}
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-.challenge-container, .progress-image-container, .outcome-image-container, .solution-outer-container, .mindmap-text-section, .work-outcome-container, .work-result-contaier, .other-work-wrapper{
+.challenge-container, .energy-outcome-img-section, .progress-image-container, .outcome-image-container, .solution-outer-container, .mindmap-text-section, .work-outcome-container, .work-result-contaier, .other-work-wrapper{
   margin-top: 4rem;
 }
 .other-work-section, .automation-footer-nav-container{
@@ -1004,7 +1037,7 @@ body {}
 }
 
 @media screen and (max-width: 650px) {
-  .solution-section-wrapper, .afious-chat-wrapper, .grid-section, .result-upper-section {
+  .solution-section-wrapper, .afious-chat-wrapper, .grid-section, .result-upper-section ,.tab-img-section, .energy-outcome-img-section {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
 

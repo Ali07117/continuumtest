@@ -7,7 +7,14 @@ function Homesection1(props) {
         <p className={`font-average select-work-text leading-[4rem] text-[4rem] text-[--textprimary] font-[400]`} style={{ paddingTop: `${props.titlept}` }}>{props.maintitle}</p>
         <p className='font-average section-heading pt-[1rem] text-[2.8rem] text-[--text-primary] font-[400]'>{props.title}</p>
         <div className={` ${props.containerclass} mt-[2.1rem] flex justify-center`}>
-          <div className={` ${props.imgclass} rounded-[2.5rem] scale-[0.5] section-images h-[100vh] w-[100%]`} style={{ backgroundImage: `url(${props.img})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+          {/* <div className={` ${props.imgclass} rounded-[2.5rem] scale-[0.5] section-images h-[100vh] w-[100%]`} style={{ backgroundImage: `url(${props.img})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div> */}
+          <video
+          className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
+            src={props.img}
+            autoPlay
+            loop
+            muted
+          ></video>
         </div>
         <div className="section-bottom flex pb-[1rem] min-h-[100px] justify-between items-start mt-[20px]">
           <div className="section-bottom-left flex items-center gap-[8px]">

@@ -14,6 +14,7 @@ import Contactsection from './components/homesections/contactsection';
 gsap.registerPlugin(ScrollTrigger)
 
 function Home() {
+  
   useGSAP(
     () => {
 
@@ -117,9 +118,9 @@ function Home() {
           <div className=' img1 rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
         </div>
       </div>
-      <Homesection1 titlept={"0rem"} containerclass={"img-container2"} imgclass={"img2"} img={"/images/section1img.svg"} pt={"6rem"} maintitle={"Selected Work"} title={"Mobile Interface for Robotic Process Automation"} cta={"Request Case Study"} para1={"Mobile app for a leading robotic process automation(RPA) software company."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
-      <Homesection1 containerclass={"img-container3"} imgclass={"img3"} img={"/images/section2img.svg"} pt={"6rem"} title={"Afious"} cta={"Request Case Study"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
-      <Homesection1 pb={"6rem"} containerclass={"img-container4"} imgclass={"img4"} img={"/images/section2img.svg"} pt={"6rem"} title={"Energy Company’s Digital Presence"} cta={"Request Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 titlept={"0rem"} containerclass={"img-container2"} imgclass={"img2"} img={"/videos/energy-hero-video.mp4"} pt={"6rem"} maintitle={"Selected Work"} title={"Mobile Interface for Robotic Process Automation"} cta={"Request Case Study"} para1={"Mobile app for a leading robotic process automation(RPA) software company."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 containerclass={"img-container3"} imgclass={"img3"} img={"/videos/automation mbl-flip.mp4"} pt={"6rem"} title={"Afious"} cta={"Request Case Study"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 pb={"6rem"} containerclass={"img-container4"} imgclass={"img4"} img={"/videos/energy-hero-video.mp4"} pt={"6rem"} title={"Energy Company’s Digital Presence"} cta={"Request Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
       <Homeaboutsection />
       <Homemarquee bg={"#fff"} text={"--textsecondry"} />
       <Capabilities bg={"#D5D9E4"} arrowimg={"/images/blackarrow.svg"} capabgif1={"/images/accessbility.gif"} capabgif2={"/images/expert recomendation.gif"} capabgif3={"/images/evaluation.gif"} capabgif4={"/images/user satisfaction.gif"}/>

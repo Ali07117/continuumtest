@@ -5,7 +5,7 @@ function SolutionSection(props) {
     <>
     <div className="solution-section-wrapper flex min-h-[70%] mt-[6rem] px-[10%]">
     <div className="solution-section-left w-[50%] " style={{paddingRight:`${props.pr}`}}>
-    <img className='w-[100%]' src={props.img} alt="" />
+    <img className={` ${props.imghidden} w-[100%]`} src={props.img} alt="" />
     <video
     className='rounded-[2.5rem] afious-solution-video h-[100%] object-cover w-[100%]'
     src={props.video}

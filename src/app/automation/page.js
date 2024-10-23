@@ -15,6 +15,7 @@ import WorkResult from '../components/workresult';
 import OutcomeSection from '../components/outcomesection';
 gsap.registerPlugin(ScrollTrigger)
 function Automation() {
+  
   useGSAP(
     () => {
 
@@ -34,19 +35,19 @@ function Automation() {
         }
       });
 
-      let am = gsap.matchMedia();
+      // let am = gsap.matchMedia();
 
-      am.add("(min-width: 1285px)", () => {
-        gsap.to(".work-result-left", {
-          scrollTrigger: {
-            trigger: ".work-result-left",
-            start: "top top",
-            end: "+=40%",
-            // markers:true,
-            pin: true,
-          }
-        });
-      });
+      // am.add("(min-width: 1285px)", () => {
+      //   gsap.to(".work-result-left", {
+      //     scrollTrigger: {
+      //       trigger: ".work-result-left",
+      //       start: "top top",
+      //       end: "+=40%",
+      //       // markers:true,
+      //       pin: true,
+      //     }
+      //   });
+      // });
 
       gsap.to(".other-work-top", {
         backgroundColor: "black",
@@ -65,7 +66,7 @@ function Automation() {
       <div className='automation-wrapper'>
         <div className="automation-header  pt-[14.3rem]  min-h-[10vh] w-[100%] bg-[--bgprimary]">
           <Navbar />
-          <AutomationHero imgheight={"95vh"} heroimg={"url(/images/section1img.svg)"} heading={"Automation Anywhere"} intro={"Intro"} introheading={"Mobile app for a leading robotic process automation(RPA) software company."} projectintrolabel={"Contributions"} projectintro1={"Discovery & Research"} projectintro2={"Strategy"} projectintro3={"Experience Design"} projectintro4={"Visual Design"}/>
+          <AutomationHero videohidden={"hidden"} imgheight={"95vh"} heroimg={"url(/images/section1img.svg)"} heading={"Automation Anywhere"} intro={"Intro"} introheading={"Mobile app for a leading robotic process automation(RPA) software company."} projectintrolabel={"Contributions"} projectintro1={"Discovery & Research"} projectintro2={"Strategy"} projectintro3={"Experience Design"} projectintro4={"Visual Design"}/>
         </div>
         <WorkInfo />
         <div className="workmap-section px-[1.5rem]">
@@ -93,7 +94,14 @@ function Automation() {
         <p className='font-inter mindmap-bottom-text px-[1.5rem] font-[400] text-[18px] mt-[0.5rem] text-[--textsecondry]'>Mindmap to visualize all the necessary functionality of the app</p>
         <OutcomeSection heading={"Outcome"} subheading={"The redesigned app featured a more intuitive user interface, with streamlined navigation and an improved login process that accommodated both cloud and on-premise solutions. Users could now easily manage automations, assign failed bots, and receive real-time updates. We also introduced filters to help users quickly access the information they needed."}/>
         <div className=' min-h-[100vh] outcome-image-container px-[10%] mt-[6rem] flex justify-center'>
-          <img className=' h-[100%] w-[100%] outcome-image' src="/images/workimages/outcome1img.svg" alt="" />
+          {/* <img className=' h-[100%] w-[100%] outcome-image' src="/images/workimages/outcome1img.svg" alt="" /> */}
+          <video
+          className='h-[100%] rounded-[2.5rem] w-[100%] outcome-image' 
+          src="/videos/automation mbl-flip.mp4"
+          autoPlay 
+                loop 
+                muted
+          ></video>
         </div>
         <WorkResult />
         <OtherWorkSection />

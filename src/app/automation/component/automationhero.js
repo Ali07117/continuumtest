@@ -28,8 +28,17 @@ function AutomationHero(props) {
                     <img className='rotate-[180deg]' src="/images/sectionarrow.svg" alt="" />
                     <p className='automation-all-work  font-inter font-[400] text-[18px] text-[--textprimary] text-start'>All Works</p>
                 </div>
-                <div className='flex justify-center'>
-                    <div className={` automation-hero-image mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]`} style={{ height:`${props.imgheight}`, backgroundImage: `${props.heroimg}`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                <div className={`flex justify-center ${props.hidden} `}>
+                    <div className={` automation-hero-image  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]`} style={{ height:`${props.imgheight}`, backgroundImage: `${props.heroimg}`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                </div>
+                <div className={` ${props.videohidden} flex justify-center `}>
+                    <video
+                    className=' automation-hero-video  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]'
+                     src={props.video}
+                     autoPlay 
+                loop 
+                muted
+                    ></video>
                 </div>
             </div>
         </>
