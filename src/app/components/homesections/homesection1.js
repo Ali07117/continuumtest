@@ -1,37 +1,41 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import ReactPlayer from 'react-player'
 
 function Homesection1(props) {
   const videoRef = useRef(null);
+  // const [isMounted, setIsMounted] = useState(false);
+  // useEffect(() => {
+  //   setIsMounted(true);
+  // }, []);
 
-  const hideControll = () => {
-    const video = videoRef.current;
-
-    if (video) {
-      // If controls exist, hide them
-      video.removeAttribute('controls');
-      
-      // Optional: prevent pointer events on the video element (to avoid user interaction)
-      video.style.pointerEvents = 'none';
-    }
-    useEffect(() => {
-      hideControll();
-    }, []);
-  };
   return (
     <>
       <div className={`home-section-1-wrapper bg-[black]  px-[1.5rem]  pt-[${props.pt}] text-[white]`} style={{ paddingBottom: `${props.pb}` }}>
         <p className={`font-average select-work-text leading-[4rem] text-[4rem] text-[--textprimary] font-[400]`} style={{ paddingTop: `${props.titlept}` }}>{props.maintitle}</p>
         <p className='font-average section-heading pt-[1rem] text-[2.8rem] text-[--text-primary] font-[400]'>{props.title}</p>
-        <div className={` ${props.containerclass} mt-[2.1rem] flex justify-center`}>
+        <div className={` ${props.containerclass} mt-[2.1rem] flex justify-center `}>
           {/* <div className={` ${props.imgclass} rounded-[2.5rem] scale-[0.5] section-images h-[100vh] w-[100%]`} style={{ backgroundImage: `url(${props.img})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div> */}
+          {/* {isMounted && (
+            <ReactPlayer
+              className={`${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
+              url='/videos/energy-hero-video.mp4'
+              playing   // Autoplay
+              loop      // Loop the video
+              muted     // Mute the video (useful for autoplay in some browsers)
+              controls={false}  // Optional: Hide controls if you don't want them
+            />
+          )} */}
           <video
-           ref={videoRef}
-          className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
+            ref={videoRef}
+            className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
             src={props.img}
             autoPlay
             loop
             muted
             playsinline
+            webkit-playsinline  // iOS-specific attribute for inline playback
+            controls={false}    // Hides video controls
+            onLoadedMetadata={() => { videoRef.current.controls = false }}
           ></video>
         </div>
         <div className="section-bottom flex pb-[1rem] min-h-[100px] justify-between items-start mt-[20px]">
