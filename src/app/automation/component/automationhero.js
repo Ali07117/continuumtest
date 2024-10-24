@@ -1,7 +1,17 @@
 import Projectintro from '@/app/components/projectintro';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function AutomationHero(props) {
+
+
+    const videoRef = useRef(null);
+    useEffect(() => {
+      if (videoRef.current) {
+        videoRef.current.removeAttribute('controls');
+        videoRef.current.controls = false;
+      }
+    }, []);
+
     return (
         <>
             <div className="automation-hero-section">
@@ -29,16 +39,20 @@ function AutomationHero(props) {
                     <p className='automation-all-work  font-inter font-[400] text-[18px] text-[--textprimary] text-start'>All Works</p>
                 </div>
                 <div className={`flex justify-center ${props.hidden} `}>
-                    <div className={` automation-hero-image  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]`} style={{ height:`${props.imgheight}`, backgroundImage: `${props.heroimg}`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+                    <div className={` automation-hero-image  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]`} style={{ height: `${props.imgheight}`, backgroundImage: `${props.heroimg}`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
                 </div>
                 <div className={` ${props.videohidden} flex justify-center `}>
                     <video
-                    className=' automation-hero-video  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]'
-                     src={props.video}
-                     autoPlay 
-                     loop 
-                     muted
-                     playsinline
+                        className=' automation-hero-video  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]'
+                        src={props.video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline    // Ensures inline playback on iOS
+                        webkit-playsinline // iOS-specific attribute for inline playback
+                        controls={false}    // Hides video controls
+                        controlsList="nodownload"  // Helps block certain controls like download
+                        style={{ pointerEvents: 'none' }} // Disable interaction with video
 
                     ></video>
                 </div>

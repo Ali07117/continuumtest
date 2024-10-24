@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function WorkResult() {
+
+
+  const videoRef = useRef(null);
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.removeAttribute('controls');
+      videoRef.current.controls = false;
+    }
+  }, []);
+
   return (
     <>
         <div className="work-result-contaier mt-[12rem] flex pr-[1.5rem] gap-[1rem]">
@@ -15,10 +25,14 @@ function WorkResult() {
           <video 
           className='work-result-image object-cover  w-[100%] h-[100%] rounded-[2.5rem]'
           src="/videos/automation-step.mp4"
-          autoPlay 
-                loop 
-                muted
-                playsinline
+          autoPlay
+      loop
+      muted
+      playsInline    // Ensures inline playback on iOS
+      webkit-playsinline // iOS-specific attribute for inline playback
+      controls={false}    // Hides video controls
+      controlsList="nodownload"  // Helps block certain controls like download
+      style={{ pointerEvents: 'none' }} // Disable interaction with video
           ></video>
         </div>
         </div>

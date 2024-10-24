@@ -1,15 +1,10 @@
 import { useRef, useEffect, useState } from 'react';
-import ReactPlayer from 'react-player'
 
 function Homesection1(props) {
+  
   const videoRef = useRef(null);
-  // const [isMounted, setIsMounted] = useState(false);
-  // useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
   useEffect(() => {
     if (videoRef.current) {
-      // Ensure the controls are removed programmatically once the video is loaded
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
     }
@@ -45,7 +40,7 @@ function Homesection1(props) {
       controlsList="nodownload"  // Helps block certain controls like download
       style={{ pointerEvents: 'none' }} // Disable interaction with video
     ></video>
-    
+
         </div>
         <div className="section-bottom flex pb-[1rem] min-h-[100px] justify-between items-start mt-[20px]">
           <div className="section-bottom-left flex items-center gap-[8px]">
