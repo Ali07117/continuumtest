@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from '../components/navbar';
 import AutomationHero from '../automation/component/automationhero';
 import WorkChallenge from '../components/workchallenge';
@@ -13,6 +13,16 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger)
 
 function EnergyProvider() {
+
+
+  const videoRef = useRef(null);
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.removeAttribute('controls');
+      videoRef.current.controls = false;
+    }
+  }, []);
+
   useGSAP(
     () => {
 
@@ -31,7 +41,7 @@ function EnergyProvider() {
           end: "top -70%",
         }
       });
-      });
+    });
   return (
     <>
       <div className="afious-wrapper">
@@ -55,26 +65,31 @@ function EnergyProvider() {
           </div>
           <OutcomeSection heading={"Outcome"} subheading={"The redesigned website delivered a cleaner, more engaging experience for users. By focusing on clarity and ease of use, it simplified the sign-up process and effectively showcased Dynegy’s brand values, resulting in higher customer satisfaction and engagement."} />
           <div className="energy-outcome-img-section mt-[12rem] flex gap-[1rem] px-[1.5rem] min-h-[10px]">
-          <div className="energy-outcome-section-left w-[50%]"><img className='w-[100%]' src="/images/workimages/energy-outcome-left.svg" alt="" /></div>
-          <div className="energy-outcome-section-right w-[50%]"><img className='w-[100%]' src="/images/workimages/energy-outcome-right.svg" alt="" /></div>
+            <div className="energy-outcome-section-left w-[50%]"><img className='w-[100%]' src="/images/workimages/energy-outcome-left.svg" alt="" /></div>
+            <div className="energy-outcome-section-right w-[50%]"><img className='w-[100%]' src="/images/workimages/energy-outcome-right.svg" alt="" /></div>
           </div>
-          <div className='mt-[2rem] tab-img-section'><video 
-          className='m-auto'
-          src="/videos/tab-video.mp4"  
-          autoPlay 
-                loop 
-                playsinline
-                muted></video></div>
+          <div className='mt-[2rem] tab-img-section'><video
+            className='m-auto'
+            src="/videos/tab-video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline    // Ensures inline playback on iOS
+            webkit-playsinline // iOS-specific attribute for inline playback
+            controls={false}    // Hides video controls
+            controlsList="nodownload"  // Helps block certain controls like download
+            style={{ pointerEvents: 'none' }} // Disable interaction with video
+          ></video></div>
           <div className='mt-[4rem] step-img-section px-[10%]'><img className='w-[100%]' src="/images/workimages/energy-step-img.svg" alt="" /></div>
           <div className="work-result-contaier mt-[12rem] px-[10%]">
-        <div className="work-result-left  w-[50%] ">
-        <div className="">
-        <p className='text-[2rem] font-[300] font-average'>Results </p>
-        <p className='text-[20px] work-result-para font-inter mt-[1rem] text-[--textsecondry]'>The revamped mobile app significantly improved user satisfaction, addressing core usability issues and enhancing mobile-specific functionality. With clearer navigation and optimized performance, the app became a more effective tool for managing bots and automations, allowing users to stay connected and in control even when away from their desktops.</p>
-    </div>
-        </div>
-        </div>
-        <OtherWorkSection/>
+            <div className="work-result-left  w-[50%] ">
+              <div className="">
+                <p className='text-[2rem] font-[300] font-average'>Results </p>
+                <p className='text-[20px] work-result-para font-inter mt-[1rem] text-[--textsecondry]'>The revamped mobile app significantly improved user satisfaction, addressing core usability issues and enhancing mobile-specific functionality. With clearer navigation and optimized performance, the app became a more effective tool for managing bots and automations, allowing users to stay connected and in control even when away from their desktops.</p>
+              </div>
+            </div>
+          </div>
+          <OtherWorkSection />
         </div>
       </div>
     </>
