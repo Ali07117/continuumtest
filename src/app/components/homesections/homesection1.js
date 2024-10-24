@@ -7,6 +7,13 @@ function Homesection1(props) {
   // useEffect(() => {
   //   setIsMounted(true);
   // }, []);
+  useEffect(() => {
+    if (videoRef.current) {
+      // Ensure the controls are removed programmatically once the video is loaded
+      videoRef.current.removeAttribute('controls');
+      videoRef.current.controls = false;
+    }
+  }, []);
 
   return (
     <>
@@ -26,17 +33,19 @@ function Homesection1(props) {
             />
           )} */}
           <video
-            ref={videoRef}
-            className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
-            src={props.img}
-            autoPlay
-            loop
-            muted
-            playsinline
-            webkit-playsinline  // iOS-specific attribute for inline playback
-            controls={false}    // Hides video controls
-            onLoadedMetadata={() => { videoRef.current.controls = false }}
-          ></video>
+      ref={videoRef}
+      className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
+      src={props.img}
+      autoPlay
+      loop
+      muted
+      playsInline    // Ensures inline playback on iOS
+      webkit-playsinline // iOS-specific attribute for inline playback
+      controls={false}    // Hides video controls
+      controlsList="nodownload"  // Helps block certain controls like download
+      style={{ pointerEvents: 'none' }} // Disable interaction with video
+    ></video>
+    
         </div>
         <div className="section-bottom flex pb-[1rem] min-h-[100px] justify-between items-start mt-[20px]">
           <div className="section-bottom-left flex items-center gap-[8px]">
