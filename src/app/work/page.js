@@ -98,7 +98,7 @@ function Workpage() {
             <Workimg img={"/images/section2img.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext pageurl={"/energyprovider"} heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section1img.svg"} />
-            <div className='my-[3rem] hidden work-hidden-text-wrapper'> <Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
+            <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
             <Workimg img={"/images/section2img.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
           </div>
