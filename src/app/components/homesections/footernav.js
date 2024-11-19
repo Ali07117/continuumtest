@@ -9,21 +9,21 @@ function Footernav() {
     <>
     <div>
     <div className="bottom-logo  z-[5] relative flex justify-center mt-[3rem] lg:mt-[12rem]"><Link href="/"><img className='h-[16px] footer-logo' src="/images/logo.svg" alt="" /></Link></div>
-        <div className="relative z-[5] footer-nav flex justify-between pt-[0.5rem] mt-[1rem] items-start footer-nav-wrapper max-h-[100px] h-[70px] border-t-[1px] border-t-[#FFFFFF]">
-            <div className="empty-div w-[15%]"></div>
+        <div className="relative z-[5] footer-nav flex justify-center pt-[0.5rem] mt-[1rem] items-start footer-nav-wrapper max-h-[100px] h-[70px] border-t-[1px] border-t-[#FFFFFF]">
+            {/* <div className="empty-div w-[15%]"></div> */}
             <div className="footer-links flex items-center gap-[32px]">
-          <Link href="/about"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+          <Link href="/about"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/about" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
               } `}>About</p> </Link>
-            <Link href="/capabilities"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/capabilities" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+            <Link href="/capabilities"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/capabilities" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
               } `}>Capabilities</p> </Link>
-            <Link href="/work"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/work" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+            <Link href="/work"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/work" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
               } `}>Work</p> </Link>
-            <Link href="/contact"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/contact" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+            <Link href="/contact"><p className={` font-inter  text-[1rem] font-inter font-[400] ${pathname === "/contact" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
               } `}>Contact</p> </Link>
             <p className=' font-inter  text-[--textprimary] text-[1rem] font-inter font-[400]'>Terms</p>
             <p className=' font-inter  text-[--textprimary] text-[1rem] font-inter font-[400]'>Privacy</p>
             </div>
-            <div className="footer-copyright text-[--textprimary] text-[1rem] font-inter font-[400]">&copy; 2024 Continuum Design Lab</div>
+            {/* <div className="footer-copyright text-[--textprimary] text-[1rem] font-inter font-[400]">&copy; 2024 Continuum Design Lab</div> */}
         </div>
     </div>
     </>

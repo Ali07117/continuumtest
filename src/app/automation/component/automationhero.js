@@ -1,5 +1,6 @@
 import Projectintro from '@/app/components/projectintro';
 import React, { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 function AutomationHero(props) {
 
@@ -34,9 +35,11 @@ function AutomationHero(props) {
                         </div>
                     </div>
                 </div>
-                <div className='flex gap-[15px] px-[1.5rem] mb-[1rem] automation-all-work-box'>
+                <div className='flex gap-[15px] px-[1.5rem] mb-[1rem] automation-all-work-box duration-300 hover:translate-x-[-20px]'>
                     <img className='rotate-[180deg]' src="/images/sectionarrow.svg" alt="" />
+                    <Link href="/work">
                     <p className='automation-all-work  font-inter font-[400] text-[18px] text-[--textprimary] text-start'>All Works</p>
+                    </Link>
                 </div>
                 <div className={`flex justify-center ${props.hidden} `}>
                     <div className={` automation-hero-image  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]`} style={{ height: `${props.imgheight}`, backgroundImage: `${props.heroimg}`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>

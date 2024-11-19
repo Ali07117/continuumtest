@@ -43,28 +43,28 @@ function Navbar(props) {
 
         <div className="nav-right flex gap-[32px]">
           <Link href="/about">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
               }`}>
               About
             </p>
           </Link>
 
           <Link href="/capabilities">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/capabilities" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/capabilities" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
               }`}>
               Capabilities
             </p>
           </Link>
 
           <Link href="/work">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/work" ? 'text-[#044AFF]' : 'text-[--textprimary]'
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/work" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
               }`}>
               Work
             </p>
           </Link>
 
           <Link href="/contact">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/contact" ? 'text-[#044AFF]' : 'text-[--textprimary]'}`}> Contact </p>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/contact" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'}`}> Contact </p>
           </Link>
         </div>
 

@@ -13,7 +13,7 @@ function Aboutworksection() {
           <Aboutworkcards pr={"25px"} border={"1px"} company={"Dynegy"} device={"Website"} beforpara={"Visual Design, Experience Design"} />
           <Aboutworkcards company={"Afious"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"} />
         </div>
-        <div className="section-bottom-left flex mt-[1rem] items-center gap-[8px]">
+        <div className="section-bottom-left flex mt-[1rem] items-center gap-[8px] hover:translate-x-[20px] w-fit duration-300">
         <Link href="/work"><p className='text-[1.125rem] font-[400] text-[--textprimary]'>See all Work</p></Link>
           <img src="/images/aboutpageimg/whiterightarrow.svg" alt="" />
         </div>

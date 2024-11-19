@@ -14,7 +14,7 @@ function Capabilities(props) {
     <Capabilitiescard text={props.textcol} img={props.capabgif2} subheading={"In-depth analysis of user behaviors and needs through interviews, surveys, and testing provides a clear understanding of the landscape and competitive insights, ensuring products resonate with target audiences."} heading={"User Research & Insights"}/>
     <Capabilitiescard text={props.textcol} img={props.capabgif1} subheading={"Ongoing refinement of products via UX audits, A/B testing, and optimization, ensuring evolution based on user feedback and emerging needs."} heading={"Continuous Improvement"}/>
     </div>
-    <div className="section-bottom-left flex mt-[1rem] items-center gap-[8px]">
+    <div className="section-bottom-left flex mt-[1rem] items-center gap-[8px] hover:translate-x-[20px] duration-300 w-fit">
     <Link href="/capabilities"><p className={`text-[1.125rem] font-[400] text-[${props.textcol}]`}>See all Capabilities</p></Link>
             <img src={props.arrowimg} alt="" />
         </div>

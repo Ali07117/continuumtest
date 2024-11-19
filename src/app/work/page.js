@@ -18,6 +18,7 @@ function Workpage() {
         duration: 1,
         scrollTrigger: {
           trigger: ".img-container",
+          
         }
       })
 
@@ -78,17 +79,17 @@ function Workpage() {
       <div className="work-wrapperd pt-[14.3rem] bg-[black] px-[1.5rem]">
         <Navbar/>
         <h1 className='hero-heading text-[white] text-[8rem] leading-[6.5rem] text-[--textprimary] font-average'>Work </h1>
-        <div className="img-container mt-[2rem] flex justify-center">
-          <div className=' img1 work-hero-img rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
-        </div>
-        <h2 className='anime-text work-hero-text text-nowrap mt-[6rem] top-[0px] left-[0px] relative font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>At <span className='text-[4.7vw] leading-[5.7vw] text-[#044AFF] font-average'>Continuum,</span> we create digital experiences <br /> that deliver measurable results. </h2>
+        {/* <div className="img-container mt-[2rem] flex justify-center">
+          <div className=' img1 work-hero-img upperimg rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
+        </div> */}
+        <h2 className='anime-text work-hero-text text-nowrap mt-[4rem] top-[0px] left-[0px] relative font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>At <span className='text-[4.7vw] leading-[5.7vw] text-[#044AFF] font-average'>Continuum,</span> we create digital experiences <br /> that deliver measurable results. </h2>
         <div className=" work-anime-container overflow-hidden flex min-h-[500vh]">
           <div className="anime-left w-[30%] mt-[6rem] h-[100%]">
-            <Worktext pageurl={"/automation"} heading={"Robotic Process Automation"} para1={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
-            <Worktext pageurl={"/afious"} heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
-            <Worktext pageurl={"/energyprovider"} heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} />
-            <Worktext heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
-            <Worktext heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext linktext={"View Case Study"} pageurl={"/automation"} heading={"Robotic Process Automation"} para1={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext linktext={"View Case Study"} pageurl={"/afious"} heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext linktext={"View Case Study"} pageurl={"/energyprovider"} heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext linktext={"Request Case Study"} pageurl={"/contact"} heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
+            <Worktext linktext={"Request Case Study"} pageurl={"/contact"} heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
           </div>
           <div className="anime-right w-[70%]  py-[5vh] mt-[6rem]  ">
             <Workimg img={"/images/heroimg1.svg"} />
