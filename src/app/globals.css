@@ -17,18 +17,16 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
-    /* transform: translateY(); */
-    /* transform: rotate(); */
-    
+    --foreground: #ededed;  
   }
 }
 
 #container h1 {
   background-image: conic-gradient(#ed0101, blue);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
+
 
 #container h2 {
   -webkit-text-stroke: 1.3px white;
