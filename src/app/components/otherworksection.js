@@ -1,8 +1,35 @@
-import React  from "react";
+import React, { useEffect }  from "react";
 import Aboutworkcards from '../about/aboutworksection/comp/aboutworkcards';
 import Footernav from './homesections/footernav';
+import Link from 'next/link';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger)
 
 function OtherWorkSection() {
+
+  useEffect(() => { 
+
+    // useGSAP(
+      // () => {
+  
+    gsap.to(".other-work-top", {
+      backgroundColor: "black",
+      color: "white",
+      scrollTrigger: {
+        trigger: ".other-work-wrapper",
+        start: "top 30%",
+        end: "top 20%",
+        scrub: true,
+        // markers: true,
+      }
+    });
+  // });
+
+   }, []);
+
+ 
   return (
     <>
     <div className="other-work-wrapper sticky top-[0px] bg-[--bgprimary] relative mt-[12rem] ">
@@ -20,7 +47,7 @@ function OtherWorkSection() {
         </div>
         <div className="other-work-top min-h-[105px] w-[100%] text-[#00259C] sticky bottom-[0] bg-[#D5D9E4] flex items-center justify-center gap-[1rem]">
             <p className=' font-average other-work-top-text text-[3rem]'>Ready to bring your project to life?</p>
-            <button className='bg-[#00259C] text-[18px] other-work-top-button text-[white] font-[400] border-[2px] border-[#044AFF] px-[3rem] py-[13px] rounded-[2rem]'>Contact Us</button>
+            <Link href="/contact"><button className='bg-[#00259C] text-[18px] other-work-top-button text-[white] font-[400] border-[2px] border-[#044AFF] px-[3rem] py-[13px] rounded-[2rem]'>Contact Us</button></Link>
         </div>
         <div className='px-[1.5rem] automation-footer-nav-container pt-[6rem]'>
     <Footernav/>

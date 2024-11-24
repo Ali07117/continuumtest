@@ -58,31 +58,17 @@ function Automation() {
         }
       });
 
-      // let am = gsap.matchMedia();
-
-      // am.add("(min-width: 1285px)", () => {
-      //   gsap.to(".work-result-left", {
-      //     scrollTrigger: {
-      //       trigger: ".work-result-left",
-      //       start: "top top",
-      //       end: "+=40%",
-      //       // markers:true,
-      //       pin: true,
-      //     }
-      //   });
+      // gsap.to(".other-work-top", {
+      //   backgroundColor: "black",
+      //   color: "white",
+      //   scrollTrigger: {
+      //     trigger: ".other-work-wrapper",
+      //     start: "top 20%",
+      //     end: "top 30%",
+      //     scrub: true,
+      //     markers: true,
+      //   }
       // });
-
-      gsap.to(".other-work-top", {
-        backgroundColor: "black",
-        color: "white",
-        scrollTrigger: {
-          trigger: ".other-work-wrapper",
-          start: "top 20%",
-          end: "top 30%",
-          scrub: true,
-          // markers: true,
-        }
-      });
     });
   return (
     <>
