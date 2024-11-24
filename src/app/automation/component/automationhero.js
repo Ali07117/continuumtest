@@ -35,7 +35,7 @@ function AutomationHero(props) {
                         </div>
                     </div>
                 </div>
-                <div className='flex gap-[15px] px-[1.5rem] mb-[1rem] automation-all-work-box duration-300 hover:translate-x-[-20px]'>
+                <div className='flex gap-[15px] px-[1.5rem] mb-[1rem] automation-all-work-box hover:translate-x-[20px] duration-300 w-fit'>
                     <img className='rotate-[180deg]' src="/images/sectionarrow.svg" alt="" />
                     <Link href="/work">
                     <p className='automation-all-work  font-inter font-[400] text-[18px] text-[--textprimary] text-start'>All Works</p>
@@ -46,7 +46,7 @@ function AutomationHero(props) {
                 </div>
                 <div className={` ${props.videohidden} flex justify-center `}>
                     <video
-                        className=' automation-hero-video  mb-[1rem] rounded-[2.5rem] mx-[1.5rem] w-[100%]'
+                        className='automation-hero-video mb-[1rem] rounded-[2.5rem] mx-[1.5rem] h-[100vh] object-cover w-[100%]'
                         src={props.video}
                         autoPlay
                         loop
@@ -56,7 +56,6 @@ function AutomationHero(props) {
                         controls={false}    // Hides video controls
                         controlsList="nodownload"  // Helps block certain controls like download
                         style={{ pointerEvents: 'none' }} // Disable interaction with video
-
                     ></video>
                 </div>
             </div>

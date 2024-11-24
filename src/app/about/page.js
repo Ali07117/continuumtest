@@ -18,6 +18,20 @@ gsap.registerPlugin(ScrollTrigger)
 function about() {
   useGSAP(
     () => {
+
+      gsap.to(".loading-layer", {
+        transform: "translateY(-200%)",
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.inOut",
+      });
+  
+      gsap.to(".logo-icon-animated", {
+        rotation: 360,
+        duration: 0.5,
+        ease: "none",
+      });
+
       gsap.to(".aboutimg1", {
         scale: '1',
         duration: 1,
@@ -69,6 +83,9 @@ function about() {
     });
   return (
     <>
+    <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
+      <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
+    </div>
       <div className="aboutpagewrapper bg-[black]">
         <Aboutsectionabout />
         <Capabilities bg={"#000"} textcol={"--textprimary"} arrowimg={"/images/aboutpageimg/whiterightarrow.svg"} />

@@ -1,7 +1,8 @@
 import { useRef, useEffect, useState } from 'react';
+import Link from 'next/link';
 
 function Homesection1(props) {
-  
+
   const videoRef = useRef(null);
   useEffect(() => {
     if (videoRef.current) {
@@ -28,24 +29,26 @@ function Homesection1(props) {
             />
           )} */}
           <video
-      ref={videoRef}
-      className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
-      src={props.img}
-      autoPlay
-      loop
-      muted
-      playsInline    // Ensures inline playback on iOS
-      webkit-playsinline // iOS-specific attribute for inline playback
-      controls={false}    // Hides video controls
-      controlsList="nodownload"  // Helps block certain controls like download
-      style={{ pointerEvents: 'none' }} // Disable interaction with video
-    ></video>
+            ref={videoRef}
+            className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
+            src={props.img}
+            autoPlay
+            loop
+            muted
+            playsInline    // Ensures inline playback on iOS
+            webkit-playsinline // iOS-specific attribute for inline playback
+            controls={false}    // Hides video controls
+            controlsList="nodownload"  // Helps block certain controls like download
+            style={{ pointerEvents: 'none' }} // Disable interaction with video
+          ></video>
 
         </div>
         <div className="section-bottom flex pb-[1rem] min-h-[100px] justify-between items-start mt-[20px]">
-          <div className="section-bottom-left flex items-center gap-[8px]">
-            <p className='text-[1.125rem] font-[400] text-[--textprimary]'>{props.cta}</p>
-            <img src="/images/sectionarrow.svg" alt="" />
+          <div className="section-bottom-left flex items-center gap-[8px] hover:translate-x-[20px] duration-300 cursor-pointer">
+            <Link href={props.link || '#'}>
+              <p className="text-[1.125rem] font-[400] text-[--textprimary]">{props.cta || 'Default Text'}</p>
+            </Link>
+            <img src="/images/sectionarrow.svg" alt="Arrow Icon" />
           </div>
           <div className="section-bottom-right flex gap-[50px]">
             <div className="bottom-right-first">

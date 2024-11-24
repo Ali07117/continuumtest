@@ -5,7 +5,8 @@ import Footernav from './homesections/footernav';
 function OtherWorkSection() {
   return (
     <>
-    <div className="other-work-wrapper sticky top-[0px] bg-[--bgprimary] relative mt-[18rem] ">
+    <div className="other-work-wrapper sticky top-[0px] bg-[--bgprimary] relative mt-[12rem] ">
+    <div className="h-[12rem] bg-[white]"></div>
     {/* <div className="other-work-top h-[13vh] w-[100%] bg-[#D5D9E4] flex items-center justify-center gap-[1rem]">
             <p className='text-[#00259C] font-average text-[3rem]'>Ready to bring your project to life?</p>
             <button className='bg-[#00259C] text-[18px] text-[white] font-[400] border-[2px] border-[#044AFF] px-[3rem] py-[13px] rounded-[2rem]'>Contact Us</button>

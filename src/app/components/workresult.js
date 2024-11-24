@@ -24,7 +24,7 @@ function WorkResult() {
           {/* <img clsassName=' ' src="/images/workimages/workresultimage.svg" alt="" /> */}
           <video 
           className='work-result-image object-cover  w-[100%] h-[100%] rounded-[2.5rem]'
-          src="/videos/automation-step.mp4"
+          src="/videos/video5.mp4"
           autoPlay
       loop
       muted

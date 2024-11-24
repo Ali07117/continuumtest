@@ -36,35 +36,36 @@ function Navbar(props) {
     <>
       <div className={`navContainer nav-bar ${props.blend} navbar ${isHidden ? 'hiddenn' : ''} navbg z-[50] h-[4.3rem] flex justify-between items-center`} style={{backgroundColor:`${props.bg}`}}>
         <div className="navLeft">
-          <Link href="/">
+          <Link className='' href="/">
+            {/* <img className="nav-logoicon h-[40px]" src="/images/logoicon.svg" alt="Logo" /> */}
             <img className="nav-logo" src="/images/logo.svg" alt="Logo" />
           </Link>
         </div>
 
         <div className="nav-right flex gap-[32px]">
           <Link href="/about">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/about" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-[5px] hover:underline text-[--textprimary]'
               }`}>
               About
             </p>
           </Link>
 
           <Link href="/capabilities">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/capabilities" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/capabilities" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-[5px] hover:underline text-[--textprimary]'
               }`}>
               Capabilities
             </p>
           </Link>
 
           <Link href="/work">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/work" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/work" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-[5px] hover:underline text-[--textprimary]'
               }`}>
               Work
             </p>
           </Link>
 
           <Link href="/contact">
-            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/contact" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-4 hover:underline text-[--textprimary]'}`}> Contact </p>
+            <p className={`font-inter font-[200] text-[1.125rem] ${pathname === "/contact" ? 'text-[#044AFF] underline-offset-4 underline' : ' duration-300 hover:underline-offset-[5px] hover:underline text-[--textprimary]'}`}> Contact </p>
           </Link>
         </div>
 

@@ -26,13 +26,26 @@ function EnergyProvider() {
   useGSAP(
     () => {
 
+      gsap.to(".loading-layer", {
+        transform: "translateY(-200%)",
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.inOut",
+      });
+  
+      gsap.to(".logo-icon-animated", {
+        rotation: 360,
+        duration: 0.5,
+        ease: "none",
+      });
+
       gsap.to(".automation-hero-video", {
         // width: '100%',
         marginLeft: '0rem',
         marginRight: '0rem',
         marginBottom: '0rem',
         // duration:0.8,
-        borderRadius: '0rem',
+        borderRadius: '0px',
         scrollTrigger: {
           trigger: ".automation-hero-video",
           scrub: true,
@@ -44,10 +57,13 @@ function EnergyProvider() {
     });
   return (
     <>
+    <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
+      <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
+    </div>
       <div className="afious-wrapper">
         <div className="automation-header pt-[14.3rem]  h-[145vh] w-[100%] bg-[--bgprimary]">
           <Navbar />
-          <AutomationHero hidden={"hidden"} imgheight={"1200px"} video={"/videos/energy-hero-video.mp4"} heading={"Energy Provider"} intro={"Intro"} introheading={"Mobile app for a leading robotic process automation(RPA) software company."} projectintrolabel={"Contributions"} projectintro1={"Discovery & Research"} projectintro2={"Strategy"} projectintro3={"Experience Design"} projectintro4={"Visual Design"} />
+          <AutomationHero hidden={"hidden"} imgheight={"1200px"} video={"/videos/video12.mp4"} heading={"Energy Provider"} intro={"Intro"} introheading={"Mobile app for a leading robotic process automation(RPA) software company."} projectintrolabel={"Contributions"} projectintro1={"Discovery & Research"} projectintro2={"Strategy"} projectintro3={"Experience Design"} projectintro4={"Visual Design"} />
           <div className="workinfo-wrapper py-[6rem] bg-[--bgsecondry]">
             <WorkChallenge workchallengemainpara={"A leading retail electricity provider in the U.S., wanted a website that communicated its commitment to transparency, reliability, and community engagement. I led the visual design effort, ensuring the website effectively catered to both residential and business customers across multiple states, while highlighting client’s partnerships and community initiatives."} workchallengeheading={"Challenge "} workchallengepara={"We faced several challenges, including managing complex information architecture for different states and customer types, integrating the Chicago Cubs partnership while maintaining Dynegy’s professional brand, and effectively showcasing community engagement and their Total Satisfaction Guarantee."} />
           </div>
@@ -70,7 +86,7 @@ function EnergyProvider() {
           </div>
           <div className='mt-[2rem] tab-img-section'><video
             className='m-auto'
-            src="/videos/tab-video.mp4"
+            src="/videos/video6.mp4"
             autoPlay
             loop
             muted
@@ -80,7 +96,7 @@ function EnergyProvider() {
             controlsList="nodownload"  // Helps block certain controls like download
             style={{ pointerEvents: 'none' }} // Disable interaction with video
           ></video></div>
-          <div className='mt-[4rem] step-img-section px-[10%]'><img className='w-[100%]' src="/images/workimages/energy-step-img.svg" alt="" /></div>
+          {/* <div className='mt-[4rem] step-img-section px-[10%]'><img className='w-[100%]' src="/images/workimages/energy-step-img.svg" alt="" /></div> */}
           <div className="work-result-contaier mt-[12rem] px-[10%]">
             <div className="work-result-left  w-[50%] ">
               <div className="">
@@ -89,6 +105,18 @@ function EnergyProvider() {
               </div>
             </div>
           </div>
+          <div className='my-[6rem] tab-img-section'><video
+            className='m-auto'
+            src="/videos/video12.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline    // Ensures inline playback on iOS
+            webkit-playsinline // iOS-specific attribute for inline playback
+            controls={false}    // Hides video controls
+            controlsList="nodownload"  // Helps block certain controls like download
+            style={{ pointerEvents: 'none' }} // Disable interaction with video
+          ></video></div>
           <OtherWorkSection />
         </div>
       </div>

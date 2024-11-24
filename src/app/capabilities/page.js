@@ -11,6 +11,19 @@ gsap.registerPlugin(ScrollTrigger)
 function Capabilities() {
   useGSAP(() => {
 
+    gsap.to(".loading-layer", {
+      transform: "translateY(-200%)",
+      duration: 1,
+      delay: 0.5,
+      ease: "power2.inOut",
+    });
+
+    gsap.to(".logo-icon-animated", {
+      rotation: 360,
+      duration: 0.5,
+      ease: "none",
+    });
+
     // let cmm = gsap.matchMedia();
     // cmm.add("(min-width: 1000px)", () => {
 
@@ -69,14 +82,13 @@ function Capabilities() {
         delay: -0.3 // Adjust timing as needed
       });
     // });
-
-
-
-
   });
 
   return (
     <>
+     <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
+      <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
+    </div>
       <div className="px-[1.5rem] pt-[14.3rem] bg-[--bgprimary] capabilities-wrapperd capabilities-margin-top">
         <Navbar />
         <h1 className='hero-heading text-[white] text-[8rem] leading-[6.5rem] text-[--textprimary] font-average'>Capabilities </h1>
