@@ -11,6 +11,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger)
+import LocomotiveScroll from 'locomotive-scroll';
+const locomotiveScroll = new LocomotiveScroll();
 
 function EnergyProvider() {
 

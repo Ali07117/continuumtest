@@ -15,28 +15,19 @@ import FluidBubble from './components/FluidBubble';
 import MagicMouseComponent from './components/MagicMouseComponent';
 import LocomotiveScroll from 'locomotive-scroll';
 const locomotiveScroll = new LocomotiveScroll();
-import "locomotive-scroll/dist/locomotive-scroll.css"; // Ensure styles are applied
+
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Home() {
 
   const videoRef = useRef(null);
-  const scrollRef = useRef(null); // Reference for the scroll container
-  const locomotiveScroll = useRef(null);
   
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
     }
-     // Initialize LocomotiveScroll
-    locomotiveScroll.current = new LocomotiveScroll({
-      el: scrollRef.current, // Target the scrolling container
-      smooth: true,          // Enable smooth scrolling
-      multiplier: 0.3,       // Adjust scroll speed (lower = slower)
-      lerp: 0.05,            // Smoother transitions (lower = smoother)
-    });
     
   }, []);
 

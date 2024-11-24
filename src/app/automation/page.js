@@ -14,6 +14,8 @@ import Footernav from '../components/homesections/footernav';
 import WorkResult from '../components/workresult';
 import OutcomeSection from '../components/outcomesection';
 gsap.registerPlugin(ScrollTrigger)
+import LocomotiveScroll from 'locomotive-scroll';
+const locomotiveScroll = new LocomotiveScroll();
 function Automation() {
 
   const videoRef = useRef(null);

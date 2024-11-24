@@ -9,6 +9,8 @@ import Worktext from './comp/worktext';
 import Workimg from './comp/workimg';
 import Footernav from '../components/homesections/footernav';
 gsap.registerPlugin(ScrollTrigger)
+import LocomotiveScroll from 'locomotive-scroll';
+const locomotiveScroll = new LocomotiveScroll();
 
 function Workpage() {
   useGSAP(

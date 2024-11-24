@@ -14,6 +14,8 @@ import Homemarquee from '../components/homesections/homemarquee';
 import Contactsection from '../components/homesections/contactsection';
 import Howwework from './abouthowwework/howwework';
 gsap.registerPlugin(ScrollTrigger)
+import LocomotiveScroll from 'locomotive-scroll';
+const locomotiveScroll = new LocomotiveScroll();
 
 function about() {
   useGSAP(
