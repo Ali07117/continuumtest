@@ -11,6 +11,7 @@ const MagicMouseComponent = () => {
     canvas.height = window.innerHeight;
 
     const particles = []; // Store the particles for the gas effect
+    let bubble = null; // Store the bubble object
 
     class Particle {
       constructor(x, y) {
@@ -47,6 +48,35 @@ const MagicMouseComponent = () => {
       }
     }
 
+    class Bubble {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.size = 15; // Small size for the bubble
+        this.color = 'white'; // White color for the bubble
+        this.alpha = 1; // Full opacity
+        this.lifeSpan = 60; // Bubbles will stay for a short time
+      }
+
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = this.alpha; // Apply transparency
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.restore();
+      }
+
+      update() {
+        this.draw();
+        this.alpha -= 0.02; // Fade out the bubble over time
+        if (this.alpha <= 0) {
+          this.lifeSpan = 0; // End the bubble's life when it fades out
+        }
+      }
+    }
+
     const handleMouseMove = (e) => {
       mouseRef.current.x = e.clientX;
       mouseRef.current.y = e.clientY;
@@ -55,6 +85,9 @@ const MagicMouseComponent = () => {
       for (let i = 0; i < 5; i++) {
         particles.push(new Particle(e.clientX, e.clientY));
       }
+
+      // Create the bubble following the mouse
+      bubble = new Bubble(e.clientX, e.clientY);
     };
 
     const animate = () => {
@@ -67,6 +100,14 @@ const MagicMouseComponent = () => {
           i--;
         } else {
           particles[i].update(); // Update the particle's position and fading
+        }
+      }
+
+      // Update and draw the bubble
+      if (bubble) {
+        bubble.update();
+        if (bubble.lifeSpan <= 0) {
+          bubble = null; // Remove the bubble after it fades out
         }
       }
 
@@ -84,7 +125,7 @@ const MagicMouseComponent = () => {
   return (
     <section
       id="container"
-      className="flex flex-col justify-center items-center w-full h-full overflow-hidden relative"
+      className="flex z-[2] flex-col justify-center items-center w-full h-full overflow-hidden relative"
     >
       <canvas ref={canvasRef} className="w-full h-full"></canvas>
     </section>

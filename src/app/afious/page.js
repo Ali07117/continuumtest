@@ -25,10 +25,180 @@ function Afious() {
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
     }
-  }, []);
 
+    gsap.to('.other-work-top-2', {
+      backgroundColor: 'black',
+      color: 'white',
+      scrollTrigger: {
+        trigger: '.other-work-top-2',
+        start: 'top+=200 bottom', // Start 200px into the element
+        end: 'bottom+=200 bottom', // End 200px past the element
+        scrub: true, // Smooth scrubbing
+      },
+    });
+
+  }, []);
+  
   useGSAP(
     () => {
+
+
+      // ===================
+      gsap.from(".afious-animation-1", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-1", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-2", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-2", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-3", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-3", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-4", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-4", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-5", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-5", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-6", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-6", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-7", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-7", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-8", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-8", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-9", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-9", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-10", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-10", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-11", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".afious-animation-11", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-12", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".afious-animation-12", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-13", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".afious-animation-13", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-14", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".afious-animation-14", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      gsap.from(".afious-animation-15", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".afious-animation-15", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      // ===================
 
       gsap.to(".loading-layer", {
         transform: "translateY(-200%)",
@@ -76,9 +246,9 @@ function Afious() {
           <OutcomeSection heading={"Outcome"} subheading={"The redesigned app now offers a smooth user experience that helps students find connections and join groups easily. Enhanced interest pages, real-time chat, and event planning features allow for a lively community experience. The onboarding process is simple and intuitive, ensuring students can set up and start engaging within minutes."} />
           <AfiousChatSection />
           <div className="grid-section min-h-[100vh] mt-[3rem] py-[5%] px-[1.5rem] flex justify-center w-[100%] bg-[#D5D9E4]">
-            <img className='w-[100%] rounded-[2.5rem] object-cover' src="/images/gridimg.svg" alt="" />
+            <img className='w-[100%] afious-animation-8 rounded-[2.5rem] object-cover' src="/images/gridimg.svg" alt="" />
           </div>
-          <div className="result-upper-section px-[1.5rem]   w-[100%] mb-[12rem] mt-[2.5rem]">
+          <div className="result-upper-section px-[1.5rem] afious-animation-9  w-[100%] mb-[12rem] mt-[2.5rem]">
             {/* <div className="reslut-video-1-section w-[100%] h-[80vh]"> */}
               <video
                 ref={videoRef}
@@ -99,11 +269,11 @@ function Afious() {
 
             <div className="solution-section-right w-[50%]">
               <div>
-                <p className='text-[2rem] font-[300] font-average mt-[4rem]'>Results</p>
-                <p className='text-[20px] challenge-container-para font-inter mt-[1rem] text-[--textsecondry]'>Results: Afious has secured 20+ partner colleges eager to pilot the app, validating its potential for campus adoption. Initial testing showed positive feedback on ease of use and relevance of suggested connections, distinguishing Afious from other social platforms.</p>
+                <p className='text-[2rem] afious-animation-10 font-[300] font-average mt-[4rem]'>Results</p>
+                <p className='text-[20px] challenge-container-para afious-animation-11 font-inter mt-[1rem] text-[--textsecondry]'>Results: Afious has secured 20+ partner colleges eager to pilot the app, validating its potential for campus adoption. Initial testing showed positive feedback on ease of use and relevance of suggested connections, distinguishing Afious from other social platforms.</p>
               </div>
             </div>
-            <div className="solution-section-left w-[50%] pl-[10%]">
+            <div className="solution-section-left w-[50%] pl-[10%] afious-animation-12">
               <video
               ref={videoRef}
                 className='rounded-[2.5rem] h-[90vh] object-cover w-[100%]'
@@ -119,7 +289,7 @@ function Afious() {
               ></video>
             </div>
           </div>
-          <OtherWorkSection />
+          <OtherWorkSection classtop={"other-work-top-2"} />
         </div>
       </div>
     </>

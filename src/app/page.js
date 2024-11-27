@@ -33,6 +33,266 @@ function Home() {
 
   useGSAP(
     () => {
+    
+      gsap.from(".home-animation-1", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".home-animation-1", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".home-animation-1-b", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".home-animation-1-b", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".home-animation-1-c", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".home-animation-1-b", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".aboutus-text", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".aboutus-text", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".aboutus-para", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".aboutus-para", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".marquee-heading-text", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".marquee-heading-text", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".capabilities-text-heading", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".capabilities-text-heading", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".capabilities-text-box-1", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".capabilities-text-box-1", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".capabilities-text-box-2", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".capabilities-text-box-2", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".capabilities-text-box-3", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        scrollTrigger: {
+          trigger: ".capabilities-text-box-3", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".capabilities-text-box-4", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".capabilities-text-box-4", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".capabilities-arrow-link", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".capabilities-arrow-link", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".contact-heading-text", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".contact-heading-text", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".contact-sub-heading-text", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".contact-sub-heading-text", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+
+      gsap.from(".contact-para-text", {
+        y: "30px", // Start the element 100px down from its original position
+        opacity:0,
+        duration: 0.4, // Set a reasonable duration for the animation (not 20s)
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: ".contact-para-text", // Element that triggers the animation
+          start: "top 80%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "end 80%",
+        }
+      });
+      
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home-animation-2", // Element that triggers the timeline
+          start: "top 80%",            // Start animation when the element enters viewport
+          end: "end 80%",              // End animation after reaching this point
+          // markers: true,               // Enable markers for debugging
+        }
+      });
+
+      tl.from(".home-animation-2", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      tl.from(".home-animation-3", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      tl.from(".home-animation-4", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home-animation-2-b", // Element that triggers the timeline
+          start: "top 80%",            // Start animation when the element enters viewport
+          end: "end 80%",              // End animation after reaching this point
+          // markers: true,               // Enable markers for debugging
+        }
+      });
+
+      tl2.from(".home-animation-2-b", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      tl2.from(".home-animation-3-b", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      tl2.from(".home-animation-4-b", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      
+      const tl3 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home-animation-2-c", // Element that triggers the timeline
+          start: "top 80%",            // Start animation when the element enters viewport
+          end: "end 80%",              // End animation after reaching this point
+          // markers: true,               // Enable markers for debugging
+        }
+      });
+
+      tl3.from(".home-animation-2-c", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      tl3.from(".home-animation-3-c", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+      tl3.from(".home-animation-4-c", {
+        y: "30px",    // Start the element 50px down
+        opacity: 0,   // Start with 0 opacity
+        duration: 0.4, // Animation duration
+        ease:"none",
+      })
+
+      
+
+
       gsap.to(".loading-layer", {
         transform: "translateY(-200%)",
         duration: 1,
@@ -146,8 +406,9 @@ function Home() {
     <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] ralative z-[9999] flex items-center justify-center'>
       <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
     </div>
-      <div className="relative pt-[14.3rem] home-wrapper bg-black h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-herso.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+    <div className='bg-[black]'>
         <Navbar />
+      <div className="relative z-[48] pt-[14.3rem] home-wrapper bg-transparent h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-herso.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <p className=" z-[20] anime-1 hero-heading w-[90%] font-average font-[400] text-[7.6vw] leading-[8vw]  text-[--textprimary]">Increasing human potential through design.</p>
         <p className=" z-[20] anime-1 mt-[2rem] hero-sub-heading w-[95%] text-[2rem] leading-[3rem] font-[400] font-inter font-[200] text-[--textprimary]">At Continuum, we drive forward-thinking solutions that empower people and transform ideas into impactful realities.</p>
         <div className="img-container mt-[2rem] flex justify-center">
@@ -167,13 +428,24 @@ function Home() {
           {/* <div className=' img1 rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div> */}
         </div>
       </div>
-      <Homesection1 link={"/automation"} titlept={"0rem"} containerclass={"img-container2"} imgclass={"img2"} img={"/videos/video3.mp4"} pt={"6rem"} maintitle={"Selected Work"} title={"Mobile Interface for Robotic Process Automation"} cta={"View Case Study"} para1={"Mobile app for a leading robotic process automation(RPA) software company."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
-      <Homesection1 link={"/afious"} containerclass={"img-container3"} imgclass={"img3"} img={"/videos/video1.mp4"} pt={"6rem"} title={"Afious"} cta={"View Case Study"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
-      <Homesection1 link={"/energyprovider"} pb={"6rem"} containerclass={"img-container4"} imgclass={"img4"} img={"/videos/video4.mp4"} pt={"6rem"} title={"Energy Company’s Digital Presence"} cta={"View Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+    </div>
+    <div className=' bg-[black]'>
+    <div className='relative z-[48]'>
+
+{/* ================================================================================================================================================================================== */}
+    
+      <Homesection1 ani2={"home-animation-2"} ani3={"home-animation-3"} ani4={"home-animation-4"} ani1={"home-animation-1"} link={"/automation"} titlept={"0rem"} containerclass={"img-container2"} imgclass={"img2"} img={"/videos/video3.mp4"} pt={"6rem"} maintitle={"Selected Work"} title={"Mobile Interface for Robotic Process Automation"} cta={"View Case Study"} para1={"Mobile app for a leading robotic process automation(RPA) software company."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 ani2={"home-animation-2-b"} ani3={"home-animation-3-b"} ani4={"home-animation-4-b"} ani1={"home-animation-1-b"} link={"/afious"} containerclass={"img-container3"} imgclass={"img3"} img={"/videos/video1.mp4"} pt={"6rem"} title={"Afious"} cta={"View Case Study"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+      <Homesection1 ani2={"home-animation-2-c"} ani3={"home-animation-3-c"} ani4={"home-animation-4-c"} ani1={"home-animation-1-c"} link={"/energyprovider"} pb={"6rem"} containerclass={"img-container4"} imgclass={"img4"} img={"/videos/video4.mp4"} pt={"6rem"} title={"Energy Company’s Digital Presence"} cta={"View Case Study"} para1={"Energy company's digital footprint designed to boost online service subscriptions and streamline customer onboarding."} para2={"Discovery & Research Strategy Experience Design Visual Design"} />
+
+{/* ================================================================================================================================================================================== */}
+
       <Homeaboutsection />
-      <Homemarquee bg={"#fff"} text={"--textsecondry"} />
+      <Homemarquee bgwrapper={"#fff"} bg={"#fff"} text={"--textsecondry"} />
       <Capabilities bg={"#D5D9E4"} arrowimg={"/images/blackarrow.svg"} capabgif1={"/images/accessbility.gif"} capabgif2={"/images/expert recomendation.gif"} capabgif3={"/images/evaluation.gif"} capabgif4={"/images/user satisfaction.gif"}/>
-      <Contactsection bg={"/images/home-hero.svg"} />
+      <Contactsection bg={""} />
+    </div>
+    </div>
   </div>
     </>
   );

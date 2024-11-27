@@ -14,7 +14,7 @@ function AfiousChatSection() {
   return (
     <>
       <div className="afious-chat-wrapper flex min-h-[80vh] gap-[2rem] mt-[6rem] w-[100%] px-[1.5rem]">
-        <div className="afious-chat-left h-[100%] w-[50%] rounded-[2.6rem]">
+        <div className="afious-chat-left afious-animation-6 h-[100%] w-[50%] rounded-[2.6rem]">
           {/* <img className=' afious-chat-img w-[100%] object-cover rounded-[2.5rem]' src="/images/chatleftimg.svg" alt="" /> */}
           <video
             className='afious-chat-video object-cover rounded-[3rem]'
@@ -29,7 +29,7 @@ function AfiousChatSection() {
             style={{ pointerEvents: 'none' }} // Disable interaction with video
           ></video>
         </div>
-        <div className="afious-chat-right h-[100%] overflow-hidden w-[50%]">
+        <div className="afious-chat-right afious-animation-7 h-[100%] overflow-hidden w-[50%]">
           <video
             className='afious-chat-video object-cover rounded-[3rem] scale-[1.04]'
             src="/videos/chat-video.mp4"

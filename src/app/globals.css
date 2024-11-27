@@ -27,6 +27,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.other-work-top-button{
+  background-color: #00259C !important;
+  border: 2px solid #044AFF !important;
+  color: white !important;
+}
+
 
 #container h2 {
   -webkit-text-stroke: 1.3px white;
@@ -36,6 +42,9 @@
   pointer-events: none !important;
 }
 
+.show-img-1, .show-img-2{
+  pointer-events: none;
+}
 
 /* -------- video controlls ------------- */
 
@@ -102,6 +111,12 @@ video {
 
 .font-weight {
   font-weight: 300 !important;
+}
+
+@media screen and (max-width: 750px) {
+  .logo-icon-animated {
+    height: 40px;
+  }
 }
 
 /* --------------------  Marquee -------------------- */
@@ -267,20 +282,26 @@ video {
 @media screen and (max-width: 1100px) {
   .section-images,
   .workimgs-image,
+  .automation-hero-image,
   .work-hero-img,
   .hero-image {
     height: 500px ; 
   }
+  /* .automation-hero-image{ */
+    /* border-radius: 0px !important; */
+  /* } */
 }
 @media screen and (max-width: 600px) {
   .section-images,
   .workimgs-image,
   .work-hero-img,
+  .automation-hero-image,
   .hero-image { 
     height: 350px;
   }
   .homeabout-img,
   .workimgs-image,
+  .automation-hero-image,
   .work-hero-img
   {
     height: 350px !important;
@@ -354,7 +375,7 @@ video {
 }
 @media screen and (max-width: 1100px) {
   .marquee-wrapper{
-    margin: 3rem 0rem;
+    /* margin: 3rem 0rem; */
   }
 }
 @media screen and (max-width: 800px) {
@@ -373,8 +394,8 @@ video {
     line-height: 2.5rem;
   }
   .marquee-wrapper{
-    margin-bottom: 4rem;
-    margin-top: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .marquee-inner-container img {
