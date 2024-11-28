@@ -14,7 +14,7 @@ function Contactsection(props) {
           </div>
           {/* <form ></form> */}
           <form
-            action="https://formspree.io/f/xyzypdbz"
+            action="https://formspree.io/f/xpwzyjvn"
             method="POST"
             className="contact-wrapper-right w-[50%]  z-[5] ">
             <div className="input-box flex flex-col gap-[0.5rem] w-[100%] w-[100%]">
