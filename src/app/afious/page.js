@@ -13,11 +13,11 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger)
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 
 function Afious() {
-
+  
+  // const locomotiveScroll = new LocomotiveScroll();
 
   const videoRef = useRef(null);
   useEffect(() => {

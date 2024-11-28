@@ -14,10 +14,10 @@ import Footernav from '../components/homesections/footernav';
 import WorkResult from '../components/workresult';
 import OutcomeSection from '../components/outcomesection';
 gsap.registerPlugin(ScrollTrigger)
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 function Automation() {
-
+  // const locomotiveScroll = new LocomotiveScroll();
+  
   const videoRef = useRef(null);
   useEffect(() => {
     if (videoRef.current) {

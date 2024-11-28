@@ -8,9 +8,9 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 import Footernav from '../components/homesections/footernav';
 gsap.registerPlugin(ScrollTrigger)
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 function Capabilities() {
+  // const locomotiveScroll = new LocomotiveScroll();
   useGSAP(() => {
 
     gsap.to(".loading-layer", {
