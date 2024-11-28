@@ -19,6 +19,7 @@ function Contactpage() {
         delay: 0.5,
         ease: "power2.inOut",
       });
+      // --
   
       gsap.to(".logo-icon-animated", {
         rotation: 360,
