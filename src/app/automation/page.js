@@ -24,6 +24,16 @@ function Automation() {
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
     }
+
+
+      (async ()=> {
+  
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+      
+    )()
+  
   
   }, []);
 

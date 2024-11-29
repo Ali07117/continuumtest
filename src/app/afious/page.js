@@ -26,6 +26,15 @@ function Afious() {
       videoRef.current.controls = false;
     }
 
+      (async ()=> {
+  
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+      
+    )()
+  
+
     gsap.to('.other-work-top-2', {
       backgroundColor: 'black',
       color: 'white',

@@ -24,6 +24,15 @@ function EnergyProvider() {
       videoRef.current.controls = false;
     }
 
+      (async ()=> {
+  
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+      
+    )()
+
+
     gsap.to('.other-work-top-3', {
       backgroundColor: 'black',
       color: 'white',
