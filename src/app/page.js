@@ -21,6 +21,7 @@ gsap.registerPlugin(ScrollTrigger)
 function Home() {
   // const locomotiveScroll = new LocomotiveScroll();
 
+
   const videoRef = useRef(null);
   
   useEffect(() => {
@@ -28,6 +29,14 @@ function Home() {
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
     }
+
+    (async ()=> {
+
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    }
+    
+  )()
     
   }, []);
 
