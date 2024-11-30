@@ -48,7 +48,7 @@ function Automation() {
           start: 'top+=200 bottom', // Start 200px into the element
           end: 'bottom+=200 bottom', // End 200px past the element
           scrub: true, // Smooth scrubbing
-          markers:true,
+          // markers:true,
         },
       });
       
