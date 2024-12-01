@@ -24,22 +24,42 @@ function EnergyProvider() {
       videoRef.current.controls = false;
     }
 
-    gsap.to('.other-work-top-3', {
-      backgroundColor: 'black',
-      color: 'white',
-      scrollTrigger: {
-        trigger: '.other-work-top-3',
-        start: 'top+=200 bottom', // Start 200px into the element
-        end: 'bottom+=200 bottom', // End 200px past the element
-        scrub: true, // Smooth scrubbing
-      },
-    });
+    // useEffect(() => {
+      // const animation = gsap.to('.other-work-top-3', {
+      //   opacity: 0,
+      //   display: 'none',
+      //   scrollTrigger: {
+      //     trigger: '.other-work-top-3',
+      //     start: 'top 60%',
+      //     end: 'bottom 40%',
+      //     scrub: true,
+      //     markers: true,
+      //   },
+      // });
+    
+      // ScrollTrigger.refresh(); // Recalculate positions
+    
+      // return () => {
+      //   animation.scrollTrigger?.kill(); // Cleanup on unmount
+      // };
+    // }, []);
 
   }, []);
 
   useGSAP(
     () => {
 
+      // gsap.to('.other-work-top-3', {
+      //   backgroundColor: 'black',
+      //   color: 'white',
+      //   scrollTrigger: {
+      //     trigger: '.other-work-top-3',
+      //     start: 'top 60%',
+      //     end: 'bottom 50%',
+      //     scrub: true,
+      //     markers: true, // Visualize start and end
+      //   },
+      // });
 
       // ==============================
 
@@ -278,7 +298,7 @@ function EnergyProvider() {
             controlsList="nodownload"  // Helps block certain controls like download
             style={{ pointerEvents: 'none' }} // Disable interaction with video
           ></video></div>
-          <OtherWorkSection classtop={"other-work-top-3"} />
+          <OtherWorkSection classtops={"other-work-3"} classtop={"other-work-top-3"} />
         </div>
       </div>
     </>

@@ -112,15 +112,15 @@ function Workpage() {
             <Worktext lockicon={"/images/lockicon.svg"} linktext={"Request Case Study"} pageurl={"/contact"} heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} />
           </div>
           <div className="anime-right w-[70%]  py-[5vh] mt-[6rem]  ">
-            <Workimg img={"/images/section1img.svg"} />
+            <Workimg object={"cover"} img={"/images/section1img.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext linktext={"View Case Study"} pageurl={"/automation"} heading={"Robotic Process Automation"} para1={"Mobile app for a leading robotic process"} parar={"automation(RPA) software company."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
-            <Workimg img={"/images/workimg2.svg"} />
+            <Workimg object={"contain"} img={"/images/workimg2.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext linktext={"View Case Study"} pageurl={"/afious"} heading={"Afious"} para1={"Startup re-imagining loneliness crisis on campuses by matching people based on similar interests."} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
-            <Workimg img={"/images/workimg3.svg"} />
+            <Workimg object={"cover"} img={"/images/workimg3.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext linktext={"View Case Study"} pageurl={"/energyprovider"} heading={"Energy Company"} para1={"Energy company's digital footprint designed to boost online service "} parar={"subscriptions and streamline customer onboarding."} point3={"Experience Design"} point4={"Visual Design"} /></div>
-            <Workimg img={"/images/workimg4.svg"} />
+            <Workimg object={"contain"} img={"/images/workimg4.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext lockicon={"/images/lockicon.svg"} linktext={"Request Case Study"} pageurl={"/contact"} heading={"Bank of America"} para1={"Dashboard and Mobile apps for the"} para2={"Investment Banking team."} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
-            <Workimg img={"/images/workimg5.svg"} />
+            <Workimg object={"cover"} img={"/images/workimg5.svg"} />
             <div className='my-[3rem] hidden work-hidden-text-wrapper'><Worktext lockicon={"/images/lockicon.svg"} linktext={"Request Case Study"} pageurl={"/contact"} heading={"AT&T"} para1={"Tablet and desktop designs for the in-"} para2={"store agent experience"} point1={"Discovery & Research"} point2={"Strategy"} point3={"Experience Design"} point4={"Visual Design"} /></div>
           </div>
         </div>

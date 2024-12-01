@@ -33,7 +33,7 @@ function Aboutsectionabout() {
           <h2 className='anime-text top-[0px] left-[0px] text-nowrap text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>Fortune 500 companies</h2>
           <h2 className='anime-text top-[0px] stroke left-[0px] absolute w-[0%] text-[#044AFF] overflow-hidden text-nowrap text-[4.7vw] leading-[5.7vw] font-average'>Fortune 500 companies</h2>
         </span>
-        <div className="img-container mt-[2rem] flex justify-center">
+        <div className="img-container aboutimg1-container mt-[2rem] flex justify-center">
           <div className=' aboutimg1 mt-[6rem] rounded-[2.5rem] hero-image scale-[0] h-[100vh] w-[100%]' style={{ backgroundImage: "url(/images/heroimg1.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
         </div>
       </div>

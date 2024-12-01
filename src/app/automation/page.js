@@ -24,23 +24,36 @@ function Automation() {
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
     }
+
+    // useEffect(() => {
+      // const animation = gsap.to('.other-work-top', {
+      //   opacity: 0,
+      //   display: 'none',
+      //   scrollTrigger: {
+      //     trigger: '.other-work-upper',
+      //     start: 'top 60%',
+      //     end: 'bottom 40%',
+      //     scrub: true,
+      //     markers: true,
+      //   },
+      // });
+    
+      // ScrollTrigger.refresh(); // Recalculate positions
+    
+      // return () => {
+      //   animation.scrollTrigger?.kill(); // Cleanup on unmount
+      // };
+    // }, []);
+    
   
   }, []);
 
   useGSAP(
     () => {
 
-      gsap.to('.other-work-top', {
-        backgroundColor: 'black',
-        color: 'white',
-        scrollTrigger: {
-          trigger: '.other-work-top',
-          start: 'top+=200 bottom', // Start 200px into the element
-          end: 'bottom+=200 bottom', // End 200px past the element
-          scrub: true, // Smooth scrubbing
-          markers:true,
-        },
-      });
+     
+
+     
       
       // Change button colors with the same timing
       // gsap.to('.other-work-top-button', {
@@ -350,7 +363,7 @@ function Automation() {
           ></video>
         </div>
         <WorkResult />
-        <OtherWorkSection classtop={"other-work-top"} />
+        <OtherWorkSection classtops={"other-work-1"} classtop={"other-work-top"} />
       </div>
     </>
   );

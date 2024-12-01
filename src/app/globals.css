@@ -21,6 +21,14 @@
   }
 }
 
+.workimages{
+  background: linear-gradient(
+  to bottom, /* Direction of the gradient */
+  rgba(219, 219, 219, 1), /* Start color */
+  rgba(255, 255, 255, 1) /* End color */
+);
+}
+
 #container h1 {
   background-image: conic-gradient(#ed0101, blue);
   /* -webkit-background-clip: text; */
@@ -150,10 +158,10 @@ video {
 }
 /* @media screen and (max-width: 650px) {.hero-image{ height: ; } } */
 @media screen and (max-width: 650px) {.footer-logo{ height: 11px !important; } }
-@media screen and (max-width: 650px) {.nav-logo{ height: 20px !important; } }
-@media screen and (max-width: 500px) {.nav-logo{ height: 18px !important; } }
-@media screen and (max-width: 450px) {.nav-logo{ height: 17px !important; } }
-@media screen and (max-width: 400px) {.nav-logo{ height: 16px !important; } }
+@media screen and (max-width: 650px) {.nav-logo{ height: 35px !important; } }
+@media screen and (max-width: 500px) {.nav-logo{ height: 35px !important; } }
+@media screen and (max-width: 450px) {.nav-logo{ height: 30px !important; } }
+@media screen and (max-width: 400px) {.nav-logo{ height: 35px !important; } }
 
 /* --------Nav------------- */
 
@@ -747,7 +755,7 @@ video {
 @media screen and (max-width: 760px) {.work-card-center{width: 50%;} .work-card-first{width: 50%;}}
 @media screen and (max-width: 650px) { .about-wrapper, .howwework-wrapper{ padding-left: 0.8rem; padding-right: 0.8rem;}}
 @media screen and (max-width: 900px) { .capabilities-margin-top{margin-top: 0px;} .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.5rem;} .work-card-last, .work-answer-text{font-size: 1rem;} .work-plus{height: 15px;} .work-minus{height: 2px;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
-@media screen and (max-width: 650px) { .cards-wrapper{padding: 1rem 0rem;} .hero-heading{margin-bottom: 0rem;} .aboutimg1,  .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.3rem;} .work-card-last, .work-answer-text{font-size: 0.9rem;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
+@media screen and (max-width: 650px) { .cards-wrapper{padding: 1rem 0rem;} .hero-heading{margin-bottom: 0rem;} .aboutimg1{margin-top: 4rem;} .aboutimg1-container{margin-top: 0px;}  .work-card-center{display: none;} .work-card-first, .work-question-text{font-size: 1.3rem;} .work-card-last, .work-answer-text{font-size: 0.9rem;} .workcardwrapper{padding: 1.5rem 0;} .about-card-component-wrapper{padding: 1rem 0rem;}}
 @media screen and (max-width: 530px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.8rem;} .workcardwrapper{padding: 1.5rem 0;}}
 @media screen and (max-width: 440px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.7rem;} .workcardwrapper{padding: 1.5rem 0;}}
 @media screen and (max-width: 440px) {.work-card-first{font-size: 1.1rem;} .work-card-last{font-size: 0.7rem;} .workcardwrapper{padding: 1.5rem 0;}}
