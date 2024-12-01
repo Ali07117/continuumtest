@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/navbar';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -9,10 +9,23 @@ import Worktext from './comp/worktext';
 import Workimg from './comp/workimg';
 import Footernav from '../components/homesections/footernav';
 gsap.registerPlugin(ScrollTrigger)
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 
 function Workpage() {
+  // const locomotiveScroll = new LocomotiveScroll();
+
+  useEffect(()=>{
+
+    (async ()=> {
+
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    }
+    
+  )()
+
+  }, [])
+
   useGSAP(
     () => {
 

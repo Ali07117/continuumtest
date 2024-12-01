@@ -1,16 +1,29 @@
 'use client'
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Contactsection from '../components/homesections/contactsection';
 import Navbar from '../components/navbar';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger)
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 
 function Contactpage() {
+  // const locomotiveScroll = new LocomotiveScroll();
+
+  useEffect(()=>{
+
+    (async ()=> {
+
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    }
+    
+  )()
+
+  }, [])
+
   useGSAP(
     () => {
       gsap.to(".loading-layer", {

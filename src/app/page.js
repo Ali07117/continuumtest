@@ -13,13 +13,14 @@ import Capabilities from './components/homesections/capabilities';
 import Contactsection from './components/homesections/contactsection';
 import FluidBubble from './components/FluidBubble';
 import MagicMouseComponent from './components/MagicMouseComponent';
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Home() {
+  // const locomotiveScroll = new LocomotiveScroll();
+
 
   const videoRef = useRef(null);
   
@@ -28,6 +29,14 @@ function Home() {
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
     }
+
+    (async ()=> {
+
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    }
+    
+  )()
     
   }, []);
 

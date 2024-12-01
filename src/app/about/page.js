@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/navbar';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -14,10 +14,24 @@ import Homemarquee from '../components/homesections/homemarquee';
 import Contactsection from '../components/homesections/contactsection';
 import Howwework from './abouthowwework/howwework';
 gsap.registerPlugin(ScrollTrigger)
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 
 function about() {
+  // const locomotiveScroll = new LocomotiveScroll();
+
+  useEffect(()=>{
+
+    (async ()=> {
+
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    }
+    
+  )()
+
+  }, [])
+
+
   useGSAP(
     () => {
 

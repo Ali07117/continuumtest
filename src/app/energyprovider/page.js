@@ -11,10 +11,10 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger)
-import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
+// import LocomotiveScroll from 'locomotive-scroll';
 
 function EnergyProvider() {
+  // const locomotiveScroll = new LocomotiveScroll();
 
 
   const videoRef = useRef(null);
@@ -24,25 +24,25 @@ function EnergyProvider() {
       videoRef.current.controls = false;
     }
 
-    // useEffect(() => {
-      // const animation = gsap.to('.other-work-top-3', {
-      //   opacity: 0,
-      //   display: 'none',
-      //   scrollTrigger: {
-      //     trigger: '.other-work-top-3',
-      //     start: 'top 60%',
-      //     end: 'bottom 40%',
-      //     scrub: true,
-      //     markers: true,
-      //   },
-      // });
-    
-      // ScrollTrigger.refresh(); // Recalculate positions
-    
-      // return () => {
-      //   animation.scrollTrigger?.kill(); // Cleanup on unmount
-      // };
-    // }, []);
+      (async ()=> {
+  
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+      
+    )()
+
+
+    gsap.to('.other-work-top-3', {
+      backgroundColor: 'black',
+      color: 'white',
+      scrollTrigger: {
+        trigger: '.other-work-top-3',
+        start: 'top+=200 bottom', // Start 200px into the element
+        end: 'bottom+=200 bottom', // End 200px past the element
+        scrub: true, // Smooth scrubbing
+      },
+    });
 
   }, []);
 
