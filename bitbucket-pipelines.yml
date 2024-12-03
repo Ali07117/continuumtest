@@ -14,7 +14,7 @@ pipelines:
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "apt-get update && apt-get install -y sshpass"
 
           # 2. Kill any process running on port 3000
-          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "sudo -n fuser -k 3000/tcp"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "sudo fuser -k 3000/tcp"
 
           # 3. Check if the repo exists and remove it if it does
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "if [ -d ~/nextjs-app ]; then rm -rf ~/nextjs-app; fi"
