@@ -263,6 +263,7 @@ function Afious() {
           end: 'top 50%',
           scrub: true,
           // markers: true,
+          // d
         },
       }); 
 
