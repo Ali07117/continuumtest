@@ -246,6 +246,7 @@ function EnergyProvider() {
           end: 'top 50%',
           scrub: true,
           // markers: true,
+          // m
         },
       }); 
 
