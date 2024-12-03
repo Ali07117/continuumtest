@@ -1,4 +1,4 @@
-mage: node:14  # Use the appropriate Node.js image version
+image: node:14  # Use the appropriate Node.js image version
 
 pipelines:
   default:
