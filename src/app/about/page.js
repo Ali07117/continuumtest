@@ -18,6 +18,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 function about() {
   // const locomotiveScroll = new LocomotiveScroll();
+  // cc
 
   useEffect(()=>{
 
