@@ -26,16 +26,16 @@ pipelines:
           # 5. Navigate to the project directory and install dependencies
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install -g pm2"
-          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && pm2 delete npm"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && pm2 delete npm || true"
 
           # 6. Build the Next.js app
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm run build"
 
           # 7. Start the Next.js app
-          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && pm2 start npm --name "npm" -- start"
+          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && pm2 start npm --name 'npm' -- start"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && pm2 startup"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && pm2 save"
 
 definitions:
   caches:
-    node: ~/.npm
+    node: ~/.npm
