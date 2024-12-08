@@ -4,7 +4,7 @@ import Footernav from './footernav';
 function Contactsection(props) {
   return (
     <>
-      <div className="contact-wrapper px-[4.5rem] relative min-h-[100vh]  w-[100%]  pt-[8rem]" >
+      <div className="contact-wrapper px-[4.5rem] relative min-h-[100vh]  w-[100%]  pt-[10rem]" >
         <div className='h-[100%] w-[100%] absolute top-[0px] left-[0px] z-[1] rotate-[180deg]' style={{ backgroundImage: `url(${props.bg})`, backgroundPosition: " right 20%%", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></div>
         <div className='flex contact-inner-wrapper gap-[8rem]'>
           <div className="contact-wrapper-left w-[50%]  z-[5] ">
