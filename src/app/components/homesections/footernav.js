@@ -8,7 +8,7 @@ function Footernav() {
   return (
     <>
     <div>
-    <div className="bottom-logo  z-[5] relative flex justify-center mt-[3rem] lg:mt-[14rem]"><Link href="/"><img className=' nav-logo' src="/images/logo.svg" alt="" /></Link></div>
+    <div className="bottom-logo  z-[5] relative flex justify-center mt-[3rem] lg:mt-[12rem]"><Link href="/"><img className=' nav-logo' src="/images/logo.svg" alt="" /></Link></div>
         <div className="relative z-[5] footer-nav flex justify-center pt-[0.5rem] mt-[1rem] items-start footer-nav-wrapper max-h-[100px] h-[70px] border-t-[1px] border-t-[#FFFFFF]">
             {/* <div className="empty-div w-[15%]"></div> */}
             <div className="footer-links flex items-center gap-[32px]">
