@@ -227,14 +227,14 @@ function Afious() {
       gsap.to(".loading-layer", {
         transform: "translateY(-200%)",
         duration: 1,
-        delay: 0.5,
+        delay: 1,
         ease: "power2.inOut",
       });
   
       gsap.to(".logo-icon-animated", {
         rotation: 360,
-        duration: 0.5,
-        ease: "none",
+        duration: 1,
+        ease: "slow(1,1,false)",
       });
 
       gsap.to(".automation-hero-video", {
@@ -334,7 +334,7 @@ function Afious() {
         <div className="other-work-section bg-[--bgprimary] pt-[5rem]">
         <p className='font-average other-work-section-heading automation-animation-19 afious-animation-13 energy-animation-12 text-[--textprimary] text-[3rem] px-[1.5rem]'>Other Work</p>
         <div className=" other-work-card-component-wrapper pt-[6rem] pb-[12rem] px-[1.5rem]">
-        <Link href="/automation">
+        <Link href="/energyprovider">
         <div className="show-img-1-box relative automation-animation-20 afious-animation-14 energy-animation-13">
         <img className=" opacity-0 show-img-1 duration-300 h-[200px] w-[280px] absolute top-[0px] left-[15%] rounded-[8px] object-cover" src="/images/workimg2.svg" alt="" />
           <Aboutworkcards pr={"25px"} border={"1px"} company={"Dynegy"} device={"Website"} beforpara={"Visual Design, Experience Design"}  />

@@ -29,15 +29,14 @@ function Contactpage() {
       gsap.to(".loading-layer", {
         transform: "translateY(-200%)",
         duration: 1,
-        delay: 0.5,
+        delay: 1,
         ease: "power2.inOut",
       });
-      // --
   
       gsap.to(".logo-icon-animated", {
         rotation: 360,
-        duration: 0.5,
-        ease: "none",
+        duration: 1,
+        ease: "slow(1,1,false)",
       });
       });
   return (

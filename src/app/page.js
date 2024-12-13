@@ -299,20 +299,17 @@ function Home() {
         ease:"none",
       })
 
-      
-
-
       gsap.to(".loading-layer", {
         transform: "translateY(-200%)",
         duration: 1,
-        delay: 0.5,
+        delay: 1,
         ease: "power2.inOut",
       });
   
       gsap.to(".logo-icon-animated", {
         rotation: 360,
-        duration: 0.5,
-        ease: "none",
+        duration: 1,
+        ease: "slow(1,1,false)",
       });
 
       gsap.from(".anime-1", {
@@ -418,7 +415,9 @@ function Home() {
     <div className='bg-[black]'>
         <Navbar />
       <div className="relative z-[48] pt-[14.3rem] home-wrapper bg-transparent h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-herso.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-        <p className=" z-[20] anime-1 hero-heading w-[90%] font-average font-[400] text-[7.6vw] leading-[8vw]  text-[--textprimary]">Increasing human potential through design.</p>
+        <p className=" z-[20] anime-1 hero-heading w-[90%] h1-heading home-heading font-average font-[400] before-1800 text-[7.6vw] leading-[8vw]  text-[--textprimary]">Increasing human potential through design.</p>
+        <p className=" z-[20] anime-1 hero-heading w-[90%] h1-heading home-heading font-average font-[400] after-1800 hidden text-[7.6vw] leading-[8vw]  text-[--textprimary]">Increasing human potential</p>
+        <p className=" z-[20] anime-1 hero-heading w-[90%] h1-heading home-heading font-average font-[400] after-1800 hidden text-[7.6vw] leading-[8vw]  text-[--textprimary]">through design.</p>
         <p className=" z-[20] anime-1 mt-[2rem] hero-sub-heading w-[95%] text-[2rem] leading-[3rem] font-[400] font-inter font-[200] text-[--textprimary]">At Continuum, we drive forward-thinking solutions that empower people and transform ideas into impactful realities.</p>
         <div className="img-container mt-[2rem] flex justify-center">
         <video

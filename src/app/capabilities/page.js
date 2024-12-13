@@ -29,14 +29,14 @@ function Capabilities() {
     gsap.to(".loading-layer", {
       transform: "translateY(-200%)",
       duration: 1,
-      delay: 0.5,
+      delay: 1,
       ease: "power2.inOut",
     });
 
     gsap.to(".logo-icon-animated", {
       rotation: 360,
-      duration: 0.5,
-      ease: "none",
+      duration: 1,
+      ease: "slow(1,1,false)",
     });
 
     // let cmm = gsap.matchMedia();
@@ -106,8 +106,8 @@ function Capabilities() {
     </div>
       <div className="px-[1.5rem] pt-[14.3rem] bg-[--bgprimary] capabilities-wrapperd capabilities-margin-top">
         <Navbar />
-        <h1 className='hero-heading text-[white] text-[8rem] leading-[6.5rem] text-[--textprimary] font-average'>Capabilities </h1>
-        <h2 className=' font-[400] text-[5.5vw] leading-[6.5vw] sm:text-[4.7vw] hero-subheading-para1 sm:leading-[5.7vw] mt-[1rem] sm:mt-[2rem] text-[--textprimary] font-average'>Empowering Your Vision with Comprehensive Design and Strategy Services</h2>
+        <h1 className='hero-heading text-[white] text-[8rem] leading-[6.5rem] capabilities-heading-after-1800 text-[--textprimary] font-average'>Capabilities </h1>
+        <h2 className=' font-[400] text-[5.5vw] leading-[6.5vw] sm:text-[4.7vw] capabilities-subheading-after-1800 hero-subheading-para1 sm:leading-[5.7vw] mt-[1rem] sm:mt-[2rem] text-[--textprimary] font-average'>Empowering Your Vision with Comprehensive Design and Strategy Services</h2>
         {/* <h2 className=' font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>Design and Strategy Services </h2> */}
         <div className="capabilities-anime-container w-[100%]  flex h-[50vh] md:h-[90vh] -max-h-[90vh] mt-[6rem]">
           <div className="capabilities-left -bg-[blue] w-[50%] h-[100%]">

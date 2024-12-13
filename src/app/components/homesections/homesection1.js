@@ -23,7 +23,7 @@ function Homesection1(props) {
         <div className={` ${props.containerclass} mt-[2.1rem] z-[1] flex justify-center `}>
           <video
             ref={videoRef}
-            className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.5] section-images h-[100vh] w-[100%]`}
+            className={` ${props.imgclass} rounded-[2.5rem] object-cover scale-[0.7] section-images h-[100vh] w-[100%]`}
             src={props.img}
             autoPlay
             loop

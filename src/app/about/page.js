@@ -240,14 +240,14 @@ function about() {
       gsap.to(".loading-layer", {
         transform: "translateY(-200%)",
         duration: 1,
-        delay: 0.5,
+        delay: 1,
         ease: "power2.inOut",
       });
   
       gsap.to(".logo-icon-animated", {
         rotation: 360,
-        duration: 0.5,
-        ease: "none",
+        duration: 1,
+        ease: "slow(1,1,false)",
       });
 
       gsap.to(".aboutimg1", {
@@ -283,7 +283,7 @@ function about() {
             scrub: true, // Link the animation to the scroll position
             // markers: true, // Shows markers to visualize scroll trigger points (remove for production)
             start: "top 0%",
-            end: "top -80%",
+            end: "top -100%",
           }
         });
       });

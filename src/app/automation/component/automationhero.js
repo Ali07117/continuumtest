@@ -19,7 +19,7 @@ function AutomationHero(props) {
                 {/* <Projectintro/> */}
                 <div>
                     <h1 className=' px-[1.5rem] text-[white] automation-hero-heading hero-heading text-[7.6vw] leading-[6.5rem] text-[--textprimary] font-average'>{props.heading} </h1>
-                    <div className="project-intro-wrapper flex mt-[1rem] sm:mt-[2rem] px-[1.5rem]">
+                    <div className="project-intro-wrapper automation-under-heading flex mt-[1rem] sm:mt-[2rem] px-[1.5rem]">
                         <div className="intro-left w-[50%] h-[100%]">
                             <p className=' project-intro-text font-inter font-[300] text-[18px] text-[--textprimary]'>{props.intro}</p>
                             <p className=' project-intro-text font-inter font-[400] text-[18px] text-[--textprimary]'>{props.introheading}</p>
