@@ -23,6 +23,9 @@ function Automation() {
   
   const videoRef = useRef(null);
   useEffect(() => {
+
+    // window.location.reload();
+
     if (videoRef.current) {
       videoRef.current.removeAttribute('controls');
       videoRef.current.controls = false;
