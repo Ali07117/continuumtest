@@ -31,8 +31,8 @@ function AfiousChatSection() {
         </div>
         <div className="afious-chat-right afious-animation-7 h-[100%] overflow-hidden w-[50%]">
           <video
-            className='afious-chat-video object-cover rounded-[3rem] scale-[1.04]'
-            src="/videos/chat-video.mp4"
+            className='afious-chat-video object-cover rounded-[3rem] '
+            src="/videos/chat-video-2.mp4"
             autoPlay
             loop
             muted

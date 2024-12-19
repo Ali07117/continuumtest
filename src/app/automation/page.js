@@ -15,6 +15,7 @@ import Footernav from '../components/homesections/footernav';
 import WorkResult from '../components/workresult';
 import OutcomeSection from '../components/outcomesection';
 import Aboutworkcards from '../about/aboutworksection/comp/aboutworkcards';
+import Otherwork1 from '../components/otherwork1';
 gsap.registerPlugin(ScrollTrigger)
 // import LocomotiveScroll from 'locomotive-scroll';
 function Automation() {
@@ -296,19 +297,16 @@ function Automation() {
         }
       });
 
-      gsap.to('.other-work-top-1', {
-        opacity: 0,
-        display: 'none',
-        scrollTrigger: {
-          trigger: '.other-work-wrapper-1',
-          start: 'top 100%',
-          end: 'top 50%',
-          scrub: true,
-          // markers: true,
-          // comment
-          // commiit
-        },
-      }); 
+      // gsap.to('.other-work-top-1', {
+      //   opacity: 0,
+      //   display: 'none',
+      //   scrollTrigger: {
+      //     trigger: '.other-work-wrapper-1',
+      //     start: 'top 5%',
+      //     end: 'top 0%',
+      //     scrub: true,
+      //   },
+      // }); 
     });
   return (
     <>
@@ -321,8 +319,8 @@ function Automation() {
           <AutomationHero videohidden={"hidden"} imgheight={"95vh"} heroimg={"url(/images/section1img.svg)"} heading={"Automation Anywhere"} intro={"Intro"} introheading={"Mobile app for a leading robotic process automation(RPA) software company."} projectintrolabel={"Contributions"} projectintro1={"Discovery & Research"} projectintro2={"Strategy"} projectintro3={"Experience Design"} projectintro4={"Visual Design"} />
         </div>
         <WorkInfo />
-        <div className="workmap-section px-[1.5rem]">
-          <img className=' w-[100%] automation-animation-8 workmap-section-img object-contain' src="/images/workimages/workdesignmap.svg" alt="" />
+        <div className="workmap-section px-[1.5rem] rounded-[2.3rem]">
+          <img className=' w-[100%] automation-animation-8 workmap-section-imgd rounded-[2.3rem] h-[100%] object-cover' src="/images/workimages/workdesignmap.svg" alt="" />
           <p className='font-inter font-[400] automation-animation-9 workmap-section-img-text text-[18px] mt-[0.5rem] text-[--textsecondry]'>Mindmap to visualize all the necessary functionality of the app</p>
         </div>
         <div className="mindmap-text-section mt-[6rem] gap-[1rem] px-[1.5rem] h-[100vh] flex">
@@ -345,7 +343,7 @@ function Automation() {
         </div>
         <p className='font-inter automation-animation-12 mindmap-bottom-text px-[1.5rem] font-[400] text-[18px] mt-[0.5rem] text-[--textsecondry]'>Mindmap to visualize all the necessary functionality of the app</p>
         <OutcomeSection heading={"Outcome"} subheading={"The redesigned app featured a more intuitive user interface, with streamlined navigation and an improved login process that accommodated both cloud and on-premise solutions. Users could now easily manage automations, assign failed bots, and receive real-time updates. We also introduced filters to help users quickly access the information they needed."} />
-        <div className=' min-h-[100vh] automation-animation-15 outcome-image-container px-[10%] mt-[6rem] flex justify-center'>
+        <div className=' min-h-[100vh] automation-animation-15 outcome-image-container px-[1.5rem] mt-[6rem] flex justify-center'>
           {/* <img className=' h-[100%] w-[100%] outcome-image' src="/images/workimages/outcome1img.svg" alt="" /> */}
           <video
           ref={videoRef}
@@ -364,39 +362,8 @@ function Automation() {
         <WorkResult />
         <p></p>
         {/* <OtherWorkSection classtops={"other-work-1"} classtop={"other-work-top"} /> */}
-        <div className="other-work-wrapper-1 bg-[--bgprimary] relative mt-[12rem] ">
-    <div className="h-[12rem] bg-[white]"></div>
-        <div className="other-work-upper"></div>
-        <div className="other-work-section bg-[--bgprimary] pt-[5rem]">
-        <p className='font-average other-work-section-heading automation-animation-19 afious-animation-13 energy-animation-12 text-[--textprimary] text-[3rem] px-[1.5rem]'>Other Work</p>
-        <div className=" other-work-card-component-wrapper pt-[6rem] pb-[12rem] px-[1.5rem]">
-        <Link href="/energyprovider">
-        <div className="show-img-1-box relative automation-animation-20 afious-animation-14 energy-animation-13">
-        <img className=" opacity-0 show-img-1 duration-300 h-[200px] w-[280px] absolute top-[0px] left-[15%] rounded-[8px] object-cover" src="/images/workimg2.svg" alt="" />
-          <Aboutworkcards pr={"25px"} border={"1px"} company={"Dynegy"} device={"Website"} beforpara={"Visual Design, Experience Design"}  />
-        </div>
-        </Link>
-        <Link href="/afious">
-        <div className="show-img-2-box relative automation-animation-21 afious-animation-15 energy-animation-14">
-        <img className=" opacity-0 show-img-2 duration-300 h-[200px] w-[280px] absolute top-[-100%] left-[15%] rounded-[8px] object-cover" src="/images/workimg3.svg" alt="" />
-          <Aboutworkcards company={"Afious"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"} />
-        </div>
-        </Link>
-        </div>
-        </div>
-
-        <div className={` other-work-top min-h-[105px] z-[9] w-[100%] text-[white] sticky bottom-[0] flex items-center justify-center gap-[1rem] bg-[black] `}>
-            <p className=' font-average other-work-top-text text-[3rem]'>Ready to bring your project to life?</p>
-            <Link href="/contact"><button className='bg-[#00259C] text-[18px] other-work-top-button text-[white] font-[400] border-[2px] border-[#044AFF] px-[3rem] py-[13px] rounded-[2rem]'>Contact Us</button></Link>
-        </div>
-        <div className={` other-work-top other-work-top-1 z-[999] min-h-[105px] w-[100%] text-[#00259C] sticky bottom-[0] flex items-center bg-[#D5D9E4] justify-center gap-[1rem]`}>
-            <p className=' font-average other-work-top-text text-[3rem]'>Ready to bring your project to life?</p>
-            <Link href="/contact"><button className='bg-[#00259C] text-[18px] other-work-top-button text-[white] font-[400] border-[2px] border-[#044AFF] px-[3rem] py-[13px] rounded-[2rem]'>Contact Us</button></Link>
-        </div>
-        <div className='px-[1.5rem] automation-footer-nav-container pt-[6rem]'>
-    <Footernav/>
-        </div>
-    </div>
+        <Otherwork1/>
+       
       </div>
     </>
   );

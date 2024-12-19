@@ -8,7 +8,7 @@ function Capabilitiescard(props) {
           <img className='h-[85px]' src={props.img} alt="" />
           <p className={`font-average  text-[2.8rem] text-[${props.text}] font-[400]`}>{props.heading}</p>
         </div>
-        <p className={`font-inter card-para text-[20px] w-[80%] mt-[1rem] text-[${props.text}] font-[400]`}>{props.subheading}</p>
+        <p className={`font-inter card-para text-[20px] w-[600px] mt-[1rem] text-[${props.text}] font-[400]`}>{props.subheading}</p>
       </div>
     </>
   );

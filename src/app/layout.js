@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico?v=2" />
+        <link className="bg-[white] favicon-color" rel="icon" href="/favicon.ico?v=2" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>

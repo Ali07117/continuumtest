@@ -36,6 +36,8 @@ function about() {
   useGSAP(
     () => {
 
+      
+
       gsap.from(".capabilities-text-heading", {
         y: "30px", // Start the element 100px down from its original position
         opacity:0,
@@ -280,13 +282,24 @@ function about() {
           stagger: 0.5, // Delay each animation by 0.2 seconds
           scrollTrigger: {
             trigger: ".about-wrapper",
+            // pin:true,
             scrub: true, // Link the animation to the scroll position
             // markers: true, // Shows markers to visualize scroll trigger points (remove for production)
             start: "top 0%",
-            end: "top -100%",
+            end: "top -180%",
           }
         });
+         gsap.from(".text-anime-container", {
+        scrollTrigger: {
+          trigger: ".text-anime-container", // Element that triggers the animation
+          start: "top 5%", // Start the animation when the element's top hits the bottom of the viewport
+          end: "top -180%",
+          pin:true,
+        }
       });
+      });
+
+     
 
       gsap.to(".marquee-inner-container", {
         x: "-100%",

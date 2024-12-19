@@ -259,10 +259,10 @@ function Afious() {
         display: 'none',
         scrollTrigger: {
           trigger: '.other-work-wrapper-2',
-          start: 'top 100%',
-          end: 'top 50%',
+          start: 'top 5%',
+          end: 'top 0%',
           scrub: true,
-          // markers: true,
+          markers: true,
           // d
         },
       }); 
@@ -284,7 +284,7 @@ function Afious() {
           <OutcomeSection heading={"Outcome"} subheading={"The redesigned app now offers a smooth user experience that helps students find connections and join groups easily. Enhanced interest pages, real-time chat, and event planning features allow for a lively community experience. The onboarding process is simple and intuitive, ensuring students can set up and start engaging within minutes."} />
           <AfiousChatSection />
           <div className="grid-section min-h-[100vh] mt-[3rem] py-[5%] px-[1.5rem] flex justify-center w-[100%] bg-[#D5D9E4]">
-            <img className='w-[100%] afious-animation-8 rounded-[2.5rem] object-cover' src="/images/gridimg.svg" alt="" />
+            <img className='w-[100%] afious-animation-8 rounded-[2.5rem] object-cover' src="/images/afiousnew.svg" alt="" />
           </div>
           <div className="result-upper-section px-[1.5rem] afious-animation-9  w-[100%] mb-[12rem] mt-[2.5rem]">
             {/* <div className="reslut-video-1-section w-[100%] h-[80vh]"> */}
@@ -314,7 +314,7 @@ function Afious() {
             <div className="solution-section-left w-[50%] pl-[10%] afious-animation-12">
               <video
               ref={videoRef}
-                className='rounded-[2.5rem] h-[90vh] object-cover w-[100%]'
+                className=' reslut-video-1-section-video rounded-[2.5rem] h-[90vh] object-cover w-[100%]'
                 src="/videos/afious-result-video2.mp4"
                 autoPlay
                 loop
@@ -336,14 +336,14 @@ function Afious() {
         <div className=" other-work-card-component-wrapper pt-[6rem] pb-[12rem] px-[1.5rem]">
         <Link href="/energyprovider">
         <div className="show-img-1-box relative automation-animation-20 afious-animation-14 energy-animation-13">
-        <img className=" opacity-0 show-img-1 duration-300 h-[200px] w-[280px] absolute top-[0px] left-[15%] rounded-[8px] object-cover" src="/images/workimg2.svg" alt="" />
+        <img className=" opacity-0 show-img-1 duration-300 h-[300px] w-[420px] absolute top-[-50px] left-[10%] rounded-[8px] object-cover" src="/images/workimg3.svg" alt="" />
           <Aboutworkcards pr={"25px"} border={"1px"} company={"Dynegy"} device={"Website"} beforpara={"Visual Design, Experience Design"}  />
         </div>
         </Link>
-        <Link href="/afious">
+        <Link href="/automation">
         <div className="show-img-2-box relative automation-animation-21 afious-animation-15 energy-animation-14">
-        <img className=" opacity-0 show-img-2 duration-300 h-[200px] w-[280px] absolute top-[-100%] left-[15%] rounded-[8px] object-cover" src="/images/workimg3.svg" alt="" />
-          <Aboutworkcards company={"Afious"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"} />
+        <img className=" opacity-0 show-img-2 duration-300 h-[300px] w-[420px] absolute top-[-50px] left-[10%] rounded-[8px] object-cover" src="/images/section1img.svg" alt="" />
+          <Aboutworkcards company={"RPA Company"} device={"Mobile App"} beforpara={"Strategy, Experience Design, Visual Design"} />
         </div>
         </Link>
         </div>

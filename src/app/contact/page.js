@@ -44,7 +44,7 @@ function Contactpage() {
     <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
       <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
     </div>
-      <div className="contact-page-wrapper bg-[black] pt-[7.3rem] md:pt-[7.3rem] ">
+      <div className="contact-page-wrapper bg-[black] pt-[7.3rem] md:pt-[0rem] ">
         <div className="contact-page-nav-container pt-[6rem] md:pt-[3.5rem] lg:pt-[0rem] px-[1.5rem]">
           <Navbar/>
         </div>

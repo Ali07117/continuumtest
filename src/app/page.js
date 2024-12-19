@@ -414,7 +414,7 @@ function Home() {
     </div>
     <div className='bg-[black]'>
         <Navbar />
-      <div className="relative z-[48] pt-[14.3rem] home-wrapper bg-transparent h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-herso.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+      <div className="relative z-[48] pt-[13.5rem] home-wrapper bg-transparent h-[100%] px-[1.5rem] w-[100%]" style={{ backgroundImage: "url(/images/home-herso.svg)", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <p className=" z-[20] anime-1 hero-heading w-[90%] h1-heading home-heading font-average font-[400] before-1800 text-[7.6vw] leading-[8vw]  text-[--textprimary]">Increasing human potential through design.</p>
         <p className=" z-[20] anime-1 hero-heading w-[90%] h1-heading home-heading font-average font-[400] after-1800 hidden text-[7.6vw] leading-[8vw]  text-[--textprimary]">Increasing human potential</p>
         <p className=" z-[20] anime-1 hero-heading w-[90%] h1-heading home-heading font-average font-[400] after-1800 hidden text-[7.6vw] leading-[8vw]  text-[--textprimary]">through design.</p>
