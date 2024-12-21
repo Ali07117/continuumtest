@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import Head from "next/head";
 import { useGSAP } from '@gsap/react';
 import Navbar from './components/navbar';
 import { ScrollTrigger } from "gsap/all";
@@ -401,8 +402,51 @@ function Home() {
       });
     }
   );
+
+  const homeSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Home | Continuum Design Labs",
+    "url": "https://www.continuumdesignlabs.com",
+    "description": "Welcome to Continuum Design Labs, a UX design agency in New York focused on creating innovative and user-centric design solutions.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Continuum Design Labs",
+      "url": "https://www.continuumdesignlabs.com",
+      "logo": "https://www.continuumdesignlabs.com/logo.png"
+    },
+    "mainEntityOfPage": "https://www.continuumdesignlabs.com",
+    "image": "https://www.continuumdesignlabs.com/home-banner.jpg"
+  };
+
   return (
     <>
+    <Head>
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchemaData) }}
+        />
+
+        {/* Open Graph Metadata */}
+        <meta property="og:title" content="Home | Continuum Design Labs" />
+        <meta
+          property="og:description"
+          content="Welcome to Continuum Design Labs, a UX design agency in New York focused on creating innovative and user-centric design solutions."
+        />
+        <meta property="og:image" content="https://www.continuumdesignlabs.com/home-og-image.jpg" />
+        <meta property="og:url" content="https://www.continuumdesignlabs.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home | Continuum Design Labs" />
+        <meta
+          name="twitter:description"
+          content="Welcome to Continuum Design Labs, a UX design agency in New York delivering innovative and user-centric design solutions."
+        />
+        <meta name="twitter:image" content="https://www.continuumdesignlabs.com/home-twitter-image.jpg" />
+      </Head>
     <div className="fixed z-[1] blur-[15px] events-pointer-none top-0 left-0 w-full h-[100vh]" style={{zIndex:"1"}}>
       {/* <FluidBubble /> */}
       <MagicMouseComponent/>

@@ -15,6 +15,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 import Footernav from '../components/homesections/footernav';
 import Aboutworkcards from '../about/aboutworksection/comp/aboutworkcards';
+import Head from 'next/head';
 gsap.registerPlugin(ScrollTrigger)
 // import LocomotiveScroll from 'locomotive-scroll';
 
@@ -269,8 +270,49 @@ function Afious() {
       }); 
 
     });
+    const afiousSchemaData = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Afious | Leading Innovators in Tech Solutions",
+      "url": "https://www.afious.com",
+      "description": "Explore the Afious website, where we deliver cutting-edge technology solutions for businesses around the world.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Afious",
+        "url": "https://www.afious.com",
+        "logo": "https://www.afious.com/logo.png"
+      },
+      "mainEntityOfPage": "https://www.afious.com",
+      "image": "https://www.afious.com/afious-og-image.jpg"
+    };
   return (
     <>
+    <Head>
+  {/* Structured Data */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(afiousSchemaData) }}
+  />
+
+  {/* Open Graph Metadata */}
+  <meta property="og:title" content="Afious | Leading Innovators in Tech Solutions" />
+  <meta
+    property="og:description"
+    content="Explore the Afious website, where we deliver cutting-edge technology solutions for businesses around the world."
+  />
+  <meta property="og:image" content="https://www.afious.com/afious-og-image.jpg" />
+  <meta property="og:url" content="https://www.afious.com" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card Metadata */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Afious | Leading Innovators in Tech Solutions" />
+  <meta
+    name="twitter:description"
+    content="Explore the Afious website, where we deliver cutting-edge technology solutions for businesses around the world."
+  />
+  <meta name="twitter:image" content="https://www.afious.com/afious-twitter-image.jpg" />
+</Head>
     <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
       <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
     </div>

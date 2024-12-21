@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import Navbar from '../components/navbar';
+import Head from "next/head";
 import Capabilitiescard from './comp/capabilitiescard';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -99,8 +100,57 @@ function Capabilities() {
     // });
   });
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Continuum Design Labs",
+    "url": "https://www.continuumdesignlabs.com",
+    "logo": "https://www.continuumdesignlabs.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-347-903-6060",
+      "contactType": "Sales",
+      "areaServed": "US",
+      "availableLanguage": "English",
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "157 Columbus Ave",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10023",
+      "addressCountry": "US",
+    },
+  };
+
   return (
     <>
+     <Head>
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+
+        {/* Open Graph Metadata */}
+        <meta property="og:title" content="Continuum Design Labs | UX Design Agency in New York, NY" />
+        <meta
+          property="og:description"
+          content="Continuum Design Labs delivers innovative, user-centric design solutions for startups and enterprises, transforming ideas into exceptional digital experiences."
+        />
+        <meta property="og:image" content="https://www.continuumdesignlabs.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.continuumdesignlabs.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Continuum Design Labs | UX Design Agency in New York, NY" />
+        <meta
+          name="twitter:description"
+          content="User-centric design solutions for enterprise and e-commerce."
+        />
+        <meta name="twitter:image" content="https://www.continuumdesignlabs.com/twitter-image.jpg" />
+      </Head>
      <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
       <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
     </div>

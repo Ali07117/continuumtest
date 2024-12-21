@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Head from "next/head";
 import { ScrollTrigger } from "gsap/all";
 import Link from 'next/link';
 import Navbar from '../components/navbar';
@@ -311,8 +312,49 @@ function Automation() {
       //   },
       // }); 
     });
+    const automationSchemaData = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Automation | Continuum Design Labs",
+      "url": "https://www.continuumdesignlabs.com/automation",
+      "description": "Explore the Automation Anywhere project by Continuum Design Labs, where we helped redesign a mobile app for a leading robotic process automation (RPA) software company.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Continuum Design Labs",
+        "url": "https://www.continuumdesignlabs.com",
+        "logo": "https://www.continuumdesignlabs.com/logo.png"
+      },
+      "mainEntityOfPage": "https://www.continuumdesignlabs.com/automation",
+      "image": "https://www.continuumdesignlabs.com/automation-og-image.jpg"
+    };
   return (
     <>
+    <Head>
+  {/* Structured Data */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(automationSchemaData) }}
+  />
+
+  {/* Open Graph Metadata */}
+  <meta property="og:title" content="Automation | Continuum Design Labs" />
+  <meta
+    property="og:description"
+    content="Explore the Automation Anywhere project by Continuum Design Labs, where we helped redesign a mobile app for a leading robotic process automation (RPA) software company."
+  />
+  <meta property="og:image" content="https://www.continuumdesignlabs.com/automation-og-image.jpg" />
+  <meta property="og:url" content="https://www.continuumdesignlabs.com/automation" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card Metadata */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Automation | Continuum Design Labs" />
+  <meta
+    name="twitter:description"
+    content="Explore the Automation Anywhere project by Continuum Design Labs, where we helped redesign a mobile app for a leading robotic process automation (RPA) software company."
+  />
+  <meta name="twitter:image" content="https://www.continuumdesignlabs.com/automation-twitter-image.jpg" />
+</Head>
     <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
       <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
     </div>

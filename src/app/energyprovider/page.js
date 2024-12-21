@@ -8,6 +8,7 @@ import SolutionSection from '../components/solutionsection';
 import OutcomeSection from '../components/outcomesection';
 import OtherWorkSection from '../components/otherworksection';
 import gsap from 'gsap';
+import Head from 'next/head';
 import { useGSAP } from '@gsap/react';
 import Link from 'next/link';
 import { ScrollTrigger } from "gsap/all";
@@ -250,12 +251,52 @@ function EnergyProvider() {
           end: "top -70%",
         }
       });
-
-      
-
     });
+    const energySchemaData = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Energy Solutions | Afious",
+      "url": "https://www.afious.com/energy",
+      "description": "Explore Afious energy solutions that provide efficient, sustainable, and innovative energy management for businesses.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Afious",
+        "url": "https://www.afious.com",
+        "logo": "https://www.afious.com/logo.png"
+      },
+      "mainEntityOfPage": "https://www.afious.com/energy",
+      "image": "https://www.afious.com/energy-og-image.jpg"
+    };
+  
+    
   return (
     <>
+     <Head>
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(energySchemaData) }}
+        />
+
+        {/* Open Graph Metadata */}
+        <meta property="og:title" content="Energy Solutions | Afious" />
+        <meta
+          property="og:description"
+          content="Explore Afious energy solutions that provide efficient, sustainable, and innovative energy management for businesses."
+        />
+        <meta property="og:image" content="https://www.afious.com/energy-og-image.jpg" />
+        <meta property="og:url" content="https://www.afious.com/energy" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Energy Solutions | Afious" />
+        <meta
+          name="twitter:description"
+          content="Explore Afious energy solutions that provide efficient, sustainable, and innovative energy management for businesses."
+        />
+        <meta name="twitter:image" content="https://www.afious.com/energy-twitter-image.jpg" />
+      </Head>
     <div className='h-[100vh] loading-layer w-[100%] bg-[black] fixed top-[0px] left-[0px] z-[9999] flex items-center justify-center'>
       <img className='h-[80px] logo-icon-animated' src="/images/logoicon.svg" alt="" />
     </div>
