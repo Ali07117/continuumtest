@@ -24,7 +24,7 @@ pipelines:
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "git clone https://x-token-auth:ATCTT3xFfGN0JkDIrIZLEUli-ypvMIHb8ijUOYIl8G9K0-BVfUyzuWaA3-FUofba8Q_lR9_oiFJ5IrOKU4HmqpnLHAaYEbzxdnZarBrEcmm2-UsTsKHQ_K6MZLH0wrGxthz_ClW5W8kgmDdkwMJo_sxM4DEaib-oScI40Czw6ZpsIX3J5TsWVOo=F9CF8284@bitbucket.org/continuumdesignlabs/continuum-main-site.git ~/nextjs-app"
 
           # 5. Navigate to the project directory and install dependencies
-          - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install"
+          # - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && npm install -g pm2"
           - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no root@157.245.244.83 "cd ~/nextjs-app && pm2 delete npm || true"
 
