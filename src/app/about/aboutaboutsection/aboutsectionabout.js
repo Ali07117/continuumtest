@@ -18,6 +18,7 @@ function Aboutsectionabout() {
   }, []);
   return (
     <>
+    {/* a */}
       <div className=' about-wrapper pt-[14.3rem] bg-[black] h-[100%] px-[1.5rem] w-[100%]'>
         <Navbar />
         <div className=' text-anime-container'>
