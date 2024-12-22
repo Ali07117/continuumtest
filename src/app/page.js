@@ -21,6 +21,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 function Home() {
   // const locomotiveScroll = new LocomotiveScroll();
+  // s
 
 
   const videoRef = useRef(null);
