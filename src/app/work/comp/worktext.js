@@ -8,7 +8,7 @@ function Worktext(props) {
   return (
     <>
       <div className="wrapper work-left-text-card-wrapper h-[100vh] pt-[10vh]">
-        <p className='text-[6.5vw] md:text-[3.5vw] leading-[3.5rem] font-average text-[--textprimary]'>{props.heading}</p>
+        <p className='text-[7vw] leading-[7vw] md:text-[3.5vw]  leading-[3.5rem] font-average text-[--textprimary]'>{props.heading}</p>
         <p className='text-[1.1rem] font-inter text-[--textprimary] pr-[5%] mt-[1.5rem]'>{props.para1} <br />{props.parar}</p>
         <p className='text-[1.1rem] font-[300] font-inter text-[--textprimary] leading-[1.8rem] mt-[1.5rem]'>{props.point1}</p>
         <p className='text-[1.1rem] font-[300] font-inter text-[--textprimary] leading-[1.8rem]'> {props.point2}</p>

@@ -9,21 +9,27 @@ function Homemarquee(props) {
         <div className={`marquee-container my-[1rem] sm:mt-[3rem] flex gap-[55%] overflow-hidden`} style={{ backgroundColor: `${props.bg}` }}>
           {/* <div className="marquee-inner-containerr flex gap-[100px]"> */}
           <Marquee style={{ marginTop: "0.5rem" }}>
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo2.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo1.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo3.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo4.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo5.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo1.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo2.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo3.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo4.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo5.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo1.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo2.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo3.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo4.svg" alt="" />
-    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px]' src="/images/marqueelogo5.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[65px] object-contain' src="/images/marqueelogo2.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px] object-contain' src="/images/marqueelogo1.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo3.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[65px] object-contain' src="/images/marqueelogo4.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo5.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo6.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo7.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px] object-contain' src="/images/marqueelogo1.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[65px] object-contain' src="/images/marqueelogo2.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo3.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[65px] object-contain' src="/images/marqueelogo4.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo5.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo6.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo7.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[55px] object-contain' src="/images/marqueelogo1.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[65px] object-contain' src="/images/marqueelogo2.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo3.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[65px] object-contain' src="/images/marqueelogo4.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo5.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo6.svg" alt="" />
+    <img className='ml-[70px] mix-blend-luminosity grayscale h-[30px] object-contain' src="/images/marqueelogo7.svg" alt="" />
 </Marquee>
           {/* </div> */}
           {/* <div className="marquee-inner-containerr flex ml-[100px]">

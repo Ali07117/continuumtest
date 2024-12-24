@@ -23,8 +23,8 @@ function Aboutsectionabout() {
         <Navbar />
         <div className=' text-anime-container'>
         <h1 className='hero-heading text-[white] text-[8rem] about-heading-after-1800 leading-[6.5rem] text-[--textprimary] font-average'>About </h1>
-
-        <span className='relative w-[100%]'>
+        <span className='text-fill-animation-hidden-1'>
+        <span className='relative w-[100%] text-fill-animation-hidden-1'>
           <h2 className='anime-text about-anime-text text-nowrap top-[0px] left-[0px] mt-[1rem] sm:mt-[2rem] relative font-[400] text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>At <span className='text-[4.3vw] leading-[5.7vw] stroke text-[#044AFF] font-average'>Continuum,</span> we create digital experiences</h2>
           <h2 className='anime-text about-anime-text top-[0px] stroke left-[0px] absolute w-[0%] overflow-hidden text-nowrap  text-[4.7vw] leading-[5.7vw] text-[#044AFF] font-average'>At <span className='text-[4.3vw] leading-[5.7vw] text-[#044AFF] font-average'>Continuum,</span> we create digital experiences</h2>
         </span>
@@ -44,6 +44,34 @@ function Aboutsectionabout() {
           <h2 className='anime-text about-anime-text top-[0px] left-[0px] text-nowrap text-[4.7vw] leading-[5.7vw] text-[--textprimary] font-average'>Fortune 500 companies</h2>
           <h2 className='anime-text about-anime-text top-[0px] stroke left-[0px] absolute w-[0%] text-[#044AFF] overflow-hidden text-nowrap text-[4.7vw] leading-[5.7vw] font-average'>Fortune 500 companies</h2>
         </span>
+        </span>
+        {/* -- */}
+        <div className='text-fill-animation-hidden-2'>
+        <span className='relative w-[100%]'>
+          <h2 className=' text-nowrap top-[0px] left-[0px] mt-[1rem] sm:mt-[2rem] relative font-[400] text-[6vw] leading-[7vw] text-[--textprimary] font-average'>At <span className='text-[6.5vw] leading-[7vw] stroke text-[#044AFF] font-average'>Continuum,</span> we create digital</h2>
+          <h2 className=' top-[0px] stroke left-[0px] absolute w-[0%] overflow-hidden text-nowrap  text-[6vw] leading-[7vw] text-[#044AFF] font-average'>At <span className='text-[6.5vw] leading-[7vw] text-[#044AFF] font-average'>Continuum,</span> we create digital</h2>
+        </span>
+        <span className='relative w-[100%]'>
+          <h2 className=' top-[0px] left-[0px] text-nowrap text-[6vw] leading-[7vw] text-[--textprimary] font-average'>experiences that deliver measurable</h2>
+          <h2 className=' top-[0px] stroke left-[0px] absolute w-[0%] text-[#044AFF] overflow-hidden text-nowrap text-[6vw] leading-[7vw] font-average'>experiences that deliver measurable</h2>
+        </span>
+        <span className='relative w-[100%]'>
+          <h2 className=' top-[0px] left-[0px] text-nowrap text-[6vw] leading-[7vw] text-[--textprimary] font-average'>across industries, we transform ideas</h2>
+          <h2 className=' top-[0px] stroke left-[0px] absolute w-[0%] text-[#044AFF] overflow-hidden text-nowrap text-[6vw] leading-[7vw] font-average'>across industries, we transform ideas</h2>
+        </span>
+        <span className='relative w-[100%]'>
+          <h2 className=' top-[0px] left-[0px] text-nowrap text-[6vw] leading-[7vw] text-[--textprimary] font-average'>into user- friendly products for</h2>
+          <h2 className=' top-[0px] stroke left-[0px] absolute w-[0%] text-[#044AFF] overflow-hidden text-nowrap text-[6vw] leading-[7vw] font-average'>into user- friendly products for</h2>
+        </span>
+        <span className='relative w-[100%]'>
+          <h2 className=' top-[0px] left-[0px] text-nowrap text-[6vw] leading-[7vw] text-[--textprimary] font-average'>everyone from startups to Fortune</h2>
+          <h2 className=' top-[0px] stroke left-[0px] absolute w-[0%] text-[#044AFF] overflow-hidden text-nowrap text-[6vw] leading-[7vw] font-average'>everyone from startups to Fortune</h2>
+        </span>
+        <span className='relative w-[50%]'>
+          <h2 className=' top-[0px] left-[0px] text-nowrap text-[6vw] leading-[7vw] text-[--textprimary] font-average'>500 companies</h2>
+          <h2 className=' top-[0px] stroke left-[0px] absolute w-[0%] text-[#044AFF] overflow-hidden text-nowrap text-[6vw] leading-[7vw] font-average'>500 companies</h2>
+        </span>
+        </div>
         </div>
         <div className="img-container aboutimg1-container mt-[2rem] flex justify-center">
         <video

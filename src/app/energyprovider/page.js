@@ -32,7 +32,7 @@ function EnergyProvider() {
         start: 'top 5%',
         end: 'top 0%',
         scrub: true,
-        markers: true,
+        // markers: true,
         // m
       },
     }); 
