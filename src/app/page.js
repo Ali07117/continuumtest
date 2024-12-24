@@ -22,7 +22,7 @@ gsap.registerPlugin(ScrollTrigger)
 function Home() {
   // const locomotiveScroll = new LocomotiveScroll();
   // s
-
+// k
 
   const videoRef = useRef(null);
   
